@@ -117,14 +117,32 @@ console.log(clients.includes("Pol"));
 }
 
 {
-    
-
-
+    const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
+console.log(clients.slice(0, 2)); // ["Poly", "Kiwi"]
 
 }
 
+{
+    const scores = [1, 2, 3, 4, 5, 6];
+    const deletedScores = scores.splice(0, 3);
+    console.log(scores);
+
+    console.log(deletedScores);
+}
 
 
+{
+    const colors = ["red", "green", "blue"];
+
+    colors.splice(2, 0, "purple");
+    colors.splice(1, 0, "white", "black");
+    console.log(colors);
+}
+
+
+{
+    const colors = ["red"]
+}
 
 
 
