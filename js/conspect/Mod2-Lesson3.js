@@ -141,10 +141,25 @@ console.log(clients.slice(0, 2)); // ["Poly", "Kiwi"]
 
 
 {
-    const colors = ["red"]
+    const languages = ['C', "C++", "Java", "JavaScript"];
+
+    languages.splice(1, 2, "Python");
+    console.log(languages);
 }
 
+{
+    const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
+    const newClients = ["Monkong", "Singu"];
 
+    const allClientsWithOldFirst = oldClients.concat(newClients);
+    console.log(allClientsWithOldFirst);
+
+    const allClientsWithNewFirst = newClients.concat(oldClients);
+    console.log(allClientsWithNewFirst);
+
+    console.log(oldClients);
+    console.log(newClients);
+}
 
 
 
