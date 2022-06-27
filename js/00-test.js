@@ -200,6 +200,9 @@
 
     for (let i = 0; i < logins.length; i += 1) {
         const login = logins[i];
+
+        console.log(`Login: `, login);
+
         if (login === loginToFind) {
             message = `Пользователь ${loginToFind} найден.`;
             break;
