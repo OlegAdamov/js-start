@@ -155,11 +155,12 @@ console.log(clients.slice(0, 2)); // ["Poly", "Kiwi"]
     console.log(allClientsWithOldFirst);
 
     const allClientsWithNewFirst = newClients.concat(oldClients);
-    console.log(allClientsWithNewFirst);
+    console.table(allClientsWithNewFirst);
 
-    console.log(oldClients);
-    console.log(newClients);
+    console.table(oldClients);
+    console.table(newClients);
 }
+
 
 
 
