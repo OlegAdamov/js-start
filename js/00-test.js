@@ -332,43 +332,62 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task `);
+{    console.log(`Task 11`);
 /* Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве.
 * при условии, что числа уникальные (не повторяются).
 */
 
-    const numbers = [51, 18, 13, 24, 7, 85, 19];
-    let smallestNumber = numbers[0];
 
+
+    // console.log(`smallestNumber: `, smallestNumber);
+
+    const findSmallesNumber = function (numbers) {
+        let smallestNumber = numbers[0];
     for (const number of numbers) {
         if (number < smallestNumber) {
             smallestNumber = number;
         }
     }
-    console.log(`smallestNumber: `, smallestNumber);
+        return smallestNumber;
+}
 
 // console.log(findSmallesNumber([3, 8, 12, -2, 15])); // -2
 // console.log(findSmallesNumber([100, 54, 8, 12, 47])); // 8
 // console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
+// console.log(findSmallesNumber([51, 18, 13, 24, 7, 85, 19])); // 7
 
 }
 
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
+{    console.log(`Task 12`);
+/* Напиши функцию changeCase(string), которая заменяет регистр
+* каждого символа в строе на противоположный.
+* Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
 */
 
+    const string = 'qWeRTzxCv';
+    const letters = string.split('');
+    let invertedString = '';
 
+    for (const letter of letters) {
+        const isEqual = letter === letter.toLowerCase();
 
+        invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
+    }
+
+    console.log('invertedString: ', invertedString);
+    
+    const changeCase = function (string) {
+        const letters = string.split('');
+        let invertedString = '';
+
+        
+}
+
+    // console.log(changeCase('qweRTY'));
+    // console.log(changeCase('mAnGo'));
+    // console.log(changeCase('AjAx'));
+
+    
 
 
 }
