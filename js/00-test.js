@@ -249,7 +249,20 @@
 // }
 
 
+{
+    const fn = function (value) {
+        console.log(1);
+        console.log(2);
 
+        if (value < 100) {
+            return `Меньше чем 100`;
+        }
+        return `Больше чем 100`;
+    }
+    console.log(`Результат функции: `, fn(95));
+    console.log(`Результат функции: `, fn(269));
+    
+}
 
 
 
