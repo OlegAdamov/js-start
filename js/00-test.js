@@ -1,6 +1,5 @@
 
-{
-    // ЗАДАЧА 1
+{    console.log(`ЗАДАЧА 1`);
     /*
     * Напишите скрипт, который подщсчитывает общую сумму зарплат работников.
     * Кол-во работников хранится в переменной employees.
@@ -21,21 +20,17 @@
         const salary = Math.round(
             Math.random() * (maxSalary - minSalary) + minSalary);
 
-        console.log(`ЗП работника номер ${i} - ${salary}`)
+        // console.log(`ЗП работника номер ${i} - ${salary}`)
 
         // 4. Суммировать все з.п.
         totalSalary += salary;
 
     }
     // 5. Лог
-    console.log('totalSalary; ', totalSalary);
+    // console.log('totalSalary; ', totalSalary);
 }
 
-
-
-{
-
-    // ЗАДАЧА 2
+{    console.log(`ЗАДАЧА 2`);
     /*
     * Напишите скрипт, который подсчитывает сумму всех чётных чисел,
     * которые входят в диапазон чисел в переменных от min до max.
@@ -47,8 +42,7 @@
 
 }
 
-{
-    // ЗАДАЧА 3
+{    console.log(`ЗАДАЧА 3`);
     /*
     * Напишите скрипт, обработки покупки в магазине.
     * 
@@ -69,9 +63,8 @@
 
 
 }
-{
 
-    // Задача 4
+{    console.log(`Task 4`);
     /* Напиши скрипт подсчета суммы покупки со скидкой в зависимости 
     *от потраченной суммы за всё время (партнёрская программа).
     * 
@@ -99,8 +92,7 @@
 
 }
 
-{
-    // Задача 5
+{    console.log(`Task 5`);
     /*
     *Посчитать общую сумму покупок в корзине
    */
@@ -116,12 +108,11 @@
     for (const value of cart) {
         total += value;
     }
-    console.log(`Total: `, total);
+    // console.log(`Total: `, total);
 
 }
 
-{
-    // Задача 6
+{    console.log(`Task 6.1`);
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -131,23 +122,22 @@
     // 1. Переменная тотал
     // 2. Перебрать массив
     for (let i = 0; i < numbers.length; i += 1) {
-        console.log(numbers[i]);
+        // console.log(numbers[i]);
     
         
     // 3. На каждой итерации проверить четность элемента
     if (numbers[i] % 2 === 0) {
-        console.log(`Четное `);
+        // console.log(`Четное `);
 
     // 4. Если четное - плюсуем к тотал
         total += numbers[i];
    }     
 }
-    console.log(`Total: `, total);
+    // console.log(`Total: `, total);
 
 }
 
-{
-    // Задача 6 / or
+{    console.log(`Task 6.2`);
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -158,14 +148,15 @@
         // console.log(number);
 
         if (number % 2 === 0) {
-            console.log(`${number} - Четное!!!`);
+            // console.log(`${number} - Четное!!!`);
         
             total += number;
         }
-    } console.log(`Total: `, total);
+    }
+    // console.log(`Total: `, total);
 }
-{
-    // Задача 6 / or
+
+{    console.log(`Task 6.3`);
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -176,17 +167,18 @@
         // console.log(number);
 
         if (number % 2 !== 0) {
-            console.log(number, `Эту итерацию пропустить`);
+            // console.log(number, `Эту итерацию пропустить`);
             continue;
         }
-        console.log(`${number} - Четное!!!`);
+        // console.log(`${number} - Четное!!!`);
         total += number;
         
-    } console.log(`Total: `, total);
+    }
+    // console.log(`Total: `, total);
 }
 
-{
-    // Задача 7.1
+{    console.log(`Task 7.1`);
+
 /* Напиши скрипт поиска логина
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
 * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
@@ -201,7 +193,7 @@
     for (let i = 0; i < logins.length; i += 1) {
         const login = logins[i];
 
-        console.log(`Login: `, login);
+        // console.log(`Login: `, login);
 
         if (login === loginToFind) {
             message = `Пользователь ${loginToFind} найден.`;
@@ -209,10 +201,10 @@
         }
         message = `Пользователь ${loginToFind} не найден.`;
     }
-    console.log(message);
+    // console.log(message);
 }
-// {
-    // Задача 7.2
+
+{    console.log(`Task 7.2`);
 /* Напиши скрипт поиска логина
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
 * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
@@ -222,9 +214,9 @@
 
 
 
-// }
-// {
-    // Задача 7.3
+}
+
+{    console.log(`Task 7.3`);
 /* Напиши скрипт поиска логина
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
 * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
@@ -233,37 +225,204 @@
 */
 
 
+}
 
+{    console.log(`Task 7.4`);
+
+    /* Напиши скрипт поиска логина
+    * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
+    * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
+    *
+    * - Метод include() с тернарным оператором
+    */
+
+
+
+}
+
+{    console.log(`Task 8`);
+/* Напиши функцию calculateTotalPrice(items)
+* которая принимает массив цен (чисел) и возвращает их сумму
+*
+*/
+
+
+// const cart = [54, 28, 105, 70, 92, 17, 120, 12, 25, 90];
+// let total = 0;
+
+// for (const value of cart) {
+//     total +=value;
 // }
-// {
-    // Задача 7.4
-/* Напиши скрипт поиска логина
+
+
+// console.log(`Total: `, total);
+
+const calculateTotalPrice = function (items){
+    console.log(`items внутри функции: `, items);
+
+    let total = 0
+
+    for (const item of items) {
+        total += item;
+        
+    }
+    return total;
+}
+
+// console.log(calculateTotalPrice([1, 2, 3])); // 6
+// console.log(calculateTotalPrice([5, 10, 15, 20])); // 50
+// console.log(calculateTotalPrice([100, 200, 300])); // 600
+// console.log(calculateTotalPrice([54, 28, 105, 70, 92, 17, 120, 12, 25, 90])); 
+
+
+}
+
+{    console.log(`Task 9`);
+/* Напиши функцию logItems(items) для перебора и логирования массива
+*
+*/
+
+const logItems = function (items){
+
+    for (const item of items) {
+        // console.log(item);
+    }
+}
+
+logItems([`Mango`, `Kiwi`, `Poly`, `Ajax`]);
+logItems([1, 2, 3, 4, 5]);
+logItems([`клавиатура`, `наушники`, `часы`]);
+
+
+
+
+}
+
+{    console.log(`Task 10`);
+/* Напиши функцию findLogin(allLogins, login) для поиска логина
+*
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
 * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
+*/
+
+const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+
+
+// const findLogin = function (allLogins, loginToFind) {
+//     for (const login of allLogins) {
+//         if (login === loginToFind) {
+//             return `Пользователь ${loginToFind} найден.`;
+//        }
+//     }
+//     return `Пользователь ${loginToFind} не найден.`;   
+
+
+const findLogin = function (allLogins, loginToFind) {
+    return allLogins.includes(loginToFind)
+        ? `Пользователь ${loginToFind} найден.`
+        : `Пользователь ${loginToFind} не найден.`;
+}
+// console.log(findLogin(logins, `m4ngoDoge`));
+// console.log(findLogin(logins, `k1widab3st`));
+// console.log(findLogin(logins, `poly1scute`));
+// console.log(findLogin(logins, `aj4xth3m4n`));
+// console.log(findLogin(logins, `ajdfdxth4n`));
+// console.log(findLogin(logins, `aj4xtdfd4n`));
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве.
+* при условии, что числа уникальные (не повторяются).
+*/
+
+    
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
 *
-* - Метод include() с тернарным оператором
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
 */
 
 
 
-// }
 
 
-{
-    const fn = function (value) {
-        console.log(1);
-        console.log(2);
-
-        if (value < 100) {
-            return `Меньше чем 100`;
-        }
-        return `Больше чем 100`;
-    }
-    console.log(`Результат функции: `, fn(95));
-    console.log(`Результат функции: `, fn(269));
-    
 }
 
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
 
 
 
