@@ -188,7 +188,7 @@
 
     const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
     const loginToFind = `poly1scute`;
-    let message = ``;
+    let message = `Пользователь ${loginToFind} не найден.`;
 
     for (let i = 0; i < logins.length; i += 1) {
         const login = logins[i];
@@ -199,7 +199,6 @@
             message = `Пользователь ${loginToFind} найден.`;
             break;
         }
-        message = `Пользователь ${loginToFind} не найден.`;
     }
     // console.log(message);
 }
@@ -211,8 +210,18 @@
 *
 * - Через for...of
 */
+    const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+    const loginToFind = `k1widab3st`;
+    let message = `Пользователь ${loginToFind} не найден.`;
+    
+    for (const login of logins) {
+                if (login === loginToFind) {
+            message = `Пользователь ${loginToFind} найден.`;
+            break;
+        }
 
-
+    }
+    // console.log(message);
 
 }
 
@@ -235,12 +244,152 @@
     *
     * - Метод include() с тернарным оператором
     */
+    const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+    const loginToFind = `poly1scute`;
+
+
+
+    const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден.` : `Пользователь ${loginToFind} не найден.`;
+
+    // console.log(message);
+
+}
+
+{    console.log(`Task 8`);
+/* Напиши скрипт поиска самого маленького/большого числа в массиве,
+* при условии, что числа уникальные (не повторяются).
+*
+*/
+
+    const numbers = [51, 18, 13, 24, 7, 85, 19];
+    let smallestNumber = numbers[0];
+
+    for (const number of numbers) {
+    if (number < smallestNumber) {
+            smallestNumber = number;
+        }
+    }
+    // console.log(smallestNumber);
+
+        let biggestNumber = numbers[0];
+
+        for (const number of numbers) {
+    if (number > biggestNumber) {
+            biggestNumber = number;
+        }
+    }
+    // console.log(biggestNumber);
+}
+
+{    console.log(`Task 9`);
+/* Напиши скрипт, который объединяет все элементы массива в одно строковое значение.
+*
+* Элементов может быть произвольное кол-во.
+* Пусть элементы массива в строке будут разделены запятой.
+* 
+* - Сначала через for(),
+* - Потом через join()
+* - 
+*/
+
+    const friends = [`Mango`, `Kiwi`, `Poly`, `Ajax`, `Bread`];
+    // let string = '';
+    // Должно получиться: Mango,Kiwi,Poly,Ajax
+
+//     for (const friend of friends) {
+//         string += friend + ', ';
+//     }
+// string = string.slice (0, string.length - 2)
+//     console.log(string);
+
+    // const string = friends.join(', ');
+    // console.log(friends);
+    // console.log(string);
+
+}
+
+{    console.log(`Task 10`);
+/* Напиши функцию changeCase(string), которая заменяет регистр
+* каждого символа в строе на противоположный.
+* Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
+*/
+
+    const string = 'JavaScript';
+    const letters = string.split('');
+    let invertedString = '';
+
+    // console.log(letters);
+
+    for (const letter of letters) {
+        // console.log(letter);
+
+        // if (letter === letter.toLowerCase()) {
+        //     console.log(`Эта буква в нижнем регистре!!! - `, letter);
+
+        //     invertedString += letter.toUpperCase();
+        // } else {
+        //     invertedString += letter.toLowerCase();
+        // }
+
+        invertedString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+    }
+    // console.log(invertedString);
+
+
 
 
 
 }
 
-{    console.log(`Task 8`);
+{    console.log(`Task 11`);
+/* Делаем slug в URL из названия статьи (например на dev.to)
+* Заголовок статьи состоит только из букв и пробелов 
+* - Нормализируем строку
+* - Разбиваем по словам
+* - Сшиваем в строку с разделителями
+*/
+
+    // Должно получиться top-10-benefits-of-react-framework
+const title = 'Top 10 benefits of React framework'
+
+    const normalizedTitle = title.toLowerCase();
+    console.log(normalizedTitle);
+
+    const words = normalizedTitle.split(' ');
+    console.log(words);
+
+    const slug = words.join('-');
+    console.log(slug);
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+
+
+console.log(`Functions`);
+
+{    console.log(`Task F-1`);
 /* Напиши функцию calculateTotalPrice(items)
 * которая принимает массив цен (чисел) и возвращает их сумму
 *
@@ -277,7 +426,7 @@ const calculateTotalPrice = function (items){
 
 }
 
-{    console.log(`Task 9`);
+{    console.log(`Task F-2`);
 /* Напиши функцию logItems(items) для перебора и логирования массива
 *
 */
@@ -298,7 +447,7 @@ logItems([`клавиатура`, `наушники`, `часы`]);
 
 }
 
-{    console.log(`Task 10`);
+{    console.log(`Task F-3`);
 /* Напиши функцию findLogin(allLogins, login) для поиска логина
 *
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -332,7 +481,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task 11`);
+{    console.log(`Task F-4`);
 /* Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве.
 * при условии, что числа уникальные (не повторяются).
 */
@@ -358,7 +507,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task 12`);
+{    console.log(`Task F-5`);
 /* Напиши функцию changeCase(string), которая заменяет регистр
 * каждого символа в строе на противоположный.
 * Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
@@ -374,7 +523,7 @@ const findLogin = function (allLogins, loginToFind) {
         invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
     }
 
-    console.log('invertedString: ', invertedString);
+    // console.log('invertedString: ', invertedString);
     
     const changeCase = function (string) {
         const letters = string.split('');
@@ -392,7 +541,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task `);
+{    console.log(`Task F-6`);
 /* Напиши 
 *
 *
@@ -412,7 +561,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task `);
+{    console.log(`Task F-7`);
 /* Напиши 
 *
 *
