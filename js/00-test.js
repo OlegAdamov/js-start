@@ -583,61 +583,141 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task F-5`);
-/* Напиши функцию changeCase(string), которая заменяет регистр
-* каждого символа в строе на противоположный.
-* Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
-*/
+{   console.log(`Task F-5`);
+    /* Напиши функцию changeCase(string), которая заменяет регистр
+    * каждого символа в строе на противоположный.
+    * Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
+    */
 
-    const string = 'qWeRTzxCv';
-    const letters = string.split('');
-    let invertedString = '';
-
-    for (const letter of letters) {
-        const isEqual = letter === letter.toLowerCase();
-
-        invertedString += isEqual ? letter.toUpperCase() : letter.toLowerCase();
-    }
-
-    // console.log('invertedString: ', invertedString);
-    
     const changeCase = function (string) {
         const letters = string.split('');
         let invertedString = '';
 
+        for (const letter of letters) {
+            const isInLowerCase = letter === letter.toLowerCase();
+
+            invertedString += isInLowerCase ? letter.toUpperCase() : letter.toLowerCase();
+        }
+
+        // console.log('invertedString: ', invertedString);
+    
+        return invertedString;
+
         
-}
+    }
 
     // console.log(changeCase('qweRTY'));
     // console.log(changeCase('mAnGo'));
     // console.log(changeCase('AjAx'));
-
-    
-
-
 }
-
+    
 {    console.log(`Task F-6`);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
+/* Напиши функцию slugigy(string), которая получает строку и возвращает URL-slug
+* Строка состоит только из букв и пробелов
 */
 
 
+    // const title = 'Top 10 benefits of React framework';
+
+    // const normalizedTitle = title.toLowerCase();
+    // const words = normalizedTitle.split(' ');
+    // const slug = words.join('-');
+
+    // const slug1 = title.toLowerCase().split(' ').join('-');
+
+    // console.log(slug1);
+
+    const slugify = function (string) {
+    // const normalizedTitle = string.toLowerCase();
+    // const words = normalizedTitle.split(' ');
+    // const slug = words.join('-');
+
+        
+        return string.toLowerCase().split(' ').join('-');
+    }
+
+
+    // console.log(slugify('Top 10 benefits of React framework'));
+    // console.log(slugify('Azure Static Web Apps are Awesome'));
+    // console.log(slugify('Technical writing tips for non-native English speakers'));
+    
+    
 
 
 
 }
 
 {    console.log(`Task F-7`);
+
+/*
+* Псевдомассив argunents и Array.from и ...
+*/
+    
+    // const fn = function () {
+    //     console.log(arguments);
+
+    //     const args = Array.from(arguments);
+
+    //     console.log(args);
+    // };
+
+    // fn(1, 2, 3, 4);
+    // fn(1, 2, 3, 4, 5, 6);
+    // fn(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+
+    // const fn = function (a, b, c, ...args) {
+    //     console.log(`${a} ${b} ${c}`);
+    //    console.log(args);
+    // };
+
+    // fn('hello', 1, 2, 3, 4);
+    // fn('aloha', 1, 2, 3, 4, 5, 6);
+    // fn('hi', 1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+/* Напиши функцию add для сложения произвольного количества аргументов (чисел)
+* - Array.from()
+* - Операция ... (rest)
+*/
+
+    const add = function (...args) {
+        console.log(args);
+        let total = 0;
+
+        for (const arg of args) {
+            total += arg;
+        }
+
+        return total;
+    };
+
+
+    // console.log(add(1, 2, 3,));
+    // console.log(add(1, 2, 3, 4, 5, 6));
+    
+
+
+}
+
+{    console.log(`Task 8`);
+/*  
+* Напиши функцию filterNumbers(array [, number1, ...]), которая:
+* - первым аргументом принимает массив чисел
+* - после первого аргуметна может быть произвольное количество других аргументов, которые будут числами.
+* - Функция должна вернуть новый массив, в котором будут только те аргументы, начиная со второго, для которых есть аналог в ориганальном массиве.
+*/
+
+    const filterNumbers = function () { };
+
+        // console.log(filterNumbers[(1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
+        // console.log(filterNumbers[(10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
+        // console.log(filterNumbers[(100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
+
+
+
+
+}
+{    console.log(`Task `);
 /* Напиши 
 *
 *
@@ -656,7 +736,6 @@ const findLogin = function (allLogins, loginToFind) {
 
 
 }
-
 {    console.log(`Task `);
 /* Напиши 
 *
