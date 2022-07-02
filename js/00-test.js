@@ -352,15 +352,78 @@
     // Должно получиться top-10-benefits-of-react-framework
 const title = 'Top 10 benefits of React framework'
 
-    const normalizedTitle = title.toLowerCase();
-    console.log(normalizedTitle);
+    // const normalizedTitle = title.toLowerCase();
+    // console.log(normalizedTitle);
 
-    const words = normalizedTitle.split(' ');
-    console.log(words);
+    // const words = normalizedTitle.split(' ');
+    // console.log(words);
 
-    const slug = words.join('-');
-    console.log(slug);
+    // const slug = words.join('-');
+    // console.log(slug);
 
+const slug1 = title.toLowerCase().split(' ').join('-');
+
+    // console.log(slug1);
+    
+}
+
+{    console.log(`Task 12`);
+/* Напиши скрипт, который считает сумму элементов двух массивов
+*/
+
+    const array1 = [5, 10, 15, 20];
+    const array2 = [10, 20, 30];
+    let total = 0;
+
+    // for (let i = 0; i < array1.length; i += 1) {
+    //     total += array1[i];
+    // }
+
+    // for (let i = 0; i < array2.length; i += 1) {
+    //     total += array2[i];
+    // }
+
+    // console.log(total);
+
+    const numbers = array1.concat(array2);
+
+    // console.log(numbers);
+
+    for (const number of numbers) {
+        total += number;
+    }
+
+    // console.log(total);
+}
+
+{    console.log(`Task 13`);
+/* Работаем с коллекцией карточек в trello
+* - Метод splice()
+* - Удалить
+* - Добавить
+* - Обновить
+*/
+
+    const cards = ['Карточка-1', 'Карточка-2', 'Карточка-3', 'Карточка-4', 'Карточка-5',];
+
+/* Удаление (по индуксу), метод index()
+*
+*/
+
+    const cardToRemove = 'Карточка-1';
+
+    /* 
+    * Добавление (по индуксу)
+   */
+    
+    const cardToInsert = 'Карточка-6';
+
+    /*
+    * Обновление (по индексу)
+   */
+    
+    const cardToUpdate = 'Карточка-4';
+    
 
 
 }
