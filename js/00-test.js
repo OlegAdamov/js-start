@@ -404,28 +404,41 @@ const slug1 = title.toLowerCase().split(' ').join('-');
 * - Обновить
 */
 
-    const cards = ['Карточка-1', 'Карточка-2', 'Карточка-3', 'Карточка-4', 'Карточка-5',];
+    const cards = ['Карточка-1', 'Карточка-2', 'Карточка-3', 'Карточка-4', 'Карточка-5', '0'];
 
-/* Удаление (по индуксу), метод index()
-*
+    // console.table(cards);
+/* 
+* Удаление (по индуксу), метод indexOf()
 */
 
-    const cardToRemove = 'Карточка-1';
+    // const cardToRemove = 'Карточка-3';
+    // const index = cards.indexOf(cardToRemove);
+
+    // console.log(index);
+
+    // cards.splice(index, 1);
+    
+    // console.table(cards);
 
     /* 
     * Добавление (по индуксу)
    */
-    
-    const cardToInsert = 'Карточка-6';
+    // const cardToInsert = 'Карточка-6';
+    // const index = 3;
+    // cards.splice(index, 0, cardToInsert)
+
+    // console.table(cards);
+
 
     /*
     * Обновление (по индексу)
    */
     
-    const cardToUpdate = 'Карточка-4';
-    
+    // const cardToUpdate = 'Карточка-4';
 
+    // cards.splice(cards.indexOf(cardToUpdate), 1, 'Обновленная Карточка-4');
 
+    // console.table(cards);
 }
 
 {    console.log(`Task `);
