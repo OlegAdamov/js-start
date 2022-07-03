@@ -699,7 +699,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task 8`);
+{    console.log(`Task F-8`);
 /*  
 * Напиши функцию filterNumbers(array [, number1, ...]), которая:
 * - первым аргументом принимает массив чисел
@@ -725,6 +725,119 @@ const findLogin = function (allLogins, loginToFind) {
         // console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
         // console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
         // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
+
+
+
+
+}
+
+{    console.log(`Task AutoCheck-21`);
+/* Напиши функцию findLongestWord(string) которая принимает произвольную
+* строку состоящую только из слов разделённых пробелом (параметр string) и
+* возвращает самое длинное слово в этой строке.
+*/
+    function findLongestWord(string) {
+
+        let arrayWords = 0;
+        arrayWords = string.split(' ');
+        // console.log(arrayWords);
+
+        let maxWord = arrayWords[0];
+        for (let arrayWord of arrayWords) {
+            // console.log(arrayWord);
+
+            if (arrayWord.length > maxWord.length) {
+                 maxWord = arrayWord;
+                // console.log(maxWord);
+            } 
+        } return maxWord;
+
+    }
+
+
+        // console.log(findLongestWord("The quick brown fox jumped over the lazy dog")) // jumped
+        // console.log(findLongestWord("Google do a roll")) // Google
+        // console.log(findLongestWord("May the force be with you")) // force
+
+
+    
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+
+
+
+
+}
+
+{    console.log(`Task `);
+/* Напиши 
+*
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
 
 
 
