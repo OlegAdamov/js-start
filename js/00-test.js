@@ -751,20 +751,38 @@ const findLogin = function (allLogins, loginToFind) {
                 // console.log(maxWord);
             } 
         } return maxWord;
-
     }
-
-
         // console.log(findLongestWord("The quick brown fox jumped over the lazy dog")) // jumped
         // console.log(findLongestWord("Google do a roll")) // Google
         // console.log(findLongestWord("May the force be with you")) // force
+}
+
+{    console.log(`Task AutoCheck-22`);
+/* Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала
+* массив всех целых чисел от значения min до max. 
+* - В цикле for использовался метод push
+* **** В автопроверке работает !!!
+*/ 
+
+function createArrayOfNumbers(min, max) {
+  const numbers = [];
+  // Change code below this line
+for (i = min; i <= max; i += 1) {
+ numbers.push(i);
+}
 
 
-    
+  // Change code above this line
+//   return numbers;
+}
+
+    // console.log(createArrayOfNumbers(1, 3)); // [1, 2, 3]
+    // console.log(createArrayOfNumbers(14, 17)); // [14, 15, 16, 17]
+    // console.log(createArrayOfNumbers(29, 34)); // [29, 30, 31, 32, 33, 34]
 
 }
 
-{    console.log(`Task `);
+{    console.log(`Task AutoCheck-`);
 /* Напиши 
 *
 *
@@ -784,7 +802,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task `);
+{    console.log(`Task AutoCheck-`);
 /* Напиши 
 *
 *
@@ -804,27 +822,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
-
-{    console.log(`Task `);
+{    console.log(`Task AutoCheck-`);
 /* Напиши 
 *
 *
