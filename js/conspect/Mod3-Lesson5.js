@@ -1,6 +1,6 @@
 console.log('Repeta: ');
 
-/* Объекты (делаем плейлист музыки: имя, рейтинг, треки, кол-во треков)
+{/* Объекты (делаем плейлист музыки: имя, рейтинг, треки, кол-во треков)
 * - Литерал объекта
 * - Свойства, ключи (имя) и значения
 * - Как отличить объект от области видимости
@@ -17,8 +17,9 @@ console.log('Repeta: ');
 // };
 
 // console.log(playlist);
+}
 
-/* Доступ к свойству
+{/* Доступ к свойству
 * - obj.key
 * - obj[key]
 * - Отсутствующие свойства
@@ -40,9 +41,9 @@ console.log('Repeta: ');
 // console.log(playlist.trackCount);
 
 // console.log(playlist['rating']);
+}
 
-/* 
-* Короткая запись свойства
+{/* Короткая запись свойства
 */
 // const username = 'Mango';
 // const email = 'mango@mail.com'
@@ -52,9 +53,9 @@ console.log('Repeta: ');
 //     email,
 // };
 // console.log(signupData)
+}
 
-/* 
-* Вычисляемые свойства
+{/* Вычисляемые свойства
 */
 
 // <input name="color" value="tomato" >
@@ -67,14 +68,9 @@ console.log('Repeta: ');
 // };
 
 // console.log(colorPickerData);
+}
 
-
-
-
-
-
-/* 
-* Методы объекта и this при обращении к свойствам в методах
+{/* Методы объекта и this при обращении к свойствам в методах
 *
 * http://fecore.net.ua/books/m5ph3r-javascript/module-03/images/context.jpg
 *
@@ -85,84 +81,115 @@ console.log('Repeta: ');
 *
 */
 
-// const playlist = {
-//     name: 'Мой супер плейлист',
-//     rating: 5,
-//     tracks: ['track-1', 'track-2', 'track-3'],
-//     trackCount: 3,
-//     getName() {
-//         console.log('Ага, это getName :)');
-//     }
+    // const playlist = {
+    //     name: 'Мой супер плейлист',
+    //     rating: 5,
+    //     tracks: ['track-1', 'track-2', 'track-3'],
+    //     trackCount: 3,
+    //     getName() {
+    //         console.log('Ага, это getName :)');
+    //     }
+    // };
+
+    // console.log(playlist);
+    // playlist.getName(5);
+}
+
+{    console.log('Task - 1');
+    /* Замена имени через функцию
+    * 
+    *
+    *
+    * - 
+    * - 
+    * - 
+    *
+    */
+
+    const playlist = {
+        name: 'Мой супер плейлист',
+        rating: 5,
+        tracks: ['track-1', 'track-2', 'track-3'],
+        changeName(newName) {
+            // console.log('this внутри changeName: ', this);
+            this.name = newName;
+        },
+        addTrack(track) {
+            this.tracks.push(track);
+        },
+        updateRating(newRating) {
+            this.rating = newRating;
+        },
+        getTrackCount() { return this.tracks.length; },
+    };
+
+    // console.log(playlist.getTrackCount());
+
+    // playlist.changeName('Новое имя');
+
+    // playlist.addTrack('новый трек');
+    // console.log(playlist.getTrackCount());
+
+    // playlist.addTrack('новый трек');
+    // console.log(playlist.getTrackCount());
+
+
+    // playlist.updateRating(4);
+
+    // console.log(playlist);
+}
+
+
+ 
+{/* object.entries(obj)
+*
+*
+* - 
+* - 
+* - 
+*
+*/
+}
+
+{/* Перебор через for...in и Object.keys|values|entries
+*
+* - 
+*/
+
+// const feedback = {
+//     good: 5,
+//     neutral: 10,
+//     bad: 3,
 // };
 
-// console.log(playlist);
-// playlist.getName(5);
+//     let totalFeedback = 0;
+    
+//     const keys = Object.keys(feedback); // Возвращает массив ключей
 
+//     console.log(keys);
 
-console.log('Task - 1');
-/* Замена имени через функцию
-* 
-*
-*
-* - 
-* - 
-* - 
-*
-*/
+//     for (const key of keys) {
+//         console.log(key);
+//         console.log(feedback[key]);
 
-const playlist = {
-    name: 'Мой супер плейлист',
-    rating: 5,
-    tracks: ['track-1', 'track-2', 'track-3'],
-    changeName(newName) {
-        // console.log('this внутри changeName: ', this);
-        this.name = newName;
-    },
-    addTrack(track) {
-        this.tracks.push(track);
-    },
-    updateRating(newRating) {
-        this.rating = newRating;
-    },
-    getTrackCount() { return this.tracks.length; },
-};
+//         totalFeedback += feedback[key];
+//     }
+//     console.log('totalFeedback: ', totalFeedback);
+    
 
-console.log(playlist.getTrackCount());
+//     const values = Object.values(feedback); // Возвращает массив значений
 
-playlist.changeName('Новое имя');
+//     console.log(values);
 
-playlist.addTrack('новый трек');
-console.log(playlist.getTrackCount());
+    
+//     for (const value of values) {
+//         console.log(value);
 
-playlist.addTrack('новый трек');
-console.log(playlist.getTrackCount());
+//         totalFeedback += value
+//     }
 
-
-playlist.updateRating(4);
-
-console.log(playlist);
-
-
-
-/* 
-* object.entries(obj)
-*
-*
-* - 
-* - 
-* - 
-*
-*/
-
-/* 
-* 
-*
-*
-* - 
-* - 
-* - 
-*
-*/
+//     console.log('totalFeedback: ', totalFeedback);
+}
 
 /* 
 * 
