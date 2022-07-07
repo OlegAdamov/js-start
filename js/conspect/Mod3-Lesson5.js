@@ -212,7 +212,7 @@ console.log('Repeta: ');
     //     friend.newprop = 555;
     // }
     
-    console.table(friends);
+    // console.table(friends);
     /* 
     * Ищем друга по имени
     */
@@ -309,10 +309,60 @@ const offlineFriends = [];
 
         
 
-console.log(getFriendsByOnlineStatus(friends));
+// console.log(getFriendsByOnlineStatus(friends));
 }
 
+{ console.log('Task - Работаем с коллекцией товара в корзине')
+/*  
+* - getItems()
+* - add(product)
+* - remove(productName)
+* - clear()
+* - countTotalPrice()
+* - increaseQuantity(productName)
+* - decreaseQuantity(productName)
+*
+* { name: 'apple', price: 50 }
+* { name: 'raspberry', price: 70 }
+* { name: 'lemon', price: 60 }
+* { name: 'strawberry', price: 110 }
+*/
+    
+    const cart = {
+        items: [],
+        getItems() { },
+        add(product) {},
+        remove(productName) { },
+        clear() { },
+        countTotalPrice() { },
+        increaseQuantity(productName) {},
+        decreaseQuantity(productName) {},
+}
+    
+    // console.log(cart.getItems());
 
+cart.add({ name: 'apple', price: 50 });
+cart.add({ name: 'raspberry', price: 70 });
+cart.add({ name: 'lemon', price: 60 });
+cart.add({ name: 'strawberry', price: 110 });
+    
+    // console.table(cart.getItems());
+    
+    cart.remove('apple');
+    // console.table(cart.getItems());
+    
+    // cart.clear();
+    // console.table(cart.getItems());
+    
+    // cart.increaseQuantity('apple');
+    // console.table(cart.getItems());
+    
+    // cart.decreaseQuantity('lemon');
+    // cart.decreaseQuantity('lemon');
+    // console.table(cart.getItems());
+    
+    //consol.log('Total: ', cart.countTotalPrice());
+}
 
 
 
