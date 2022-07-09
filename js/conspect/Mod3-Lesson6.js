@@ -222,6 +222,27 @@ const a = { x: 1, y: 2 };
     // }
 }
 
+{ console.log('Объект параметров')
+    // const { name, tag, location, ...resProps } = profile;
+    
+
+    // console.log(name, tag, location);
+    // console.log(rest);
+    // console.log(profile);
+    
+    /* 
+    * Паттерн "объект настроек"
+    * - деструктуризация параметра-объекта в подписи функции
+    * - rest при деструктуризации в подписи
+    */
+
+// const showProfileInfo =  
+
+}
+
+
+
+
 
 { console.log('Операция Object - примеры')
 
@@ -242,55 +263,54 @@ const a = { x: 1, y: 2 };
 //     }
 }
 
-
 {console.log('Операция Массив Объектов - примеры')
 
-    const books = [
-  {
-    title: "The Last Kingdom",
-    author: "Bernard Cornwell",
-    rating: 8.38,
-  },
-  {
-    title: "На берегу спокойных вод",
-    author: "Роберт Шекли",
-    rating: 8.51,
-  },
-  {
-    title: "Сон смешного человека",
-    author: "Федор Достоевский",
-    rating: 7.75,
-  },
-    ];
-    for (const book of books) {
+//     const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "На берегу спокойных вод",
+//     author: "Роберт Шекли",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "Сон смешного человека",
+//     author: "Федор Достоевский",
+//     rating: 7.75,
+//   },
+    // ];
+    // for (const book of books) {
         // Объект книги
         // console.log(book);
         // Название
-        console.log(book.title);
+        // console.log(book.title);
         // Автор
         // console.log(book.author);
         // Рейтинг
         // console.log(book.rating);
-    }
+    // }
     
     // Например, получим список названий всех книг в коллекции books.
-    const bookNames = [];
+//     const bookNames = [];
 
-for (const book of books) {
-  bookNames.push(book.title);
-}
+// for (const book of books) {
+//   bookNames.push(book.title);
+// }
 
 // console.log(bookNames); // ["The Last Kingdom", "На берегу спокойных вод", "Сон смешного человека"]
 
     
     // Узнаем средний рейтинг всей нашей коллекции.
-    let totalRating = 0;
+//     let totalRating = 0;
 
-for (const book of books) {
-  totalRating += book.rating;
-}
+// for (const book of books) {
+//   totalRating += book.rating;
+// }
 
-const averageRating = (totalRating / books.length).toFixed(1);
+// const averageRating = (totalRating / books.length).toFixed(1);
 // console.log(averageRating); // 8.2
     
 }
