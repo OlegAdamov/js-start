@@ -236,8 +236,24 @@ const a = { x: 1, y: 2 };
     * - rest при деструктуризации в подписи
     */
 
-// const showProfileInfo =  
+    const showProfileInfo = function (userProfile) {
+        console.log(userProfile);
+    };
 
+ 
+
+     const profile = {
+        name: "Jacques Gluke",
+        tag: 'jgluke',
+        location: 'Ocho Rios, Jamaica',
+        avatar: 'https://s3.amazonaws.com/uifaces/faces/twittr.r_oy/128.jpg',
+        stats: {
+            followers: 5603,
+            views: 4827,
+            likes: 1308,
+        },
+    };
+    showProfileInfo(profile);
 }
 
 
