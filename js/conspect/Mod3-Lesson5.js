@@ -334,48 +334,79 @@ const offlineFriends = [];
             return this.items;
          },
         add(product) {
-            this.items.push(product);
+
+            console.table(this.items);
+            for (const item of this.items) {
+
+                if (item.name === product.name) {
+                    item.quantity += 1;   // console.log('такой продукт уже есть', product.name);
+                    return;
+                }
+            }
+            const newProduct = {
+                ...product,
+
+                quantity: 1,
+            };
+
+            this.items.push(newProduct);
         },
         remove(productName) { 
             for (let i = 0; i < this.items.length; i += 1) {
               
                 const { name } = this.items[i];
             if (productName === this.items[i].name) {
-                console.log('Нашли такой продукт: ', productName);
-                console.log('индекс: ', i);
+                // console.log('Нашли такой продукт: ', productName);
+                // console.log('индекс: ', i);
                 this.items.splice(i, 1);
                 }
             }
         },
-        clear() { },
-        countTotalPrice() { },
+        clear() {
+            this.items = [];
+         },
+        countTotalPrice() {
+        const { items } = this;    // console.log(this.items)            
+        let total = 0;
+
+         for (const { price, quantity } of items)    {   // for (const item of this.items)
+             total += price * quantity;              // total += item.price;
+            }
+
+            return total;
+         },
         increaseQuantity(productName) {},
         decreaseQuantity(productName) {},
 }
     
-    console.log(cart.getItems());
+    // console.log(cart.getItems());
 
-cart.add({ name: 'apple', price: 50 });
-cart.add({ name: 'raspberry', price: 70 });
+cart.add({ name: '🍎', price: 50 });
+cart.add({ name: '🍇', price: 70 });
+cart.add({ name: '🍋', price: 60 });
 cart.add({ name: '🍋', price: 60 });
 cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
     
-    console.table(cart.getItems());
+console.table(cart.getItems());
     
-    cart.remove('lemon');
-    console.table(cart.getItems());
+cart.remove('🍋');
+// console.table(cart.getItems());
+
+console.log('Total: ', cart.countTotalPrice());
     
-    // cart.clear();
+
+    cart.clear();
     // console.table(cart.getItems());
     
-    // cart.increaseQuantity('apple');
+    // cart.increaseQuantity('🍎');
     // console.table(cart.getItems());
     
-    // cart.decreaseQuantity('lemon');
-    // cart.decreaseQuantity('lemon');
+    // cart.decreaseQuantity('🍋');
+    // cart.decreaseQuantity('🍋');
     // console.table(cart.getItems());
     
-    //consol.log('Total: ', cart.countTotalPrice());
 }
 
 
