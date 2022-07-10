@@ -357,8 +357,8 @@ const offlineFriends = [];
 
 cart.add({ name: 'apple', price: 50 });
 cart.add({ name: 'raspberry', price: 70 });
-cart.add({ name: 'lemon', price: 60 });
-cart.add({ name: 'strawberry', price: 110 });
+cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍓', price: 110 });
     
     console.table(cart.getItems());
     
