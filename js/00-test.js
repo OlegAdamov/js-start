@@ -557,7 +557,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task F-4`);
+{    console.log(`Task F-4 - поиск самого маленького числа в массиве`);
 /* Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве.
 * при условии, что числа уникальные (не повторяются).
 */
@@ -583,8 +583,9 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{   console.log(`Task F-5`);
-    /* Напиши функцию changeCase(string), которая заменяет регистр
+{   console.log(`Task F-5 - замена регистра каждого символа в строе на противоположный`);
+    
+/* Напиши функцию changeCase(string), которая заменяет регистр
     * каждого символа в строе на противоположный.
     * Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
     */
@@ -647,7 +648,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task F-7`);
+{    console.log(`Task F-7 - Псевдомассив argunents и Array.from и ...`);
 
 /*
 * Псевдомассив argunents и Array.from и ...
@@ -783,105 +784,7 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{    console.log(`Task AutoCheck-`);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
 
-
-
-
-
-}
-
-{    console.log(`Task AutoCheck-`);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
-
-{    console.log(`Task AutoCheck-`);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
-
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
-
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
 
 
 
