@@ -330,26 +330,40 @@ const offlineFriends = [];
     
     const cart = {
         items: [],
-        getItems() { },
-        add(product) {},
-        remove(productName) { },
+        getItems() {
+            return this.items;
+         },
+        add(product) {
+            this.items.push(product);
+        },
+        remove(productName) { 
+            for (let i = 0; i < this.items.length; i += 1) {
+              
+                const { name } = this.items[i];
+            if (productName === this.items[i].name) {
+                console.log('Нашли такой продукт: ', productName);
+                console.log('индекс: ', i);
+                this.items.splice(i, 1);
+                }
+            }
+        },
         clear() { },
         countTotalPrice() { },
         increaseQuantity(productName) {},
         decreaseQuantity(productName) {},
 }
     
-    // console.log(cart.getItems());
+    console.log(cart.getItems());
 
 cart.add({ name: 'apple', price: 50 });
 cart.add({ name: 'raspberry', price: 70 });
 cart.add({ name: 'lemon', price: 60 });
 cart.add({ name: 'strawberry', price: 110 });
     
-    // console.table(cart.getItems());
+    console.table(cart.getItems());
     
-    cart.remove('apple');
-    // console.table(cart.getItems());
+    cart.remove('lemon');
+    console.table(cart.getItems());
     
     // cart.clear();
     // console.table(cart.getItems());
