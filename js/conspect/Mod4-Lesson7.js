@@ -121,8 +121,8 @@ console.log('Repeta: ');
         const filteredArray = [];
 
         for (const el of array) {
-            console.log(el);
-            console.log(test(el));
+            // console.log(el);
+            // console.log(test(el));
         }
         return filteredArray;
     };
@@ -138,12 +138,12 @@ console.log('Repeta: ');
    
 
     const r1 = filter([1, 2, 3, 4, 5,], callback1)
-    console.log(r1);
+    // console.log(r1);
     
     const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
         return value <= 4;
     });
-    console.log(r2);
+    // console.log(r2);
 
 
 }
