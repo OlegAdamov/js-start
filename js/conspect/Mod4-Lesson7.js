@@ -117,49 +117,110 @@ console.log('Repeta: ');
 {console.log('Example: Фильтр');
     
 
-    const filter = function (array, test) {
-        const filteredArray = [];
+    // const filter = function (array, test) {
+    //     const filteredArray = [];
 
-        for (const el of array) {
-            console.log(el);
-            console.log(test(el));
-        }
-        return filteredArray;
-    };
+    //     for (const el of array) {
+    //         console.log(el);
+    //         console.log(test(el));
+    //     }
+    //     return filteredArray;
+    // };
 
     // 1. надо передать функцию
     // 2. функция получает элемент массива
     // 3. если элемент массива удовлетворяет условию то функция вернет true
     // 3. если элемент массива НЕ удовлетворяет условию то функция вернет false
     
-    const callback1 = function (value) {
-        return value >= 3;
-    }
+    // const callback1 = function (value) {
+    //     return value >= 3;
+    // }
    
 
-    const r1 = filter([1, 2, 3, 4, 5,], callback1)
-    console.log(r1);
+    // const r1 = filter([1, 2, 3, 4, 5,], callback1)
+    // console.log(r1);
     
-    const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
-        return value <= 4;
-    });
-    console.log(r2);
+    // const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
+    //     return value <= 4;
+    // });
+    // console.log(r2);
 
 
-    const fruits = [
-        { name: 'apples', quantity: 200, isFresh: true },
-        { name: 'grapes', quantity: 150, isFresh: false },
-        { name: 'bananas', quantity: 100, isFresh: true },
-    ];
+    // const fruits = [
+    //     { name: 'apples', quantity: 200, isFresh: true },
+    //     { name: 'grapes', quantity: 150, isFresh: false },
+    //     { name: 'bananas', quantity: 100, isFresh: true },
+    // ];
 
-    const getFruitsWithQuantity = function (fruit) {
-        return fruit.quantity >= 120;
+    // const getFruitsWithQuantity = function (fruit) {
+    //     return fruit.quantity >= 120;
+    // };
+
+    // const r3 = filter(fruits, getFruitsWithQuantity);
+    // // console.log(r3);
+
+}
+
+{console.log('Функция замыкания: ');
+
+/* Функция результатом своей работы может возвращать другую функцию.
+* 
+* Возвращаемая функция во время вызова будет иметь доступ
+* ко всем локальным переменным (области видимости)
+* родительской функции (той, из которой её вернули)б
+* это называется "замыкание".
+*/
+    
+    const fnA = function (parameter) {
+        const innerVariable = 'значение втутренней переменной функции fnA';
+
+        const innerFunction = function () {
+            // console.log(parameter);
+            // console.log(innerVariable);
+            // console.log('Это вызов innerFunction');
+        };
+        
+        return innerFunction;
     };
 
-    const r3 = filter(fruits, getFruitsWithQuantity);
-    console.log(r3);
+    const fnB = fnA(45455);
 
+    fnB();
+
+    // console.log(fnB);
 }
+
+{console.log('Example: Поварёнок');
+
+
+
+    /* 
+    * 
+    */
+    
+    const makeDish = function (sheffName, dish) {
+        console.log('${sheffName} готовит ${dish}');
+    };
+
+
+    makeDish(`Mango`, `пирожок`);
+    makeDish(`Mango`, `омлет`);
+    makeDish(`Mango`, `чай`);
+    
+    makeDish('Poly', 'котлеты');
+    makeDish('Poly', 'супик');
+    makeDish('Poly', 'кофе');
+
+    const makeSheff = function (name) {
+        const makeDish = function (dish) {
+            console.log('${sheffName} готовит ${dish}');
+        };
+
+        return makeDish;
+    };
+
+
+};
 
 {console.log('Example: ');
 
@@ -212,9 +273,7 @@ console.log('Repeta: ');
 
 
 
-{console.log('Task-Konsp: ');
-
-
+{ console.log('Task-Konsp: ');
 
 
 }
