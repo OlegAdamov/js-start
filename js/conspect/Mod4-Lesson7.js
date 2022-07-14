@@ -199,7 +199,7 @@ console.log('Repeta: ');
     */
     
     const makeDish = function (sheffName, dish) {
-        console.log('${sheffName} готовит ${dish}');
+        console.log(`${sheffName} готовит ${dish}`);
     };
 
 
@@ -213,7 +213,7 @@ console.log('Repeta: ');
 
     const makeSheff = function (name) {
         const makeDish = function (dish) {
-            console.log('${sheffName} готовит ${dish}');
+            console.log(`${sheffName} готовит ${dish}`);
         };
 
         return makeDish;
