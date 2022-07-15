@@ -171,21 +171,21 @@ console.log('Repeta: ');
 * это называется "замыкание".
 */
     
-    const fnA = function (parameter) {
-        const innerVariable = 'значение втутренней переменной функции fnA';
+    // const fnA = function (parameter) {
+    //     const innerVariable = 'значение втутренней переменной функции fnA';
 
-        const innerFunction = function () {
+    //     const innerFunction = function () {
             // console.log(parameter);
             // console.log(innerVariable);
             // console.log('Это вызов innerFunction');
-        };
+    //     };
         
-        return innerFunction;
-    };
+    //     return innerFunction;
+    // };
 
-    const fnB = fnA(45455);
+    // const fnB = fnA(45455);
 
-    fnB();
+    // fnB();
 
     // console.log(fnB);
 }
@@ -198,35 +198,134 @@ console.log('Repeta: ');
     * 
     */
     
-    const makeDish = function (sheffName, dish) {
-        console.log(`${sheffName} готовит ${dish}`);
-    };
+    // const makeDish = function (sheffName, dish) {
+    //     console.log(`${sheffName} готовит ${dish}`);
+    // };
 
 
-    makeDish(`Mango`, `пирожок`);
-    makeDish(`Mango`, `омлет`);
-    makeDish(`Mango`, `чай`);
+    // makeDish(`Mango`, `пирожок`);
+    // makeDish(`Mango`, `омлет`);
+    // makeDish(`Mango`, `чай`);
     
-    makeDish('Poly', 'котлеты');
-    makeDish('Poly', 'супик');
-    makeDish('Poly', 'кофе');
+    // makeDish('Poly', 'котлеты');
+    // makeDish('Poly', 'супик');
+    // makeDish('Poly', 'кофе');
 
-    const makeSheff = function (name) {
-        const makeDish = function (dish) {
-            console.log(`${sheffName} готовит ${dish}`);
+    // const makeSheff = function (name) {
+    //     const makeDish = function (dish) {
+    //         console.log(`${sheffName} готовит ${dish}`);
+    //     };
+
+    //     return makeDish;
+    // };
+
+
+}
+
+{console.log('Example: Округлятор');
+
+    
+    // const floatingPoint = 3.326445454;
+    // const someInt = Math.round(floatingPoint); // 3
+    // const withDecimals = Number(floatingPoint.toFixed(2)); // 3.26
+
+    // console.log(Number(floatingPoint.toFixed(3)));
+    // console.log(Number(floatingPoint.toFixed(4)));
+
+    // const number1 = 5.125665;
+    // const number2 = 12.654554;
+    // console.log(Number(number1.toFixed(2)));
+    // console.log(Number(number2.toFixed(4)));
+
+    // {const rounder = function (number, places) {
+    //     return Number(number.toFixed(places))
+    // };
+
+    // console.log(rounder(3.548975, 4));
+    // console.log(rounder(3.55454, 3));
+    // console.log(rounder(3.21578, 5));
+    // console.log(rounder(3.212215465987, 7));}
+
+
+
+    // {const rounder = function (places) {
+    //     return function (number) {
+    //         return Number(number.toFixed(places))
+    //     }
+    // }
+    //     const rounder2 = rounder(2);
+    //     const rounder3 = rounder(3);
+    //     const rounder5 = rounder(5);
+    //     const rounder7 = rounder(7);
+
+    //     console.dir(rounder2);
+
+    //         console.log(rounder2(3.548975));
+    // console.log(rounder3(3.55454));
+    // console.log(rounder5(3.21578));
+    //     console.log(rounder7(3.212215465987));
+    
+    
+    // }
+
+}
+        
+{console.log('Example: Привтные данные и функции - скрытие реализации, интерфейс');
+
+    const salaryManagerFactory = function (employeeName, baseSalary = 0) {
+        let salary = baseSalary;
+
+        const changeBy = function (amount) {
+            salary += amount;   // можно убрать строку
         };
+    
 
-        return makeDish;
+        return {
+            raise(amount) {
+                changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
+            },
+            lower(amount) {
+                changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
+            },
+            current() {
+                return `Текущая зарплата ${employeeName} - ${salary}`;
+            },
+        };
     };
 
+    const salaryManager = salaryManagerFactory('Mango', 5000);
 
-};
+    console.log(salaryManager.current());
+}
+
 
 {console.log('Example: ');
 
 
 
 }
+
+
+{console.log('Example: ');
+
+
+
+}
+
+
+{console.log('Example: ');
+
+
+
+}
+
+
+{console.log('Example: ');
+
+
+
+}
+
 
 {console.log('Example: ');
 
