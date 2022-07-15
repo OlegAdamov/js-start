@@ -272,32 +272,79 @@ console.log('Repeta: ');
         
 {console.log('Example: Привтные данные и функции - скрытие реализации, интерфейс');
 
-    const salaryManagerFactory = function (employeeName, baseSalary = 0) {
-        let salary = baseSalary;
+    // const salaryManagerFactory = function (employeeName, baseSalary = 0) {
+    //     let salary = baseSalary;
 
-        const changeBy = function (amount) {
-            salary += amount;   // можно убрать строку
-        };
+    //     const changeBy = function (amount) {
+    //         salary += amount;   // можно убрать строку
+    //     };
     
 
-        return {
-            raise(amount) {
-                changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
-            },
-            lower(amount) {
-                changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
-            },
-            current() {
-                return `Текущая зарплата ${employeeName} - ${salary}`;
-            },
-        };
-    };
+    //     return {
+    //         raise(amount) {
+    //             changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
+    //         },
+    //         lower(amount) {
+    //             changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
+    //         },
+    //         current() {
+    //             return `Текущая зарплата ${employeeName} - ${salary}`;
+    //         },
+    //     };
+    // };
 
-    const salaryManager = salaryManagerFactory('Mango', 5000);
+    // const salaryManager = salaryManagerFactory('Mango', 5000);
 
-    console.log(salaryManager.current());
+    // console.log(salaryManager.current());
+
 }
 
+{console.log('Стрелочные функции');
+
+    /* 
+    * - Объявление
+    * - Явный и неявный возврат
+    * - Аргумент
+    * - Неявный возврат объекта
+    */
+
+// {    const add = function (a, b, c,) {
+//         console.log(a, b, c);
+//         return a + b + c;
+//     };
+
+//         console.log(add(5, 10, 15));
+// }
+
+// {    const addArrow = (a, b, c) => {   // {} - явный возврат
+//         console.log(a, b, c);
+//         return a + b + c;
+//     };
+
+//     console.log(addArrow(12, 18, 32));
+// }
+
+// {    const addArrow = (a, b, c) => a + b + c;  // !{} - НЕявный возврат
+        
+//     console.log(addArrow(37, 25, 69));
+//     }
+    
+
+    // {const fnA = function () {
+    //     return {
+    //         a: 5,
+    //     };
+    // };
+        
+    //     console.log(fnA())
+    
+    //     const arrowFnA = () => ({arrowA: 5,})
+
+    //     console.log(arrowFnA());
+    // }
+
+    
+}
 
 {console.log('Example: ');
 
