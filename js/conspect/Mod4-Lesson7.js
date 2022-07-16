@@ -535,12 +535,13 @@ function changeEven(numbers, value) {
 
     let newNumbers = [];
 
-numbers.forEach((...number) => {
+numbers.forEach(number => {
   if (number % 2 === 0) {
     newNumbers.push(number + value);
-  } 
-      newNumbers.push(number);
+  } else {
+      newNumbers.push(number);}
 });
+    return newNumbers
 
 //   for (let i = 0; i < numbers.length; i += 1) {
 //     if (numbers[i] % 2 === 0) {
@@ -550,7 +551,7 @@ numbers.forEach((...number) => {
   // Change code above this line
     }
     
-    console.log(changeEven([1, 2, 3, 4, 5], 10));
+    // console.log(changeEven([1, 2, 3, 4, 5], 10));
     // console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
     // console.log(changeEven([17, 24, 68, 31, 42], 100))
     // console.log(changeEven([44, 13, 81, 92, 36, 54], 100))
@@ -574,20 +575,32 @@ numbers.forEach((...number) => {
 {console.log('Autocheck: ');
 
 
-
-
-}
-
-
-
-{ console.log('Task-Konsp: ');
-
+    
 
 }
 
-{console.log('Task-Konsp: ');
 
 
+{ console.log('Task-Konsp: Императивное программирование');
+
+const numbers = [1, 2, 3, 4, 5];
+const filteredNumbers = [];
+
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] > 3) {
+    filteredNumbers.push(numbers[i]);
+  }
+}
+
+// console.log(filteredNumbers); // [4, 5]
+
+}
+
+{console.log('Task-Konsp: Декларативное программирование');
+
+const numbers = [1, 2, 3, 4, 5];
+const filteredNumbers = numbers.filter(value => value > 3);
+// console.log(filteredNumbers); // [4, 5]
 
 
 }
