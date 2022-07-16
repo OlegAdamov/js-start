@@ -343,6 +343,128 @@ console.log('Repeta: ');
     //     console.log(arrowFnA());
     // }
 
+    // { console.log(`Синтаксис стрелочной функции`);
+        /* 
+        * 
+        * - с параметрами
+        * - с одним параметром
+        * - без параметров
+        */
+
+        // const add = function (a, b) {
+        //     return a + b;
+        // };
+
+
+        // const add = (a, b) => {
+        //     console.log(`afaff`);
+        //     return a + b;
+        // }
+        // console.log(add(2, 3));
+
+
+        // const logMessage = message => {
+        //     console.log(message)
+        // };
+        // logMessage(`Привет`);
+
+
+        // const greet = () => {
+        //     console.log(`Привет`);
+        // };
+        // greet();
+
+
+
+        /*
+        * Явный и неявный возврат
+        */
+        
+
+        // const add = (a, b) => {
+        //     return a + b;
+        // }
+        // console.log(add(2, 3));
+
+
+        // const add = (a, b) => a + b;
+
+        // console.log(add(2, 3));
+
+
+
+       /*
+       * Псевдомассив arguments
+       */
+        
+        // const add = (...args) => {
+        //     console.log(args);
+        // };
+        // add(1, 2, 3, 4, 5, 6, 7);
+  //  }
+
+    { console.log(`Контекст стрелки`)
+        
+        /* 
+        * Контекст внутри стрелки определяется местом её объявления,
+        * а не вызова и ссылается на контекст родительской функции
+        */
+        
+        // const showThis = () => {   // Контекст стрелки формируется и запоминается в месте её объявления
+        //     console.log(`this in showThis: `, this);
+        // };
+
+        // showThis(); // this in showThis: window
+
+        // const user = { name: `Mango` };
+        // user.showContext = showThis;
+
+        // user.showContext(); // this in showThis: window
+
+        //         const user = {
+        //     fullName: `Mango`,
+        //             showName() {
+        //                 console.log(`this: `, this);
+        //                 console.log(`this.fullName: `, this.fullName);
+
+        //                 const inner = () => {
+        //                     console.log(`this in inner: `, this);
+        //                 };
+
+        //                 inner();
+        //     },
+        // };
+
+        // user.showName();
+
+        /*
+        * 💩 Стрелки как методы объекта
+        */
+        
+        // const user = {
+        //     fullName: `Mango`,
+        //     showName() {   //showName: () => {   - undefined 💩
+        //         console.log(`this: `, this);
+        //         console.log(`this.fullName: `, this.fullName);
+        //     },
+        // };
+
+        // user.showName();
+
+/* 
+* 💩 Стрелка конструктор
+*/
+
+        // const User = function (name) {  // const User = name => {  - 💩
+        //     this.name = name;
+        // }
+
+        // console.log(new User(`Mango`));
+
+
+
+
+  }
     
 }
 
@@ -382,17 +504,56 @@ console.log('Repeta: ');
 
 
 
-{console.log('Autocheck: ');
+{console.log('Autocheck: 11');
 
+// // Change code below this line
+// const filterArray = (numbers, value) => {
+//   let filteredNumbers = [];
 
+//  numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   // Change code above this line
+//   return filteredNumbers;
+// }
+//     console.log(filterArray([1, 2, 3, 4, 5], 3));
+//     console.log(filterArray([1, 2, 3, 4, 5], 4));
+//     console.log(filterArray([1, 2, 3, 4, 5], 5));
+//     console.log(filterArray([12, 24, 8, 41, 76], 38));
+//     console.log(filterArray([12, 24, 8, 41, 76], 20));
 
 
 }
 
-{console.log('Autocheck: ');
+{console.log('Autocheck: 13');
 
+function changeEven(numbers, value) {
+  // Change code below this line
+    let newNumbers = [];
 
+    numbers.forEach(i => {
+        if (i % 2 === 0) {
+            console.log(i);
+            newNumbers.push[i] = i += value;
+        }
+        newNumbers.push(i);
+    });
 
+//   for (let i = 0; i < numbers.length; i += 1) {
+//     if (numbers[i] % 2 === 0) {
+//       numbers[i] = numbers[i] + value;
+//     }
+//   }
+  // Change code above this line
+    }
+    
+    console.log(changeEven([1, 2, 3, 4, 5], 10));
+    console.log(changeEven([2, 8, 3, 7, 4, 6], 10))
+    console.log(changeEven([17, 24, 68, 31, 42], 100))
+    console.log(changeEven([44, 13, 81, 92, 36, 54], 100))
 
 }
 
