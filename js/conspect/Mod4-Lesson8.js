@@ -54,21 +54,18 @@
 
 
 
-{console.log('Task-Konsp: ');
+{console.log('Task-Konsp: Метод map()');
 
-    const planets = ["Земля", "Марс", "Венера", "Юпитер"];
+//     const planets = ["Земля", "Марс", "Венера", "Юпитер"];
 
-const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
-console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПИТЕР']
+// const planetsInUpperCase = planets.map(planet => planet.toUpperCase());
+// console.log(planetsInUpperCase); // ['ЗЕМЛЯ', 'МАРС', 'ВЕНЕРА', 'ЮПИТЕР']
 
-const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
-console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
+// const planetsInLowerCase = planets.map(planet => planet.toLowerCase());
+// console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
 
-const planetsCase = planets.map(planet);
-console.log(planetsInLowerCase); // ['земля', 'марс', 'венера', 'юпитер']
-
-// Оригинальный массив не изменился
-console.log(planets); // ['Земля', 'Марс', 'Венера', 'Юпитер']
+// // Оригинальный массив не изменился
+// console.log(planets); // ['Земля', 'Марс', 'Венера', 'Юпитер']
 
 
 
