@@ -51,6 +51,11 @@
     user.showUserTag = showTag;
     console.log('user', user)
 
+    user.showUserTag();
+
+    /* 
+    * Вызов без контекста, но объявлена как метод объекта.
+    */
 
 
 
