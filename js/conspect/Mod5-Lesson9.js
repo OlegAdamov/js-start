@@ -113,20 +113,127 @@
 
 
 
-{console.log('Task-Konsp: ');
+{console.log('Task-Konsp: Метод "Call');
 
+function greetGuest(greeting) {
+  console.log(`${greeting}, ${this.username}.`);
+}
+
+const mango = {
+  username: "Манго",
+};
+const poly = {
+  username: "Поли",
+};
+
+greetGuest.call(mango, "Добро пожаловать"); // Добро пожаловать, Манго.
+// greetGuest.call(poly, "С приездом"); // С приездом, Поли.
+
+
+
+}
+
+{console.log('Task-Konsp: Метод "Apply"');
+
+function greetGuest(greeting) {
+  console.log(`${greeting}, ${this.username}.`);
+}
+
+const mango = {
+  username: "Манго",
+};
+const poly = {
+  username: "Поли",
+};
+
+// greetGuest.apply(mango, ["Добро пожаловать"]); // Добро пожаловать, Манго.
+// greetGuest.apply(poly, ["С приездом"]); // С приездом, Поли.
+
+
+
+}
+
+{console.log('Task-Konsp: Метод "bind"');
+
+    function greet(clientName) {
+  return `${clientName}, добро пожаловать в «${this.service}».`;
+}
+
+const steam = {
+  service: "Steam",
+    };
+    
+    const steamGreeter = greet.bind(steam);
+    
+steamGreeter("Манго"); // "Манго, добро пожаловать в «Steam»."
+
+const gmail = {
+  service: "Gmail",
+    };
+    
+    const gmailGreeter = greet.bind(gmail);
+    
+gmailGreeter("Поли"); // "Поли, добро пожаловать в «Gmail»."
+
+    
+
+
+}
+
+
+{console.log('Task-Konsp: "bind" и методы объекта ');
+
+    const customer = {
+  firstName: "Jacob",
+  lastName: "Mercer",
+  getFullName() {
+    return `${this.firstName} ${this.lastName}`;
+  },
+};
+
+function makeMessage(callback) {
+  // callback() это вызов метода getFullName без объекта
+  console.log(`Обрабатываем заявку от ${callback()}.`);
+}
+
+makeMessage(customer.getFullName); // Будет ошибка при вызове функции
+
+
+
+}
+
+
+{console.log('Task-Konsp: ');
 
 
 
 
 }
 
+
 {console.log('Task-Konsp: ');
 
 
 
 
 }
+
+
+{console.log('Task-Konsp: ');
+
+
+
+
+}
+
+
+{console.log('Task-Konsp: ');
+
+
+
+
+}
+
 
 {console.log('Task-Konsp: ');
 
