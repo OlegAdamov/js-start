@@ -7,6 +7,7 @@
     * - Контекст определяется В МОМЕНТ ВЫЗОВА ФУНКЦИИ, если он не привязан явно.
     */
     
+    //{
     /*
     * Как метод объекта. В контексте объектаю
     */
@@ -31,38 +32,99 @@
 
 
     // foo();
+  // }
 
+
+    {
 /* 
 * Как метод объекта, но объявлена как внешняя функция.
 * В контексте объекта.
 */
 
-    const showTag = function () {
-        console.log('showTab -> this', this);
-        console.log('showTab -> this.tag', this.tag);
-    };
+    // const showTag = function () {
+    //     console.log('showTab -> this', this);
+    //     console.log('showTab -> this.tag', this.tag);
+    // };
 
     // showTag();
 
-    const user = {
-        tag: 'Mango',
-    };
+    // const user = {
+    //     tag: 'Mango',
+    // };
 
-    user.showUserTag = showTag;
-    console.log('user', user)
+    // user.showUserTag = showTag;
+    // console.log('user', user)
 
-    user.showUserTag();
+    // user.showUserTag();
+
+    /* 
+    * Вызов без контекста, но объявлена как метод объекта.
+    */
+  }
+
+
+
+  {
 
     /* 
     * Вызов без контекста, но объявлена как метод объекта.
     */
 
+  //   const user = {
+  //   tag: 'Mango',
+  //     showTag() {
+  //     console.log('showTag -> this', this);
+  //     console.log('showTag -> this.tag', this.tag);
+  //   },
+  // };
+    
+  //   user.showTag();
 
+  //   const outerShowTag = user.showTag;
+
+  //   outerShowTag();
+  }
+
+    
+    {
+      /* 
+      * Контекст в callback-функциях
+      */
+      
+      const user = { 
+        tag: 'Mango',
+        showTag() {
+          console.log('showTag ')
+          console.log('showTag -> this', this);
+      console.log('showTag -> this.tag', this.tag);
+    },
+  };
+          
+          const invokeAction = function (action) {
+            console.log(action);
+
+            action();
+          };
+
+          invokeAction(user.showTag);
+          
+          
+      
 
 
 
 
     }
+
+
+
+
+  }
+
+
+
+
+    
 
     {console.log('Example: ');
 
@@ -183,20 +245,20 @@ gmailGreeter("Поли"); // "Поли, добро пожаловать в «Gma
 
 {console.log('Task-Konsp: "bind" и методы объекта ');
 
-    const customer = {
-  firstName: "Jacob",
-  lastName: "Mercer",
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
-  },
-};
+//     const customer = {
+//   firstName: "Jacob",
+//   lastName: "Mercer",
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   },
+// };
 
-function makeMessage(callback) {
-  // callback() это вызов метода getFullName без объекта
-  console.log(`Обрабатываем заявку от ${callback()}.`);
-}
+// function makeMessage(callback) {
+//   // callback() это вызов метода getFullName без объекта
+//   console.log(`Обрабатываем заявку от ${callback()}.`);
+// }
 
-makeMessage(customer.getFullName); // Будет ошибка при вызове функции
+// makeMessage(customer.getFullName); // Будет ошибка при вызове функции
 
 
 
