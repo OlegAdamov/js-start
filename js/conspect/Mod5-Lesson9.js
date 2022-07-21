@@ -7,7 +7,7 @@
     * - Контекст определяется В МОМЕНТ ВЫЗОВА ФУНКЦИИ, если он не привязан явно.
     */
     
-    //{
+  {
     /*
     * Как метод объекта. В контексте объектаю
     */
@@ -32,10 +32,10 @@
 
 
     // foo();
-  // }
+  }
 
 
-    {
+  {
 /* 
 * Как метод объекта, но объявлена как внешняя функция.
 * В контексте объекта.
@@ -86,36 +86,96 @@
   }
 
     
-    {
+  {
       /* 
       * Контекст в callback-функциях
       */
       
-      const user = { 
-        tag: 'Mango',
-        showTag() {
-          console.log('showTag ')
-          console.log('showTag -> this', this);
-      console.log('showTag -> this.tag', this.tag);
-    },
-  };
+  //     const user = { 
+  //       tag: 'Mango',
+  //       showTag() {
+  //         console.log('showTag ');
+  //         console.log('showTag -> this', this);
+  //         // console.log('showTag -> this.tag', this.tag);
+  //   },
+  // };
           
-          const invokeAction = function (action) {
-            console.log(action);
+  //         const invokeAction = function (action) {
+  //           console.log(action);
 
-            action();
-          };
+  //           action();
+  //         };
 
-          invokeAction(user.showTag);
-          
-          
+  //         invokeAction(user.showTag);
+    
+  }
+
+  { console.log('Repeta - call & apply')
+  
+    {
+//       const showThis = function (a, b, arr) {
+//       console.log(a, b, arr)
+//       console.log('showThis -> this', this);
+//     };
+
+//     showThis();
+
+//     const objA = {
+//       a: 5,
+//       b: 10,
+//     };
+
+//     showThis.call(objA, 10, 20, [30, 40]);
+//     showThis.apply(objA, [100, 200, [300, 400]]);
+
+//  const objB = {
+//       a: 5,
+//       b: 10,
+//     };
+
+//         showThis.call(objB, 15, 25, 35, 45);
+//     showThis.apply(objB, [105, 205, 305, 405]);
+
+//     showThis();
+}
+
+
+{
+    const changeColor = function (color) {
+      // console.log('changeColor -> this', this);
+      this.color = color;
+    };
+
+    const hat = {
+      color: 'black',
+    };
+
+    // changeColor.call(hat, 'orange');
+    // console.log(hat);
+
+        const sweater = {
+      color: 'green',
+      };
       
+      // changeColor.call(sweater, 'blue');
+      // console.log(sweater);
 
 
 
-
+      console.log('Repeta - bind')
+      
+      const changeHatColor = changeColor.bind(hat);
+      const changeSweaterColor = changeColor.bind(sweater);
+      
+      // changeColor();
+      changeHatColor('yellow');
+      // console.log(hat);
+      
+      changeSweaterColor('red');
+      // console.log(sweater);
+      
     }
-
+}
 
 
 
