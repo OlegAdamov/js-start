@@ -238,7 +238,7 @@
 {console.log('Task-Konsp: Метод "Call');
 
 function greetGuest(greeting) {
-  console.log(`${greeting}, ${this.username}.`);
+  // console.log(`${greeting}, ${this.username}.`);
 }
 
 const mango = {
