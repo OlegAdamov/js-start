@@ -53,8 +53,7 @@
     
 }
 
-{
-    console.log('Repeta: Основы ООП: класс, экземпляр (объект), интерфейс');
+{    console.log('Repeta: Основы ООП: класс, экземпляр (объект), интерфейс');
 
     /* 
     * Функции-конструкторы
@@ -84,15 +83,15 @@
     };
 
     Car.prototype.sayHi = function () {
-        console.log('Car.prototype.sayHi -> this', this);
-        console.log('Hello :) ');
+        // console.log('Car.prototype.sayHi -> this', this);
+        // console.log('Hello :) ');
     };
 
             Car.prototype.changePrice = function (newPrice) {
             this.price = newPrice;
         };
 
-    console.log(Car.prototype);
+    // console.log(Car.prototype);
 
     // 1. Если функция вызывается через new, создается пустой объект
     const myCar = new Car({
@@ -100,7 +99,7 @@
         model: 'Q3',
         price: 35000,
     });
-    console.log(myCar);
+    // console.log(myCar);
 
     myCar.sayHi();
     
@@ -110,7 +109,7 @@
         price: 50000,
     });
     
-    console.log(myCar2);
+    // console.log(myCar2);
 
         myCar2.sayHi();
 
@@ -120,7 +119,7 @@
         model: 'A6',
         price: 65000,
     });
-    console.log(myCar3);
+    // console.log(myCar3);
 
         myCar3.sayHi();
 
@@ -159,14 +158,57 @@
 
 
 
-{console.log('Autocheck: ');
+{console.log('Autocheck: 12');
 
+class Car {
+  // Change code below this line
+    #brand;
+  constructor({ brand, model, price }) {
+    this.#brand = brand;
+    this.model = model;
+    this.price = price;
+  };
 
+  getBrand() {
+    return this.#brand;
+  };
+  
+  changeBrand(newBrand) {
+    this.#brand = newBrand;
+  };
+
+  // Change code above this line
+    }
+    
+    // console.log(new Car({ brand: "Audi", model: "Q3", price: 36000 }));
 
 
 }
 
-{console.log('Autocheck: ');
+{console.log('Autocheck: 17');
+
+    class Car {
+  static #MAX_PRICE = 50000;
+  // Change code below this line
+static checkPrice(price) {
+    return (Car.price > Car.#MAX_PRICE)
+        ? "Error! Price exceeds the maximum"
+        : "Success! Price is within acceptable limits";
+}
+
+
+
+  // Change code above this line
+  constructor({ price }) {
+    this.price = price;
+  }
+}
+
+const audi = new Car({ price: 36000 });
+const bmw = new Car({ price: 64000 });
+
+console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
 
 
 
