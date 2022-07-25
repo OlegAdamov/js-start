@@ -191,7 +191,7 @@ class Car {
   static #MAX_PRICE = 50000;
   // Change code below this line
 static checkPrice(price) {
-    return (Car.price > Car.#MAX_PRICE)
+    return (Car.constructor.checkPrice > Car.#MAX_PRICE)
         ? "Error! Price exceeds the maximum"
         : "Success! Price is within acceptable limits";
 }
@@ -204,7 +204,7 @@ static checkPrice(price) {
   }
 }
 
-const audi = new Car({ price: 36000 });
+const audi = new Car({ price: 34000 });
 const bmw = new Car({ price: 64000 });
 
 console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
@@ -278,8 +278,27 @@ for (const key in dog) {
   }  
 }
 
-{    console.log('Task-Konsp:');
+{    console.log('Task-Konsp: class - static');
 
+  class User {
+  static #takenEmails = [];
+
+  static isEmailTaken(email) {
+    return User.#takenEmails.includes(email);
+  }
+
+  #email;
+
+  constructor({ email }) {
+    this.#email = email;
+    User.#takenEmails.push(email);
+  }
+}
+
+const mango = new User({ email: "mango@mail.com" });
+
+console.log(User.isEmailTaken("poly@mail.com"));
+console.log(User.isEmailTaken("mango@mail.com"));
 }
 
 {    console.log('Task-Konsp:');
