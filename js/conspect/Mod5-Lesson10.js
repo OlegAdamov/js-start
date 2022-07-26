@@ -151,7 +151,35 @@
   // 8. В свойство this.__proto__ записывается ссылка на объект Функция.prototype
   //    то есть Функция.prototype это ПРОТОТИП будущего объекта (экземпляра) - {constructor: f}
   // 9. Ссылка на объект возвращается в место вызова new Функция( )
+
+
+  console.log('Repeta: Статические методы и свойства');
+/* 
+* - Статические свойства и методы доступны только на самом конструкторе
+* - В статических методах не нужен this
+*/
+
+  User.message = 'Я статическое свойство, меня нет на экземплярах или в прототипе.'
+  
+  User.logInfo = function (obj) {
+    console.log(obj);
+  };
+  
+  console.dir(User);
+  
+  console.log(Math.round(5.1));
+  console.log(Math.PI);
+  
+  
+  
+
 }
+
+{ console.log('Repeta: ');
+}
+
+
+
 
 
     {console.log('Example: ');
