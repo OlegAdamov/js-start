@@ -124,9 +124,33 @@
         myCar3.sayHi();
 
 
-    
+  const User = function ({ email, password } = {}) {
+    this.email = email;
+    this.password = password;
+  };
 
+  User.prototype.changeEmail = function (newMail) {
+    this.email = newMail;
+  }
 
+    const mango = new User({email: 'mango@mail.com', password: 111111})
+  
+  mango.changeEmail('my-nwe-mail@mail.com')
+  // console.log(mango);
+  
+  
+  // 1. У каждого объекта есть свойство __proto__
+  // 2. В этом свойстве лежит ссылка на его ПРОТОТИП, то есть другой объект
+  // 3. При создании литерала объекта, в свойство __proto__ записывается ссылка на 
+  //    Функция.ptototype
+  // 4. Функция-конструктор это просто функция :)
+  // 5. Всю "магию" делает оператор new
+  // 6. Если функция вызывается через new, создается пустой объект
+  // 7. Функция вызывается в контексте созданного объекта, 
+  //    то есть в this записывается ссылка на него
+  // 8. В свойство this.__proto__ записывается ссылка на объект Функция.prototype
+  //    то есть Функция.prototype это ПРОТОТИП будущего объекта (экземпляра) - {constructor: f}
+  // 9. Ссылка на объект возвращается в место вызова new Функция( )
 }
 
 
@@ -191,7 +215,7 @@ class Car {
   static #MAX_PRICE = 50000;
   // Change code below this line
 static checkPrice(price) {
-    return (Car.constructor.checkPrice > Car.#MAX_PRICE)
+    return (price > Car.#MAX_PRICE)
         ? "Error! Price exceeds the maximum"
         : "Success! Price is within acceptable limits";
 }
@@ -207,8 +231,8 @@ static checkPrice(price) {
 const audi = new Car({ price: 34000 });
 const bmw = new Car({ price: 64000 });
 
-console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
-console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
+// console.log(Car.checkPrice(audi.price)); // "Success! Price is within acceptable limits"
+// console.log(Car.checkPrice(bmw.price)); // "Error! Price exceeds the maximum"
 
 
 
@@ -297,8 +321,8 @@ for (const key in dog) {
 
 const mango = new User({ email: "mango@mail.com" });
 
-console.log(User.isEmailTaken("poly@mail.com"));
-console.log(User.isEmailTaken("mango@mail.com"));
+// console.log(User.isEmailTaken("poly@mail.com"));
+// console.log(User.isEmailTaken("mango@mail.com"));
 }
 
 {    console.log('Task-Konsp:');
