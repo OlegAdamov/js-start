@@ -53,7 +53,7 @@
     
 }
 
-{    console.log('Repeta: Основы ООП: класс, экземпляр (объект), интерфейс');
+{ console.log('Repeta: Основы ООП: класс, экземпляр (объект), интерфейс');
 
     /* 
     * Функции-конструкторы
@@ -165,17 +165,69 @@
     console.log(obj);
   };
   
-  console.dir(User);
+  // console.dir(User);
   
-  console.log(Math.round(5.1));
-  console.log(Math.PI);
+  // console.log(Math.round(5.1));
+  // console.log(Math.PI);
   
   
   
 
 }
 
-{ console.log('Repeta: ');
+{
+  console.log('Repeta: Классы');
+
+  /* 
+  * - Объявления
+  * - конструктор
+  * - методы
+  * - static
+  * - приватные свойства
+  * - синтаксис публичных свойств и методы классов 
+  * - геттеры и сеттеры
+  */
+
+  class Car1 {
+    static description = 'Класс описывающий автомобиль';
+
+    static logInfo(carObj) {
+      console.log('Car.logInfo -> carObj', carObf);
+    }
+
+    constructor( { brand, model, price } = {} ) { 
+      // console.log('Выполняется constructor');
+      // console.log(this);
+
+      this.brand = brand;
+      this.model = model;
+      this.price = price;
+}
+      changePrice(newPrice) {
+        this.price = newPrice;
+      };
+    
+    updateModel(newModel) {
+      this.model = newModel;
+      }
+  }
+  
+  console.dir(Car1);
+
+  console.log(Car1.description)
+
+  const carInstance = new Car1({
+  brand: 'Audi',
+    model: 'Q3',
+      price: 35000,
+});
+  
+  console.log(carInstance);
+  
+
+
+
+
 }
 
 
