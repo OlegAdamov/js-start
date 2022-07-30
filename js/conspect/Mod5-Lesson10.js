@@ -175,8 +175,8 @@
 
 }
 
-{
-  console.log('Repeta: Классы');
+{console.log('Repeta: Классы');
+  
 
   /* 
   * - Объявления
@@ -188,11 +188,11 @@
   * - геттеры и сеттеры
   */
 
-  class Car1 {
+{  class Car1 {
     static description = 'Класс описывающий автомобиль';
 
     static logInfo(carObj) {
-      console.log('Car.logInfo -> carObj', carObf);
+      // console.log('Car.logInfo -> carObj', carObf);
     }
 
     constructor( { brand, model, price } = {} ) { 
@@ -212,9 +212,9 @@
       }
   }
   
-  console.dir(Car1);
+  // console.dir(Car1);
 
-  console.log(Car1.description)
+  // console.log(Car1.description)
 
   const carInstance = new Car1({
   brand: 'Audi',
@@ -222,16 +222,155 @@
       price: 35000,
 });
   
-  console.log(carInstance);
+  // console.log(carInstance);
   
+}
 
+  {
+    // console.log('геттеры и сеттеры')
+    class Car2 {
+      static description = 'Класс описывающий автомобиль';
 
+      constructor({ brand, model, price } = {}) {
+        // console.log('Выполняется constructor');
+        // console.log(this);
 
+        this._brand = brand;
+        this._model = model;
+        this._price = price;
+      }
+
+      get price() {
+        return this._price;
+      }
+
+      set price(newPrice) {
+        this._price = newPrice;
+      }
+    
+      get model() {
+        return this._model;
+      }
+
+      set model(newModel) {
+        this._model = newModel;
+      }
+    }
+
+  const carInstance = new Car2({
+  brand: 'Audi',
+    model: 'Q3',
+      price: 35000,
+});
+
+    // console.log(carInstance);
+
+    // console.log(carInstance.model);
+    carInstance.model = 'Q7';
+    // console.log(carInstance.model);
+
+    // console.log(carInstance.price);
+    carInstance.price = 50000;
+    // console.log(carInstance.price);
+  }
+  
 
 }
 
+{console.log('Repeta: Наследование');
+/* 
+* - extends
+* - super()
+*/
+  
+  class Hero {
+    constructor(name = 'hero', xp = 0) { // ({ name = 'hero', xp = 0 } = {})
+      this.name = name;
+      this.xp = xp;
+    }
+
+    gainXp(amount) {
+      // console.log(`${this.name} получает ${amount} опыта`);
+      this.xp += amount;
+    }
+  }
+
+  // const mango = new Hero({ name: 'mango', xp: 1000 });
+  // console.log(mango);
+  
+  class Warrior extends Hero {
+    constructor(name, xp, weapon) {    // (config)
+      super(name, xp);    // (config)
+
+      this.weapon = weapon;
+    }
+
+    attack() {
+      // console.log(`${this.name} атакует используя ${this.weapon}`);
+}
+  }
+
+  class Berserk extends Warrior {
+    constructor(name, xp, weapon, warcry) {
+      super(name, xp, weapon);
+
+      this.warcry = warcry;
+    }
+
+    babyRage() {
+      // console.log(this.warcry);
+    }
+  }
+  
+  const ajax = new Berserk('ajax', 679, 'axe', 'waaaaaaah');
+  // console.log(ajax);
+
+    class Mage extends Hero {
+      constructor(name, xp, spells = []) {
+        super(name, xp, spells);
+
+        this.spells = spells;
+      }
+
+      cast() {
+        // console.log(`${this.name} что-то там кастует 🎈`);
+      }
+    }
+    
+    
+    
+    
+  
+
+  const mango = new Warrior('mango', 1000, 'алебарда'); //({ name: 'mango', xp: 1000, weapons: 50 })
+  // console.log(mango);
+  mango.gainXp(1000);
+  mango.attack();
+  mango.gainXp(19000);
+
+  const poly = new Mage('poly', 500, ['фаербол'])
+  // console.log(poly);
+  poly.cast();
+  poly.gainXp(300);
 
 
+//   console.log(
+//     'mango.__proto__ === Warrior.prototype ',
+//     mango.__proto__ === Warrior.prototype,
+//   );
+  
+//   console.log(
+//     'Warrior.prototype.__proto__ === Hero.prototype ',
+//     Warrior.prototype.__proto__ === Hero.prototype,
+//   );
+ 
+
+// console.log(
+//   'Hero.prototype.__proto__ === Object.prototype ',
+//   Hero.prototype.__proto__ === Object.prototype,
+// );
+
+}
 
 
     {console.log('Example: ');
