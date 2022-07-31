@@ -84,7 +84,7 @@
 
     Car.prototype.sayHi = function () {
         // console.log('Car.prototype.sayHi -> this', this);
-        // console.log('Hello :) ');
+        // console.log('Hello ');
     };
 
             Car.prototype.changePrice = function (newPrice) {
