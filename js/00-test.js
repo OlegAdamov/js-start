@@ -733,7 +733,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{ console.log(`Function + Function (Рекурсия)`);
+{ console.log(`Function + Function (Freelancer - Рекурсия)`);
 
     // function calcSumm(numOne, numTwo) {
     //     let result = 1;
@@ -753,6 +753,7 @@ const findLogin = function (allLogins, loginToFind) {
     //     }
     // }
     // console.log(calcSumm(5, 3));
+
 
 }
 
