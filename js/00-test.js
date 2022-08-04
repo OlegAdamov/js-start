@@ -733,6 +733,33 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
+{ console.log(`Function + Function (Рекурсия)`);
+
+    // function calcSumm(numOne, numTwo) {
+    //     let result = 1;
+    //     // Умножаем result на numOne numTwo раз в цикле
+    //     for (let i = 0; i < numTwo; i++) {
+    //         result *= numOne;
+    //     }
+    //     return result;
+    // }
+    // console.log(calcSumm(5, 3));
+
+    // function calcSumm(numOne, numTwo) {
+    //     if (numTwo === 1) {
+    //         return numOne;
+    //     } else {
+    //         return numOne * calcSumm(numOne, numTwo - 1);
+    //     }
+    // }
+    // console.log(calcSumm(5, 3));
+
+}
+
+
+
+
+
 {    console.log(`Task AutoCheck-21`);
 /* Напиши функцию findLongestWord(string) которая принимает произвольную
 * строку состоящую только из слов разделённых пробелом (параметр string) и
