@@ -201,8 +201,8 @@
 
 }
 
-{
-    console.log('Repeta: Создание коллекции');
+{console.log('Repeta: Создание коллекции');
+    
 
     const colorPickerOptions = [
         { label: 'red', color: '#F44336' },
@@ -234,7 +234,7 @@
     //     colorPickerContainerEl.append(...elements);
 }
     
-  { 
+  { colorPicker
        const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
         const elements = colorPickerOptions.map(option => {
