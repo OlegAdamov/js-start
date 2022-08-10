@@ -71,34 +71,41 @@
     }
 
     {
-const tagsContainer = document.querySelector('.js-tags');
-    let selectedTag = null;
+// const tagsContainer = document.querySelector('.js-tags');
+//         const selectedTags = new Set();  // const selectedTags = [];
 
-    tagsContainer.addEventListener('click', onTagsContainerClick);
+//     tagsContainer.addEventListener('click', onTagsContainerClick);
 
-    function onTagsContainerClick(event) {
-        if (event.target.nodeName !== 'BUTTON') {
-            return;
-    }
+//     function onTagsContainerClick(event) {
+//         if (event.target.nodeName !== 'BUTTON') {
+//             return;
+//     }
 
-        const currentActiveBtn = document.querySelector('.tags__btn--active')
+       
+//         const btn = event.target;
+//         const tag = btn.dataset.value
+//         const isBtnActive = btn.classList.contains('tags__btn--active');
 
-        // console.log('currentActiveBtn', currentActiveBtn);
-
-        if (currentActiveBtn) {
-            currentActiveBtn.classList.remove('tags__btn--active');
-        }           // currentActiveBtn?.classList.remove('tags__btn--active');
+//         if (isBtnActive) {
+//             selectedTags.delete(tag);
+//         } else {
+//             selectedTags.add(tag);
+//         }
         
-        const nextActiveBtn = event.target;
-       nextActiveBtn.classList.add('tags__btn--active');
-        selectedTag = nextActiveBtn.dataset.value;
-
-        console.log(selectedTag);
-}
+//     btn.classList.toggle('tags__btn--active');
+//      //    selectedTags.add(btn.dataset.value);    // selectedTags.push(event.target.dataset.value)
+    
+        
+//     console.log(selectedTags);
+// }
     
 
     }
 
+    {
+
+        
+    }
 }
 
 
