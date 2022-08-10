@@ -7,44 +7,99 @@
     * - фильтр цели клика
     */
     
-    const container = document.querySelector('.js-container');
+    // const container = document.querySelector('.js-container');
 
-    container.addEventListener('click', onClick);
+    // container.addEventListener('click', onClick);
 
-    function onClick(event) {
-        if (event.target.nodeName !== 'BUTTON') {
-            return;
-        }
-            console.log(event.target);
-            console.log(event.target.textContent);
-            console.log(event.target.nodeName);
+    // function onClick(event) {
+    //     if (event.target.nodeName !== 'BUTTON') {
+    //         return;
+    //     }
+    //         console.log(event.target);
+    //         console.log(event.target.textContent);
+    //         console.log(event.target.nodeName);
         
-    }
+    // }
 
     /* 
     * Код добавления кнопок
     */
-    const addBtn = document.querySelector('.js-add-btn');
-    let labelCounter = 6;
+    // const addBtn = document.querySelector('.js-add-btn');
+    // let labelCounter = 6;
 
-    addBtn.addEventListener('click', onAddBtnClick);
+    // addBtn.addEventListener('click', onAddBtnClick);
 
-    function onAddBtnClick() {
-        const btn = document.createElement('button');
-        btn.textContent = `Кнопка ${labelCounter}`;
-        btn.type = 'button';
+    // function onAddBtnClick() {
+    //     const btn = document.createElement('button');
+    //     btn.textContent = `Кнопка ${labelCounter}`;
+    //     btn.type = 'button';
 
-        container.appendChild(btn);
-        labelCounter += 1;
-    }
-
-
-
-
+    //     container.appendChild(btn);
+    //     labelCounter += 1;
+    // }
 
 }
 
+{
+    console.log('Repeta: Example');
 
+    {
+//         const tagsContainer = document.querySelector('.js-tags');
+//     let selectedTag = null;
+
+//     tagsContainer.addEventListener('click', onTagsContainerClick);
+
+//     function onTagsContainerClick(event) {
+//         if (event.target.nodeName !== 'BUTTON') {
+//             return;
+//     }
+
+//         const currentActiveBtn = document.querySelector('.tags__btn--active')
+
+//         // console.log('currentActiveBtn', currentActiveBtn);
+
+//         if (currentActiveBtn) {
+//             currentActiveBtn.classList.remove('tags__btn--active');
+//         }           // currentActiveBtn?.classList.remove('tags__btn--active');
+        
+//         const nextActiveBtn = event.target;
+//        nextActiveBtn.classList.add('tags__btn--active');
+//         selectedTag = nextActiveBtn.dataset.value;
+
+//         console.log(selectedTag);
+// }
+    }
+
+    {
+const tagsContainer = document.querySelector('.js-tags');
+    let selectedTag = null;
+
+    tagsContainer.addEventListener('click', onTagsContainerClick);
+
+    function onTagsContainerClick(event) {
+        if (event.target.nodeName !== 'BUTTON') {
+            return;
+    }
+
+        const currentActiveBtn = document.querySelector('.tags__btn--active')
+
+        // console.log('currentActiveBtn', currentActiveBtn);
+
+        if (currentActiveBtn) {
+            currentActiveBtn.classList.remove('tags__btn--active');
+        }           // currentActiveBtn?.classList.remove('tags__btn--active');
+        
+        const nextActiveBtn = event.target;
+       nextActiveBtn.classList.add('tags__btn--active');
+        selectedTag = nextActiveBtn.dataset.value;
+
+        console.log(selectedTag);
+}
+    
+
+    }
+
+}
 
 
 
