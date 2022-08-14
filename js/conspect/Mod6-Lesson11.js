@@ -234,22 +234,22 @@
     //     colorPickerContainerEl.append(...elements);
 }
     
-  { colorPicker
-       const colorPickerContainerEl = document.querySelector('.js-color-picker');
+  { console.log('colorPicker');
+    //    const colorPickerContainerEl = document.querySelector('.js-color-picker');
 
-        const elements = colorPickerOptions.map(option => {
+    //     const elements = colorPickerOptions.map(option => {
    
-            const buttonEl = document.createElement('button');
-    buttonEl.type = 'button';
-    buttonEl.classList.add('color-picker__option')
-    buttonEl.textContent = option.label;
-    buttonEl.style.backgroundColor = option.color;
+    //         const buttonEl = document.createElement('button');
+    // buttonEl.type = 'button';
+    // buttonEl.classList.add('color-picker__option')
+    // buttonEl.textContent = option.label;
+    // buttonEl.style.backgroundColor = option.color;
 
-         return buttonEl
-        });
-    console.log(elements);
+    //      return buttonEl
+    //     });
+    // console.log(elements);
     
-        colorPickerContainerEl.append(...elements);
+    //     colorPickerContainerEl.append(...elements);
 }
     
 
@@ -325,7 +325,7 @@
 {    console.log('Task-Konsp: DOM');
 
     
-// {    console.log(document);
+{    console.log('Task-Konsp: document');
 
 // const body = document.body;
 // console.log(body);
@@ -372,13 +372,26 @@
 // const image = document.querySelector(".image");
 // console.log(image.src); // https://placeimg.com/640/480/animals
 // image.src = 'https://placeimg.com/640/480/tech';
-//     }
+    }
     
 
 }
 
-{    console.log('Task-Konsp:');
+{    console.log('Task-Konsp: Создание');
 
+//     const heading = document.createElement("h1");
+// console.log(heading); // <h1></h1>
+
+// heading.textContent = "This is a heading";
+// console.log(heading); // <h1>This is a heading</h1>
+
+// const image = document.createElement("img");
+// image.src = "https://placeimg.com/640/480/nature";
+// image.alt = "Nature";
+// console.log(image); // <img src="https://placeimg.com/640/480/nature" alt="Nature" />
+    
+    
+    
 }
 
 {    console.log('Task-Konsp:');
