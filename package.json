@@ -2,7 +2,7 @@
   "name": "js-start",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,10 +10,16 @@
     "type": "git",
     "url": "git+https://github.com/OlegAdamov/js-start.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/OlegAdamov/js-start/issues"
   },
-  "homepage": "https://github.com/OlegAdamov/js-start#readme"
+  "homepage": "https://github.com/OlegAdamov/js-start#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "joi": "^17.6.0",
+    "shortid": "^2.2.16"
+  }
 }
