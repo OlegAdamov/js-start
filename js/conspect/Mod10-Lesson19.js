@@ -1,7 +1,7 @@
     console.log('Repeta: ');
 
 { console.log('Repeta: ');
-    import pokemonCardTpl from '../templates/pokemon-card.hbs';
+    // import pokemonCardTpl from '../templates/pokemon-card.hbs';
 
     const refs = {
         cardContainer: document.querySelector('.js-card-container'),
