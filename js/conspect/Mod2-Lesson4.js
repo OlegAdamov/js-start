@@ -220,44 +220,53 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 {
-function makeStringFromArray(array, delimeter) {
-  let string;
-  // Change code below this line
+// function makeStringFromArray(array, delimeter) {
+//   let string;
+//   // Change code below this line
 
-string = array.join(delimeter);
+// string = array.join(delimeter);
 
-  // Change code above this line
-  return string;
-    }
-   console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
-   console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
-   console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
-}
+//   // Change code above this line
+//   return string;
+//     }
+//    console.log(makeStringFromArray(["Mango", "hurries", "to", "the", "train"], " "));
+//    console.log(makeStringFromArray(["M", "a", "n", "g", "o"], ""));
+//    console.log(makeStringFromArray(["top", "picks", "for", "you"], "_"));
+// }
 
-{function findLongestWord(string) {
-  // Change code below this line
-    let words;
-    words = string.split(" ");
+// {function findLongestWord(string) {
+//   // Change code below this line
+//     let words;
+//     words = string.split(" ");
     
 
-    console.log(words);
+//     console.log(words);
 
-  // Change code above this line
-}
-    console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+//   // Change code above this line
+// }
+//     console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
 
 }
+
+{
+    const fn = function (...args) {
+            console.log(args);
+    };
+
+    fn(1, 2, 3);
+    fn(1, 2, 3, 4, 5);
+    fn(1, 2, 3, 4, 5, 6, 7);
+};
+
+
+
+
+
+
+
+
+
+
+
+
