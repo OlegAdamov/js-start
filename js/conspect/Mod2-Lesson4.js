@@ -250,20 +250,57 @@
 }
 
 {
-    const fn = function (...args) {
-            console.log(args);
-    };
+    //     const fn = function (...args) {
+    //             console.log(args);
+    //     };
 
-    fn(1, 2, 3);
-    fn(1, 2, 3, 4, 5);
-    fn(1, 2, 3, 4, 5, 6, 7);
-};
+    //     fn(1, 2, 3);
+    //     fn(1, 2, 3, 4, 5);
+    //     fn(1, 2, 3, 4, 5, 6, 7);
+    // };
+}
+{
+/*
+* Напиши функцию add для сложения произвольного количества аргументов (чисел)
+* - операция ... (rest)
+ */
 
+// const add = function (...args) {
+//     console.log(args);
 
+//     let total = 0;
 
+//     for (const arg of args) {
+//         total += arg;
+//     }
+//     return total;
+// };
 
+// console.log(add(1, 2, 3));
+// console.log(add(1, 2, 3, 4, 5, 6));
 
+}
 
+{
+    // const filterNumbers = function (array, ...args) {
+    //     // console.log('array: ', array);
+    //     // console.log('args: ', args);
+
+    //     const uniqueElement = [];
+
+    //     for (const element of array) {
+    //         if (args.includes(element)) {
+    //             uniqueElement.push(element);
+    //             // console.log(`${element} есть везде!`);
+    //         }
+    //     }
+    //     return uniqueElement;
+    // };
+
+    // console.log(filterNumbers([1, 2, 3, 4, 5], 10, 15, 2, 3, 8)); // [2, 3]
+    // console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
+    // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
+}
 
 
 
