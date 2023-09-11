@@ -133,14 +133,116 @@
 
 
 // 1. Объявление параметров x, y, z
-function multiply(x, y, z) {
-  console.log(`Результат умножения равен ${x * y * z}`);
-}
+// function multiply(x, y, z) {
+//   console.log(`Результат умножения равен ${x * y * z}`);
+// }
 
 // 2. Передача аргументов
-multiply(2, 3, 5); // Результат умножения равен 30
-multiply(4, 8, 12); // Результат умножения равен 384
-multiply(17, 6, 25); // Результат умножения равен 2550
+// multiply(2, 3, 5); // Результат умножения равен 30
+// multiply(4, 8, 12); // Результат умножения равен 384
+// multiply(17, 6, 25); // Результат умножения равен 2550
+
+
+// for (let i = 0; i < 5; i += 1) {
+//   console.log(i);
+// }
+
+
+// const str = 'hello world';
+// let i = 0;
+// while (i < str.length) {
+//   if (str[i] === 'w') {
+//     console.log('yes');
+//     break;
+// }
+
+// console.log('no', str[i]);
+// i += 1;
+// }
+
+// const str = "Hello world!"
+// let i = 0;
+// do {
+//   if (str[i] === 'w') {
+//     console.log('yes');
+//     break;
+//   }
+//   console.log('no');
+//   i += 1;
+// } while (i < str.length);
+
+
+
+// let link = 'https://my-site.com/about';
+
+// // const lastSymbol = link.length - 1;
+// // if ('/' !== link[lastSymbol]) {
+// //   link = link + '/';
+// // }
+
+// if (!link.endsWith('/')) {
+//   link += '/';
+// }
+// console.log(link);
+
+// const daysUntilDeadline = 5;
+
+// if (daysUntilDeadline < 1) {
+//   console.log('Сьогодні');
+// } else if (daysUntilDeadline < 2){
+//   console.log('Завтра');
+// } else if (daysUntilDeadline < 3){
+//   console.log('Післязавтра');
+// } else {
+//   console.log('Дата у майбутньому');
+// }
+
+// switch (daysUntilDeadline) {
+//   case 0:
+//     console.log('Сьогодні');
+//     break;
+//   case 1:
+//     console.log('Завтра');
+//     break;
+//   case 2:
+//     console.log('Післязавтра');
+//     break;
+//   default:
+//     console.log('Дата у майбутньому');
+// }
+
+
+// const login = prompt("Please turn your login");
+
+// if (login === "Admin") {
+//   const password = prompt("Please turn your password");
+//   console.log(password === "I am admin" ? "Доброго дня!" : "Невірний пароль!");
+  
+//   // if (password === "I am admin") {
+//   //   console.log("Доброго дня!")
+//   // } else {
+//   //   console.log("Невірний пароль!")
+//   // }
+// } else if (login) {
+//   console.log("Я Вас не знаю!")
+// } else {
+//   console.log("Скасовано")
+// }
+
+
+// let weight = '88,3';
+// let height = '1.75';
+
+// weight = Number(weight.replace(',', '.'));
+// height = Number(height.replace(',', '.'));
+// const bmi = Number((weight / height**2).toFixed(1));
+// console.log(bmi);
+
+
+
+
+
+
 
 
 
