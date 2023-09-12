@@ -35,8 +35,6 @@
 // }
 // console.log(message);
 }
-
-
 {
 
 // const numbers = [1, 5, 16, 28, 30, 38, 10, 3];
@@ -50,8 +48,6 @@
 //     console.log(`Число больше чем ${threshold}: ${numbers[i]}`);
 // }
 }
-
-
 {
 // let a = 5;
 // // // Присвоение по значению, в памяти будет создана еще
@@ -66,7 +62,6 @@
 // // // Значение b не изменилось так как это отдельная копия
 //     console.log(b); // 5
 }
-
 {
 // const name = "Mango";
 // console.log(name.split(""));
@@ -74,14 +69,12 @@
 // const message = "JavaScript это интересно";
 // console.log(message.split(" "));
 }
-
 {
 // const words = ["JavaScript", "это", "интересно"];
 // console.log(words.join(""));
 // console.log(words.join(" "));
 // console.log(words.join("-"));
 }
-
 {
 // const clients = ["Mango", "Poly", "Ajax", "Daria", "Robin", "Frank"];
 // console.log(clients.indexOf("Robin"));
@@ -90,7 +83,6 @@
 // console.log(clients.includes("Frank"));
 // console.log(clients.includes("Pol"));
 }
-
 {
     // const fruit = "apple";
 
@@ -105,7 +97,6 @@
     //     console.log("It is a red fruit!");
     // }
 }
-
 {
 //     const redFruits = ["apple", "strawberry", "cherry", "cranberries"];
 //     const fruit = "cherry";
@@ -118,12 +109,10 @@
 //         console.log(`${fruit} is not a red fruit`);
 // }
 }
-
 {
 //     const clients = ["Mango", "Ajax", "Poly", "Kiwi"];
 // console.log(clients.slice(0, 2)); // ["Poly", "Kiwi"]
 }
-
 {
     // const scores = [1, 2, 3, 4, 5, 6];
     // const deletedScores = scores.splice(0, 3);
@@ -131,8 +120,6 @@
 
     // console.log(deletedScores);
 }
-
-
 {
     // const colors = ["red", "green", "blue"];
 
@@ -140,15 +127,12 @@
     // colors.splice(1, 0, "white", "black");
     // console.log(colors);
 }
-
-
 {
     // const languages = ['C', "C++", "Java", "JavaScript"];
 
     // languages.splice(1, 2, "Python");
     // console.log(languages);
 }
-
 {
     // const oldClients = ["Mango", "Ajax", "Poly", "Kiwi"];
     // const newClients = ["Monkong", "Singu"];
@@ -162,8 +146,6 @@
     // console.table(oldClients);
     // console.table(newClients);
 }
-
-
 {
     /* Напиши скприпт поиска самого маленького числа в массиве
     * при условии, что числа уникальные (не повторяются).
@@ -181,7 +163,6 @@
     // }
     // console.log('smallestNumber: ', smallestNumber);
 }
-
 {
 /*  Напиши скрипт, который объединяет все элементы массива в одно строковое значение.
 * Элементов может быть произвольное количество.
@@ -201,7 +182,6 @@
 // const string = friends.join(', ')
 //     console.log(string);
 }
-
 {
     /* Напиши скрипт, которые заменяет регистр каждого символа в строке на 
     * противоположный.
@@ -235,8 +215,6 @@
 
     // console.log(inverterdString);
 }
-
-
 {
     /*  Делаем slug в URL из названия статьи (например на dev.to)
     * Заголовок статьи состоит только из букв и пробелов
@@ -259,7 +237,6 @@
     
     // console.log(slug1);
 }
-
 {
     /* 
     * Напиши скрипт, который считает сумму элементов двух массивов.
@@ -290,7 +267,6 @@
     // console.log(numbers);
 
 }
-
 {
     /* 
     * Работаем с коллекцией карточек в trello
@@ -345,22 +321,168 @@
 
     // console.table(cards);
 }
+{ /* Example 1 - Базові операції з масивом
+    * Створіть масив genres з елементами "Jazz" та "Blues"
+    * Додайте "Rock-n-roll" до кінця.
+    * Виведить у консоль перший елемент масиву.
+    * Виведить у консоль останній елемент масиву.
+    * Код повинен працювати для масиву довільної довжини.
+    * Видаліть перший елемент та виведіть його в консоль.
+    * Вставте "Country" та "Reggae" на початку масиву.
+    * 
+*
+*/
+    // const genres = ["Jazz", "Blues"];
+    // // genres.push("Rock-n-roll");
+    
+    // // const first = genres[0];
+    // // const last = genres[genres.length - 1];
 
-{
+    // // console.log(genres);
+    // // console.log(first);
+    // // console.log(last);
+    
+    // // console.log(genres.shift());
+    // // console.log(genres);
+    
+    // // genres.unshift("Reggae", "Country");
+    // // console.log(genres);
+    
+    
+    // genres.splice(genres.length, 0, "Rock-n-roll");
+    // console.log(genres.splice(0, 1, "Country", "Reggae"));
 
-    const arr = ['hello', 'world', '!'];
 
-    console.log(arr);
+    // console.log(genres);
+    
+}
+{/* Example 2 - Масиви та рядки
+    * Напиши скрипт для обчислення площі прямокутника зі сторонами,
+    * значення яких зберігаються у змінній value у вигляді рядка.
+    * Значення гарантовано розділені пробілом.
+    *
+    */
 
-    const arr1 = [1, 2, 3];
-    const arr2 = [4, 5, 6];
-    const arr3 = [7, 8];
+    // const value = '8 11';
+    // const arr = value.split(' ');
+    // const first = Number(arr[0]);
+    // const last = Number(arr[arr.length - 1]);
+    // const result = first * last;
 
-    const result = arr.concat(arr1, arr2, arr3);
-    console.log(arr);
-    console.log(result);
+    // console.log(arr);
+    // console.log(first);
+    // console.log(last);
+    // console.log(result);
+}
+{ /* Example 3 - Перебір масиву
+* Напиши скрипт для перебору масиву fruits циклом for.
+* Для кожного елемента масиву виведи в консоль рядок у форматі:
+* номер_елемента: значення_елемента.
+* Нумерація елементнів починається з 1.
+* 
+*/
+    const fruits = ['🍎', '🍇', '🍑', '🍌', '🍋'];
+
+    // for (let i = 0; i < fruits.length; i+=1) {
+    //     console.log(`${i+1}:`, fruits[i]);
+    // }
+    
+    // for (let i = 0, n = 1; i < fruits.length; i+=1, n += 1) {
+    //     console.log(`${n}:`, fruits[i]);
+    // }
+}
+{ /* Example 4 - Масиви та цикли
+* Напиши скрипт, який виводить у консоль ім'я та телефонний номер користувача.
+* У змінніх names та phones зберігаються рядки імен та телефонних номерів,
+* розділених комами.
+* Порядковий номер імен та телефонів у рядках вказують на відповідність.
+* Кількість імен та телефонів, гарантовано, однакова.
+* 
+*/
+    // const names = 'Jacob,William,Solomon,Artem';
+    // const phones = '89001234567,89001112233,890055566377,890055566300';
+
+    // const namesMassive = names.split(',');
+    // const phonesMassive = phones.split(',');
+
+    // for (let i = 0, n = 1; i < namesMassive.length, i < phonesMassive.length; i+=1) {
+    //     console.log(`${n}. ${namesMassive[i]} ${phonesMassive[i]}`);
+    // }
+
+    // console.log(namesMassive);
+    // console.log(phonesMassive);
+}
+{ /* Example 5 - Масиви та рядки
+* Напиши скрипт, який виводить у консоль усі слова рядка крім першого і останнього.
+* Результуючий рядок не повинен починатися або закінчуватися символом пробілу.
+* Скрипт повинен працювати для будь-якого рядка.
+* 
+* 
+*/
+    // const string = 'Welcome to the future';
+    // // const array = string.split(' ');
+
+    // // const strArray = array.slice(1, array.length - 1);
+    // // console.log(strArray.join(" "));
+    
+    // // array.pop();
+    // // array.shift();
+    // // const result = array.join(' ');
+    // // console.log(result);
+    
+    // const result = string.split(' ').slice(1, -1).join(' ');
+    // console.log(result);
+    // // console.log(string);
+    // // console.log(strMassive);
+}
+{ /* Example 6 - Масиви та рядки
+* Напиши скрипт, який "розгортає" рядок (зворотний порядок букв) і виводить його в консоль
+* 
+* 
+*/
+// const string = 'Welcome to the future';
+//     const result = string.split('').reverse().join('');
+
+//     console.log(result);
+}
+{ /* Example 7 - Сортування масиву із циклом
+* Напиши скрипт сортування масиву рядків в алфавітному порядку за першою літерою елемента.
+* 
+* 
+*/
+    const langs = ['python', 'javascript', 'c++', 'haskel', 'php', 'ruby'];
+    
+    // const arr = [];
+
+    for (let i = 0; i < langs.length; i += 1) {
+        if (langs[0] > langs[i]) {
+            const result = langs.splice(i, 1)[0];
+            langs.unshift(result);
+        }
+    }
+    console.log(langs);
 
 }
+{ /* Example 8 - 
+* Напиши скрипт пошуку найменшого числа у масиві.
+* Код повинен працювати для будь-якого масиву чисел.
+* Використовуй цикл для розв'язання задачі.
+*/
+//     const numbers = [2, 17, 94, 1, 23, 37];
+//     let min = numbers[0];
+//     for (const value of numbers) {
+//         if (value < min) {
+//             min = value;
+//         }
+// }
+
+//     console.log(min); // 1
+}
+
+
+
+
+
 
 
 
