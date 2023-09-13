@@ -8,13 +8,13 @@ const isOpen = true;
 const shouldConfigm = false;
 
 
-console.log(totalPrice);
+// console.log(totalPrice);
 
-const type = typeof userName;
+// const type = typeof userName;
 
-console.log(type);
+// console.log(type);
 
 
-console.log("До");
-alert("messages");
-console.log("после");
+// console.log("До");
+// alert("messages");
+// console.log("после");
