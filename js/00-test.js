@@ -1,5 +1,5 @@
 
-{    console.log(`ЗАДАЧА 1 - сумма зарплат работников`);
+{ console.log(`ЗАДАЧА 1 - сумма зарплат работников`);
     /*
     * Напишите скрипт, который подсчитывает общую сумму зарплат работников.
     * Кол-во работников хранится в переменной employees.
@@ -20,22 +20,11 @@
     //     const salary = Math.round(
     //         Math.random() * (maxSalary - minSalary) + minSalary);
 
-<<<<<<< HEAD
     //     console.log(`ЗП работника номер ${i} - ${salary}`)
-=======
-        // console.log(`ЗП работника номер ${i} - ${salary}`)
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
 
     //     // 4. Суммировать все з.п.
     //     totalSalary += salary;
-
-<<<<<<< HEAD
-    // }
     // // 5. Лог
-=======
-    }
-    // 5. Лог
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
     // console.log('totalSalary; ', totalSalary);
 }
 
@@ -101,7 +90,7 @@
 
 }
 
-{    console.log(`Task 5`);
+{    console.log(`Task 5 - Посчитать общую сумму покупок в корзине`);
     /*
     *Посчитать общую сумму покупок в корзине
    */
@@ -109,21 +98,14 @@
     // const cart = [54, 28, 105, 70, 92, 120, 45, 54, 78, 87];
     // let total = 0;
 
-    // // for (let i = 0; i < cart.length; i += 1) {
-    // //     // console.log(cart[i]);
-    // //     total += cart[i];
-    // // }
+    // for (let i = 0; i < cart.length; i += 1) {
+    //     // console.log(cart[i]);
+    //     total += cart[i];
+    // }
 
     // for (const value of cart) {
     //     total += value;
     // }
-<<<<<<< HEAD
-=======
-
-    for (const value of cart) {
-        total += value;
-    }
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
     // console.log(`Total: `, total);
 
 }
@@ -132,26 +114,6 @@
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
-    
-<<<<<<< HEAD
-//     const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
-//     let total = 0;
-//     // 1. Переменная тотал
-//     // 2. Перебрать массив
-//     for (let i = 0; i < numbers.length; i += 1) {
-//         // console.log(numbers[i]);
-    
-        
-//     // 3. На каждой итерации проверить четность элемента
-//     if (numbers[i] % 2 === 0) {
-//         // console.log(`Четное `);
-
-//     // 4. Если четное - плюсуем к тотал
-//         total += numbers[i];
-//    }     
-// }
-//     console.log(`Total: `, total);
-=======
     const numbers = [1, 5, 8, 9, 12, 4, 15, 27, 30, 18, 11];
     let total = 0;
     // 1. Переменная тотал
@@ -169,11 +131,9 @@
    }     
 }
     // console.log(`Total: `, total);
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
-
 }
 
-{    console.log(`Task 6.2`);
+{    console.log(`Task 6.2 - сумма всех четных чисел в массиве`);
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -183,25 +143,16 @@
     // for (const number of numbers) {
     //     // console.log(number);
 
-<<<<<<< HEAD
-    //     if (number % 2 === 0) {
-    //         console.log(`${number} - Четное!!!`);
-        
-    //         total += number;
-    //     }
-    // } console.log(`Total: `, total);
-=======
-        if (number % 2 === 0) {
+
+        // if (number % 2 === 0) {
             // console.log(`${number} - Четное!!!`);
         
-            total += number;
-        }
-    }
+            // total += number;
+        // }
     // console.log(`Total: `, total);
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
 }
 
-{    console.log(`Task 6.3`);
+{    console.log(`Task 6.3 - сумма всех четных чисел в массиве`);
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -209,28 +160,17 @@
     // let total = 0;
 
     // for (const number of numbers) {
-    //     // console.log(number);
+    //     console.log(number);
 
-<<<<<<< HEAD
     //     if (number % 2 !== 0) {
     //         console.log(number, `Эту итерацию пропустить`);
     //         continue;
     //     }
     //     console.log(`${number} - Четное!!!`);
     //     total += number;
-        
-    // } console.log(`Total: `, total);
-=======
-        if (number % 2 !== 0) {
-            // console.log(number, `Эту итерацию пропустить`);
-            continue;
-        }
-        // console.log(`${number} - Четное!!!`);
-        total += number;
-        
-    }
+    // }
+    
     // console.log(`Total: `, total);
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
 }
 
 {    console.log(`Task 7.1`);
@@ -242,7 +182,7 @@
 * - Через for
 */
 
-<<<<<<< HEAD
+
     // const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
     // const loginToFind = `poly1scute`;
     // let message = ``;
@@ -259,10 +199,26 @@
     //             message = `Пользователь ${loginToFind} не найден.`;
     //         }
     //         console.log(message);
+
+    //     const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+    // const loginToFind = `poly1scute`;
+    // let message = `Пользователь ${loginToFind} не найден.`;
+
+    // for (let i = 0; i < logins.length; i += 1) {
+    //     const login = logins[i];
+
+    //     // console.log(`Login: `, login);
+
+    //     if (login === loginToFind) {
+    //         message = `Пользователь ${loginToFind} найден.`;
+    //         break;
+    //     }
+    // }
+    // console.log(message);
 }
-        
 
 {
+    console.log(`Task 7.2`);
     // Задача 7.2
     /* Напиши скрипт поиска логина
     * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -281,45 +237,27 @@
     // }
     // console.log(message);
     
-=======
-    const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
-    const loginToFind = `poly1scute`;
-    let message = `Пользователь ${loginToFind} не найден.`;
-
-    for (let i = 0; i < logins.length; i += 1) {
-        const login = logins[i];
-
-        // console.log(`Login: `, login);
-
-        if (login === loginToFind) {
-            message = `Пользователь ${loginToFind} найден.`;
-            break;
-        }
-    }
-    // console.log(message);
-}
-
-{    console.log(`Task 7.2`);
-/* Напиши скрипт поиска логина
-* - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
-* - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
-*
-* - Через for...of
-*/
-    const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
-    const loginToFind = `k1widab3st`;
-    let message = `Пользователь ${loginToFind} не найден.`;
+    // {
+        /* Напиши скрипт поиска логина
+        * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
+        * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
+        *
+        * - Через for...of
+        */
+    //     const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+    //     const loginToFind = `k1widab3st`;
+    //     let message = `Пользователь ${loginToFind} не найден.`;
     
-    for (const login of logins) {
-                if (login === loginToFind) {
-            message = `Пользователь ${loginToFind} найден.`;
-            break;
-        }
+    //     for (const login of logins) {
+    //         if (login === loginToFind) {
+    //             message = `Пользователь ${loginToFind} найден.`;
+    //             break;
+    //         }
 
-    }
-    // console.log(message);
+    //     }
+    //     // console.log(message);
+    // }
 
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
 }
 
 {    console.log(`Task 7.3`);
@@ -341,12 +279,12 @@
     *
     * - Метод include() с тернарным оператором
     */
-    const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
-    const loginToFind = `poly1scute`;
+    // const logins = [`m4ngoDoge`, `k1widab3st`, `poly1scute`, `aj4xth3m4n`];
+    // const loginToFind = `poly1scute`;
 
 
 
-    const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден.` : `Пользователь ${loginToFind} не найден.`;
+    // const message = logins.includes(loginToFind) ? `Пользователь ${loginToFind} найден.` : `Пользователь ${loginToFind} не найден.`;
 
     // console.log(message);
 
@@ -358,23 +296,23 @@
 *
 */
 
-    const numbers = [51, 18, 13, 24, 7, 85, 19];
-    let smallestNumber = numbers[0];
+    // const numbers = [51, 18, 13, 24, 7, 85, 19];
+    // let smallestNumber = numbers[0];
 
-    for (const number of numbers) {
-    if (number < smallestNumber) {
-            smallestNumber = number;
-        }
-    }
-    // console.log(smallestNumber);
+    // for (const number of numbers) {
+    // if (number < smallestNumber) {
+    //         smallestNumber = number;
+    //     }
+    // }
+    // // console.log(smallestNumber);
 
-        let biggestNumber = numbers[0];
+    //     let biggestNumber = numbers[0];
 
-        for (const number of numbers) {
-    if (number > biggestNumber) {
-            biggestNumber = number;
-        }
-    }
+    //     for (const number of numbers) {
+    // if (number > biggestNumber) {
+    //         biggestNumber = number;
+    //     }
+    // }
     // console.log(biggestNumber);
 }
 
@@ -389,7 +327,7 @@
 * - 
 */
 
-    const friends = [`Mango`, `Kiwi`, `Poly`, `Ajax`, `Bread`];
+    // const friends = [`Mango`, `Kiwi`, `Poly`, `Ajax`, `Bread`];
     // let string = '';
     // Должно получиться: Mango,Kiwi,Poly,Ajax
 
@@ -411,25 +349,25 @@
 * Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
 */
 
-    const string = 'JavaScript';
-    const letters = string.split('');
-    let invertedString = '';
+    // const string = 'JavaScript';
+    // const letters = string.split('');
+    // let invertedString = '';
 
-    // console.log(letters);
+    // // console.log(letters);
 
-    for (const letter of letters) {
-        // console.log(letter);
+    // for (const letter of letters) {
+    //     // console.log(letter);
 
-        // if (letter === letter.toLowerCase()) {
-        //     console.log(`Эта буква в нижнем регистре!!! - `, letter);
+    //     // if (letter === letter.toLowerCase()) {
+    //     //     console.log(`Эта буква в нижнем регистре!!! - `, letter);
 
-        //     invertedString += letter.toUpperCase();
-        // } else {
-        //     invertedString += letter.toLowerCase();
-        // }
+    //     //     invertedString += letter.toUpperCase();
+    //     // } else {
+    //     //     invertedString += letter.toLowerCase();
+    //     // }
 
-        invertedString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
-    }
+    //     invertedString += letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase();
+    // }
     // console.log(invertedString);
 
 
@@ -558,10 +496,6 @@ const slug1 = title.toLowerCase().split(' ').join('-');
 
 }
 
-
-
-console.log(`Functions`);
-
 {    console.log(`Task F-1 - массив чисел + сумма`);
 /* Напиши функцию calculateTotalPrice(items)
 * которая принимает массив цен (чисел) и возвращает их сумму
@@ -574,14 +508,13 @@ console.log(`Functions`);
 
 // for (const value of cart) {
 //     total +=value;
-// }
+}
 
+{ console.log('Task - the natural numbers');
 
-<<<<<<< HEAD
-
-{
-/* <p>If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3, 5, 6$ and $9$. The sum of these multiples is $23$.</p>
-<p>Find the sum of all the multiples of $3$ or $5$ below $1000$.</p> */
+/* If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3, 5, 6$ and $9$. The sum of these multiples is $23$.
+* Find the sum of all the multiples of $3$ or $5$ below $1000$. 
+*/
     // const min = 0;
     // const max = 1000;
     // let total = 0;
@@ -589,7 +522,7 @@ console.log(`Functions`);
     // for (let i = min; i < max; i += 1) {
         
     //     if (!(i % 3) || !(i % 5)) {
-    //         console.log('first: ', i)
+    //         // console.log('first: ', i)
     //         total += i;
     //     } 
         
@@ -597,50 +530,41 @@ console.log(`Functions`);
     // console.log(total);
 }
 
-{
+{ console.log('Task - the Fibonacci sequence')
     /* Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with and, the first terms will be:
     * 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
     * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms. 
     */
     
-//     const firstNumber = 0;
-//     let numbers = [0, 1, 2];
-//     let counter = 4000000;
-//     let lastNumber = numbers[numbers.length - 1];
-//     let total = 0;
+    const firstNumber = 0;
+    let numbers = [0, 1, 2];
+    let counter = 4000000;
+    let lastNumber = numbers[numbers.length - 1];
+    let total = 0;
 
-// // 1. Формирование массива чисел Фибоначчи
+    // 1. Формирование массива чисел Фибоначчи
 
-// // 2. сравнение последнего числа в массиве с заданным пределом и остановка формирования массива
-//     while (counter >= lastNumber) {
-//         numbers.push(numbers[numbers.length - 1] + numbers[numbers.length - 2]);
-//         lastNumber = numbers[numbers.length - 1];
-//     }
+    // 2. сравнение последнего числа в массиве с заданным пределом и остановка формирования массива
+    while (counter >= lastNumber) {
+        numbers.push(numbers[numbers.length - 1] + numbers[numbers.length - 2]);
+        lastNumber = numbers[numbers.length - 1];
+    }
 
-//     // 3. Поиск четных членов ряда в массиве
-//     // 4. Суммирование четных членов ряда в массиве.
+    // 3. Поиск четных членов ряда в массиве
+    // 4. Суммирование четных членов ряда в массиве.
 
-//     for (const number of numbers) {
-//         if (!(number % 2)) {
-//             total += number;
-//         }
-//     }
-    
-    
-
-
-//     console.log('lastNumber: ', lastNumber)
-//     console.log('counter: ', counter);
-//     console.table(numbers);
-//     console.table('total: ', total);
+    for (const number of numbers) {
+        if (!(number % 2)) {
+            total += number;
+        }
+    }
+    // console.log('lastNumber: ', lastNumber)
+    // console.log('counter: ', counter);
+    // console.table(numbers);
+    // console.table('total: ', total);
 }
-{
-    
 
-}
-=======
-// console.log(`Total: `, total);
-
+{ console.log('Task - calculateTotalPrice')
 const calculateTotalPrice = function (items){
     console.log(`items внутри функции: `, items);
 
@@ -657,7 +581,6 @@ const calculateTotalPrice = function (items){
 // console.log(calculateTotalPrice([5, 10, 15, 20])); // 50
 // console.log(calculateTotalPrice([100, 200, 300])); // 600
 // console.log(calculateTotalPrice([54, 28, 105, 70, 92, 17, 120, 12, 25, 90])); 
-
 
 }
 
@@ -676,9 +599,6 @@ const logItems = function (items){
 logItems([`Mango`, `Kiwi`, `Poly`, `Ajax`]);
 logItems([1, 2, 3, 4, 5]);
 logItems([`клавиатура`, `наушники`, `часы`]);
-
-
-
 
 }
 
@@ -712,8 +632,6 @@ const findLogin = function (allLogins, loginToFind) {
 // console.log(findLogin(logins, `aj4xth3m4n`));
 // console.log(findLogin(logins, `ajdfdxth4n`));
 // console.log(findLogin(logins, `aj4xtdfd4n`));
-
-
 }
 
 {    console.log(`Task F-4 - поиск самого маленького числа в массиве`);
@@ -739,7 +657,6 @@ const findLogin = function (allLogins, loginToFind) {
 // console.log(findSmallesNumber([100, 54, 8, 12, 47])); // 8
 // console.log(findSmallesNumber([7, 21, 84, 15, 4])); // 4
 // console.log(findSmallesNumber([51, 18, 13, 24, 7, 85, 19])); // 7
-
 }
 
 {   console.log(`Task F-5 - замена регистра каждого символа в строе на противоположный`);
@@ -800,18 +717,13 @@ const findLogin = function (allLogins, loginToFind) {
     // console.log(slugify('Top 10 benefits of React framework'));
     // console.log(slugify('Azure Static Web Apps are Awesome'));
     // console.log(slugify('Technical writing tips for non-native English speakers'));
-    
-    
-
-
-
 }
 
-{    console.log(`Task F-7 - Псевдомассив argunents и Array.from и ...`);
+{console.log(`Task F-7 - Псевдомассив argunents и Array.from и ...`);
 
-/*
-* Псевдомассив argunents и Array.from и ...
-*/
+    /*
+    * Псевдомассив argunents и Array.from и ...
+    */
     
     // const fn = function () {
     //     console.log(arguments);
@@ -834,8 +746,10 @@ const findLogin = function (allLogins, loginToFind) {
     // fn('hello', 1, 2, 3, 4);
     // fn('aloha', 1, 2, 3, 4, 5, 6);
     // fn('hi', 1, 2, 3, 4, 5, 6, 7, 8, 9);
+}
 
-/* Напиши функцию add для сложения произвольного количества аргументов (чисел)
+{console.log('Task - сложения произвольного количества аргументов')
+    /* (Напиши функцию add для сложения произвольного количества аргументов (чисел))
 * - Array.from()
 * - Операция ... (rest)
 */
@@ -854,9 +768,6 @@ const findLogin = function (allLogins, loginToFind) {
 
     // console.log(add(1, 2, 3,));
     // console.log(add(1, 2, 3, 4, 5, 6));
-    
-
-
 }
 
 {    console.log(`Task F-8`);
@@ -887,12 +798,9 @@ const findLogin = function (allLogins, loginToFind) {
         // console.log(filterNumbers([10, 15, 25, 30], 23, 30, 18, 15)); // [30, 15]
         // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
 
-
-
-
 }
 
-{ console.log(`Function + Function (Freelancer - Рекурсия)`);
+{ console.log(`Task - Function + Function (Freelancer - Рекурсия)`);
 
     // function calcSumm(numOne, numTwo) {
     //     let result = 1;
@@ -916,31 +824,27 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-
-
-
-
 {    console.log(`Task AutoCheck-21`);
 /* Напиши функцию findLongestWord(string) которая принимает произвольную
 * строку состоящую только из слов разделённых пробелом (параметр string) и
 * возвращает самое длинное слово в этой строке.
 */
-    function findLongestWord(string) {
+    // function findLongestWord(string) {
 
-        let arrayWords = 0;
-        arrayWords = string.split(' ');
-        // console.log(arrayWords);
+    //     let arrayWords = 0;
+    //     arrayWords = string.split(' ');
+    //     // console.log(arrayWords);
 
-        let maxWord = arrayWords[0];
-        for (let arrayWord of arrayWords) {
-            // console.log(arrayWord);
+    //     let maxWord = arrayWords[0];
+    //     for (let arrayWord of arrayWords) {
+    //         // console.log(arrayWord);
 
-            if (arrayWord.length > maxWord.length) {
-                 maxWord = arrayWord;
-                // console.log(maxWord);
-            } 
-        } return maxWord;
-    }
+    //         if (arrayWord.length > maxWord.length) {
+    //              maxWord = arrayWord;
+    //             // console.log(maxWord);
+    //         } 
+    //     } return maxWord;
+    // }
         // console.log(findLongestWord("The quick brown fox jumped over the lazy dog")) // jumped
         // console.log(findLongestWord("Google do a roll")) // Google
         // console.log(findLongestWord("May the force be with you")) // force
@@ -970,7 +874,6 @@ for (i = min; i <= max; i += 1) {
     // console.log(createArrayOfNumbers(29, 34)); // [29, 30, 31, 32, 33, 34]
 
 }
-
 
 {console.log('Example: Кнопочки + -')
     
@@ -1014,7 +917,7 @@ for (i = min; i <= max; i += 1) {
 }
 
 
->>>>>>> dcdccbb4a6e781f1043da2f9875d11d45ba3459a
+
 
 
 
