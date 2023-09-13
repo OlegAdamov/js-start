@@ -301,12 +301,33 @@
 }
 
 { console.log('Example 1 - Індекс маси тіла')
-/* 
-* 
-* 
+/* Напиши функцію calkBMI (wieght, height), яка розрахує та поверне індекс маси тіла людини.
+* Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини в метрах.
+* Вага та висота будуть спеціально передані, як рядки.
+* Не цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто, як роздільник дробової частини може бути кома.
+* ІМТ треба округлити до однієї цифри після коми.
 */
     
+    // const bmi = calkBMI('88.3', '1.75');
     
+    function createString(name, year) {
+        const result = add(year);
+        return `${name} years ${result}`;
+
+    }
+
+    console.log(createString('Mango', [1, 2, 3]));
+    
+    function add(arr) {
+        let sum = 0;
+        for (const num of arr) {
+            sum += num;
+        }
+        return sum;
+    }
+
+
+
 }
 { console.log('Task - ')
 /* 
