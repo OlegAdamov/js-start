@@ -1,5 +1,5 @@
 
-{
+{ console.log('functions')
     // // 1. Объявление функции multiply
     // function multiply() {
     //     // Тело функции
@@ -12,7 +12,7 @@
     // multiply(); // "Это лог при вызове функции multiply"
 }
 
-{
+{ console.log('parametrs and arguments')
 // // Объявление параметров x, y, z
 //     function multiply(x, y, z) {
 //         console.log(`Результат умножения равен ${x * y * z}`);
@@ -23,7 +23,7 @@
 //     multiply(359, 498, 255); // Результат умножения равен 45509410
 }
 
-{
+{ console.log('return')
     // function multiply(x, y, z) {
     //     console.log("Код до return выполняется как обычно");
     //     // Возвращаем результат выражения умножения
@@ -42,7 +42,7 @@
     // console.log(result);
 }
 
-{
+{ console.log('Task - calculateTotalPrice')
 /* 
  * Напиши функцию calculateTotalPrice(items)
  * которая принимает массив цен (чисел) и возвращает их сумму.
@@ -70,7 +70,7 @@
     // console.log(calculateTotalPrice([100, 200, 300])); // 600
 }
 
-{
+{ console.log('Task - перебор и логирования массива')
 // /* 
 //  * Напиши функцию logItems(items) для перебора и логирования массива
 //  */
@@ -86,10 +86,7 @@
 //     logItems(["Клавиатура",  "Наушники", "Часы", "Микрофон"]);
 }
 
-
-
-
-{
+{ console.log('Task - поиск логина')
     /* 
      * Напиши функцию findLogin(allLogins, login) для поиска логина
      * - Если логина нет, вывести сообщение 'Пользователь [логин] не найден'
@@ -137,7 +134,7 @@
     // console.log(findLogin(logins, 'poly1scute'));
 }
 
-{
+{ console.log('Task - поиск самого маленького числа в массиве')
 
     /* Напиши скприпт поиска самого маленького числа в массиве
     * при условии, что числа уникальные (не повторяются).
@@ -162,7 +159,7 @@
     // console.log(findSmallestNumber([7, 21, 84, 15, 4])); // 4
 }
 
-{
+{ console.log('Task - замена регистра каждого символа в строке')
     /* Напиши функцию changeCase(string), которая заменяет регистр каждого символа в строке на 
     * противоположный.
     * Например, если строка "JavaScript", то на выходе должна быть строка
@@ -194,7 +191,7 @@
     // console.log(changeCase('AjAx')); // aJaX
 }
 
-{
+{ console.log('Task - возврат URL-slug')
     /*  Напиши функцию slugify(string) которая получает строку и возвращает URL-slug из названия статьи (например на dev.to)
     * Заголовок статьи состоит только из букв и пробелов
     * 
@@ -220,7 +217,7 @@
 
 }
 
-{
+{ console.log('Tasl - makeStringFromArray')
 // function makeStringFromArray(array, delimeter) {
 //   let string;
 //   // Change code below this line
@@ -249,7 +246,7 @@
 
 }
 
-{
+{ console.log('...(rest)')
     //     const fn = function (...args) {
     //             console.log(args);
     //     };
@@ -259,7 +256,8 @@
     //     fn(1, 2, 3, 4, 5, 6, 7);
     // };
 }
-{
+
+{ console.log('Task - сложене произвольного количества аргументов')
 /*
 * Напиши функцию add для сложения произвольного количества аргументов (чисел)
 * - операция ... (rest)
@@ -281,7 +279,7 @@
 
 }
 
-{
+{ console.log('Task - filterNumbers')
     // const filterNumbers = function (array, ...args) {
     //     // console.log('array: ', array);
     //     // console.log('args: ', args);
@@ -302,6 +300,30 @@
     // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
 }
 
+{ console.log('Example 1 - Індекс маси тіла')
+/* 
+* 
+* 
+*/
+    
+    
+}
+{ console.log('Task - ')
+/* 
+* 
+* 
+*/
+    
+    
+}
+{ console.log('Task - ')
+/* 
+* 
+* 
+*/
+    
+    
+}
 
 
 
