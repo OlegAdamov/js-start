@@ -75,15 +75,15 @@
 //  * Напиши функцию logItems(items) для перебора и логирования массива
 //  */
     
-//     const logItems = function (items) {
-//         for (const item of items) {
-//             console.log(item);
-//         }
-//     }
+    // const logItems = function (items) {
+    //     for (const item of items) {
+    //         console.log(item);
+    //     }
+    // }
     
-//     logItems(["Mango",  "Poly", "Kiwi", "Ajax"]);
-//     logItems([1, 2, 3, 4, 5]);
-//     logItems(["Клавиатура",  "Наушники", "Часы", "Микрофон"]);
+    // logItems(["Mango",  "Poly", "Kiwi", "Ajax"]);
+    // logItems([1, 2, 3, 4, 5]);
+    // logItems(["Клавиатура",  "Наушники", "Часы", "Микрофон"]);
 }
 
 { console.log('Task - поиск логина')
@@ -246,7 +246,7 @@
 
 }
 
-{ console.log('...(rest)')
+{ console.log('Task - ...(rest)')
     //     const fn = function (...args) {
     //             console.log(args);
     //     };
@@ -305,31 +305,155 @@
 * Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини в метрах.
 * Вага та висота будуть спеціально передані, як рядки.
 * Не цілі числа можуть бути задані у вигляді 24.7 або 24,7, тобто, як роздільник дробової частини може бути кома.
-* ІМТ треба округлити до однієї цифри після коми.
+* ІМТ треба округлити до однієї цифри після крапки.
 */
     
-    // const bmi = calkBMI('88.3', '1.75');
+    // function calcBMI(weight, height) {
+    //     weight = Number(weight.replace(',', '.'));
+    //     height = Number(height.replace(',', '.'));
+
+    //     return Number((weight / (height ** 2)).toFixed(1));
+    // }
     
-    function createString(name, year) {
-        const result = add(year);
-        return `${name} years ${result}`;
-
-    }
-
-    console.log(createString('Mango', [1, 2, 3]));
-    
-    function add(arr) {
-        let sum = 0;
-        for (const num of arr) {
-            sum += num;
-        }
-        return sum;
-    }
-
-
+    // const bmi = calcBMI('88,3', '1.75');
+    // console.log(bmi);
 
 }
-{ console.log('Task - ')
+{ console.log('Task - Найменше з чисел')
+/* Напиши функцію min (a, b), яка повертає найменше з чисел a та b.
+*/
+
+    // function min(a, b) {
+    //     return a > b ? b : a;
+    //     }
+    
+    // console.log(min(2, 5)); // 2
+    // console.log(min(3, -1)); // -1
+    // console.log(min(1, 1)); // 1
+    
+}
+{ console.log('Task - Площа прямокутника')
+/* Напиши функцію getRectArea(dimensions) для обчислення площі прямокутника зі сторонами,
+* значення яких будуть передані до параметра dimensions у вигляді рядка.
+* Значення гарантовано розділені пробілом.
+*/
+    // function getRectArea(dimensions) {
+    //     dimensions = dimensions.split(' ');
+
+    //     const first = Number(dimensions[0]);
+    //     const second = Number(dimensions[1]);
+
+    //     const result = first * second;
+    //     return result;
+    // }
+    
+    
+    // console.log(getRectArea('8 18'));
+    // console.log(getRectArea('46 11'));
+    // console.log(getRectArea('8 112'));
+}
+{ console.log('Task - Логування елементів')
+/* Напиши функцію logItems(items), яка отримує масив та використовує циел for,
+* який для кожного елемента масиву буде виводити в консоль повідомлення у форматі
+* <номер елемента> - <значення елемента>.
+* Нумерація елементів повинна починатися з 1.
+*/
+    //     function logItems(items) {
+    //         for (let i = 0, n = 1; i < items.length; i +=1, n += 1) {
+    //         console.log(`${n}. - ${items[i]}`);
+            
+    //     }
+    // }
+    
+    // logItems(["Mango",  "Poly", "Kiwi", "Ajax"]);
+    // logItems([1, 2, 3, 4, 5]);
+    // logItems(["Клавиатура",  "Наушники", "Часы", "Микрофон"]);
+    
+}
+{ console.log('Task - Логування контактів')
+/* Напиши функцію printContactsInfo(names, phones), яка виводить у консоль ім'я
+* та телефонний номер користувача.
+* У параметри names та phones будуть передані рядки імен та телефонних номерів,
+* розділених комами.
+* Порядковий номер імен та телефонів у рядках вказують на відповідністью
+* Кількість імен та телефонів гарантовано однакова.
+*/
+    // function printContactsInfo(names, phones) {
+    //     const namesMassive = names.split(',');
+    //     const phonesMassive = phones.split(',');
+        
+    //     for (let i = 0, n = 1; i < namesMassive.length, i < phonesMassive.length; i+=1) {
+    //             console.log(`${n}. ${namesMassive[i]} ${phonesMassive[i]}`);
+    //         }
+    //         // console.log(namesMassive);
+    //         // console.log(phonesMassive);
+    //     }
+            
+    //     printContactsInfo('Jacob,William,Solomon,Artem', '89001234567,89001112233,890055566377,890055566300');
+}
+{ console.log('Task - Пошук найбільшого елемента')
+/* Напиши функцію findLargestNumber(numbers), яка шукає найбільше число в масиві
+* 
+* 
+*/
+    function findLargestNumber() { 
+        // const arr = Array.from(arguments)
+        const arr = [...arguments];
+        let max = arr[0];
+        
+        for (const num of arr) {
+            if (num > max) {
+                max = num;
+            }
+        }
+        return max;
+    }
+    
+    console.log(findLargestNumber(2, 17, 94, 1, 33, 37)); // 94
+    console.log(findLargestNumber(49, 4, 7, 83, 12)); // 83
+}
+{ console.log('Task 7 - Середнє значення')
+/* Напиши функцію calAverage(), яка приймає довільну кількість аргументів і
+* повертає їхнє середнє значення.
+* Усі аргументи будуть лише числами.
+*/
+
+    function calAverage() {
+
+    }
+
+
+    console.log(calAverage(1, 2, 3, 4)) // 2.5
+    console.log(calAverage(14, 8, 2)) // 8
+    console.log(calAverage(27, 43, 2, 8, 36)) // 23.2
+    
+    
+}
+{ console.log('Task 8 - Формтування часу')
+/* Напиши функцію formatTime(minutes), яка переведе значення minutes (кількість хвилин)
+* у рядок у форматі годин та хвилин HH:MM.
+* 
+*/
+    
+    const hours = Math.floor(totalMinutes / 60);
+    const minutes = totalMinutes % 60;
+    console.log(hours);
+    console.log(minutes);
+
+    const doubleDigitHours = String(hours).padStart(2, 0)
+    const doubleDigiMinutes = String(minutes).padStart(2, 0)
+    
+    console.log(`${doubleDigitHours}:${doubleDigiMinutes}`);
+
+    function formatTime(minutes) {
+
+    }
+
+    console.log(formatTime(70)); // "01:10"
+    console.log(formatTime(450)); // "07:30"
+    console.log(formatTime(1441)); // "24:01"
+}
+{ console.log('Task 9 - Колекція курсів')
 /* 
 * 
 * 
