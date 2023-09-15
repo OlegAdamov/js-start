@@ -396,69 +396,157 @@
 * 
 * 
 */
-    function findLargestNumber() { 
-        // const arr = Array.from(arguments)
-        const arr = [...arguments];
-        let max = arr[0];
+    // function findLargestNumber() { 
+    //     // const arr = Array.from(arguments)
+    //     const arr = [...arguments];
+    //     let max = arr[0];
         
-        for (const num of arr) {
-            if (num > max) {
-                max = num;
-            }
-        }
-        return max;
-    }
+    //     for (const num of arr) {
+    //         if (num > max) {
+    //             max = num;
+    //         }
+    //     }
+    //     return max;
+    // }
     
-    console.log(findLargestNumber(2, 17, 94, 1, 33, 37)); // 94
-    console.log(findLargestNumber(49, 4, 7, 83, 12)); // 83
+    // console.log(findLargestNumber(2, 17, 94, 1, 33, 37)); // 94
+    // console.log(findLargestNumber(49, 4, 7, 83, 12)); // 83
+}
+{console.log('Task - Пошук найбільшого елемента зі списку із вкладеними масивами')
+/* Напиши функцію findLargestNumber(numbers), яка шукає найбільше число в масиві
+* 
+* 
+*/
+//     function findLargestNumber() {
+//         let max;
+
+//         for (const num of arguments) {
+//             if (typeof num === 'number') {
+//                 max = num;
+//                 break;
+//             }
+//         }
+
+//         for (const num of arguments) {
+//             if (typeof num === 'number') {
+//                 if (num > max) {
+//                     max = num
+//                 }
+//             } else {
+//                 max = findLargestNumber(...num)
+//             }
+//        }
+//     return max;
+//     }
+
+
+// console.log(findLargestNumber(2, 17, 94, 34, 33, 37));
+// console.log(findLargestNumber(2, 17, 94, [34, 134, 432], 33, 37));
+// console.log(findLargestNumber(2, 17, 94, [34, 134, 432, [400, 600]], 33, 37));
 }
 { console.log('Task 7 - Середнє значення')
 /* Напиши функцію calAverage(), яка приймає довільну кількість аргументів і
 * повертає їхнє середнє значення.
 * Усі аргументи будуть лише числами.
 */
+    // function calAverage() {
+    //     let total = 0;
+    //     for (const num of arguments) {
+    //         total += num;
+    //     }
+    //     return total / arguments.length;
+    // }
 
-    function calAverage() {
-
-    }
-
-
-    console.log(calAverage(1, 2, 3, 4)) // 2.5
-    console.log(calAverage(14, 8, 2)) // 8
-    console.log(calAverage(27, 43, 2, 8, 36)) // 23.2
-    
-    
+    // console.log(calAverage(1, 2, 3, 4)) // 2.5
+    // console.log(calAverage(14, 8, 2)) // 8
+    // console.log(calAverage(27, 43, 2, 8, 36)) // 23.2
 }
 { console.log('Task 8 - Формтування часу')
 /* Напиши функцію formatTime(minutes), яка переведе значення minutes (кількість хвилин)
 * у рядок у форматі годин та хвилин HH:MM.
 * 
-*/
-    
-    const hours = Math.floor(totalMinutes / 60);
-    const minutes = totalMinutes % 60;
-    console.log(hours);
-    console.log(minutes);
+*/    
+// function formatTime(minutes) {
+//     const hours = Math.floor(minutes / 60);
+//     minutes = minutes % 60;
 
-    const doubleDigitHours = String(hours).padStart(2, 0)
-    const doubleDigiMinutes = String(minutes).padStart(2, 0)
-    
-    console.log(`${doubleDigitHours}:${doubleDigiMinutes}`);
+//     return `${hours.toString().padStart(2, '0')} : ${minutes.toString().padStart(2, '0')}`;
+//     }
 
-    function formatTime(minutes) {
-
-    }
-
-    console.log(formatTime(70)); // "01:10"
-    console.log(formatTime(450)); // "07:30"
-    console.log(formatTime(1441)); // "24:01"
+//     console.log(formatTime(70)); // "01:10"
+//     console.log(formatTime(450)); // "07:30"
+//     console.log(formatTime(1441)); // "24:01"
 }
-{ console.log('Task 9 - Колекція курсів')
-/* 
+{ console.log('Task 9 - Колекція курсів (includes, indexOf, push і т. д.')
+/* Напишіть функції для роботи з колекцією навчальних крусів cousres:
+* addCourse(name) - додає курс до кінця колекції
+* removeCourse(name) - видаляє курс із колекції
+* updateCourse(name) - додає курс до кінця колекції
+* 
 * 
 * 
 */
+  
+//     const courses = ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL'];
+
+//     function addCourse(course) {
+//         if (courses.includes(course)) {
+//             return 'Ви вже маєте такий курс'
+//         }
+
+//         courses.push(course);
+// }
+
+//     addCourse('Express');
+//     console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'React', 'PostgreSQL', 'Express']
+//     console.log(addCourse('CSS')); //  'Ви вже маєте такий курс'
     
+    // // function removeCourse(course) {
+    // //     if (courses.includes(course)) {
+    // //         const idx = courses.indexOf(course)
+    // //         courses.splice(idx, 1);
+
+    // //         return
+    // //     }
+    // //     return "Курс із таким ім'ям не знайдено"
+    // // }
+
+    // function removeCourse(course) {
+    //     const idx = courses.indexOf(course);
+    //     if (!!~idx) {
+    //         courses.splice(idx, 1);
+    //         return
+    //     }
+    //     return "Курс із таким ім'ям не знайдено"
+    // }
+
+    // removeCourse('React');
+    // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL',]
+    // console.log(removeCourse('Vue')); // 'Курс із таким ім'ям не знайдено'
+
+    // function updateCourse(oldCourse, newCourse) {
+    //     const idx = courses.indexOf(oldCourse);
+    //     if (!!~idx) {
+    //         courses.splice(idx, 1, newCourse);
+    //         return
+
+    //     }
+    //     return "Курс із таким ім'ям не знайдено"
+    // }
+
+
+    // updateCourse('Express', 'NestJS');
+    // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL' 'NestJs']
+    // console.log(updateCourse('Express', 'NestJS'));
+    
+}
+{
+    console.log('Task - ')
+    /* 
+    * 
+    * 
+    */
+
     
 }
 { console.log('Task - ')
