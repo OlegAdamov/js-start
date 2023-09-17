@@ -5,19 +5,15 @@ console.log('Repeta: ');
 * - Литерал объекта
 * - Свойства, ключи (имя) и значения
 * - Как отличить объект от области видимости
-*
-*
 */
+// const playlist = {
+//     name: 'Мой супер плейлист',
+//     rating: 5,
+//     tracks: ['track-1', 'track-2', 'track-3'],
+//     trackCount: 3,
+// };
 
-
-const playlist = {
-    name: 'Мой супер плейлист',
-    rating: 5,
-    tracks: ['track-1', 'track-2', 'track-3'],
-    trackCount: 3,
-};
-
-console.log(playlist);
+// console.log(playlist);
 }
 
 { console.log("Доступ к свойству")
@@ -25,7 +21,6 @@ console.log(playlist);
 * - obj.key
 * - obj[key]
 * - Отсутствующие свойства
-*
 */
 // const playlist = {
 //     name: 'Мой супер плейлист',
@@ -43,10 +38,12 @@ console.log(playlist);
 // console.log(playlist.trackCount);
 
 // console.log(playlist['rating']);
+    
+// const propertyName = 'tracks';
+// console.log(playlist[propertyName]);
 }
 
 { console.log("Короткая запись свойства")
-
 // const username = 'Mango';
 // const email = 'mango@mail.com'
 
@@ -59,29 +56,34 @@ console.log(playlist);
 
 { console.log("Вычисляемые свойства")
 
-{/* <input name="color" value="tomato">
+// <input name="color" value="tomato">
 
-const inputName = 'color';
-const inputValue = 'tomato';
+// const inputName = 'color';
+// const inputValue = 'tomato';
 
-const colorPickerData = {
-[inputName]: inputValue,
-};
+// const colorPickerData = {
+// [inputName]: inputValue,
+// };
+// console.log(colorPickerData);
+}
 
-console.log(colorPickerData); */}
+{    console.log("Добавление элементов в объект после его создания")
+    
+//     const playlist = {
+//     name: 'Мой супер плейлист',
+//     rating: 5,
+//     tracks: ['track-1', 'track-2', 'track-3'],
+//     trackCount: 3,
+// };
+
+//     laylist.rating = 15;
+//     playlist.phone = 10;
+    
+//     console.log(playlist.phone)
+//     console.log(playlist.rating)
 }
 
 {console.log("Методы объекта и this при обращении к свойствам в методах")
-
-    /* 
-* http://fecore.net.ua/books/m5ph3r-javascript/module-03/images/context.jpg
-*
-* - changeName
-* - addTrack
-* - updateRating
-* - getTrackCount
-*
-*/
 
     // const playlist = {
     //     name: 'Мой супер плейлист',
@@ -97,17 +99,18 @@ console.log(colorPickerData); */}
     // playlist.getName(5);
 }
 
-{    console.log('Task - 1')
-    /* Замена имени через функцию
-    * 
-    *
-    *
-    * - 
-    * - 
-    * - 
-    *
-    */
+{  console.log('Замена имени через функцию')
 
+        /* 
+* http://fecore.net.ua/books/m5ph3r-javascript/module-03/images/context.jpg
+*
+* - changeName
+* - addTrack
+* - updateRating
+* - getTrackCount
+*
+*/
+    
     // const playlist = {
     //     name: 'Мой супер плейлист',
     //     rating: 5,
@@ -141,18 +144,6 @@ console.log(colorPickerData); */}
     // // console.log(playlist);
 }
 
-
- 
-{/* object.entries(obj)
-*
-*
-* - 
-* - 
-* - 
-*
-*/
-}
-
 { console.log("Перебор через for...in и Object.keys|values|entries")
 
 // const feedback = {
@@ -161,19 +152,19 @@ console.log(colorPickerData); */}
 //     bad: 3,
 // };
 
-//     let totalFeedback = 0;
-    
-//     const keys = Object.keys(feedback); // Возвращает массив ключей
+// let totalFeedback = 0;
 
-//     console.log(keys);
+// const keys = Object.keys(feedback); // Возвращает массив ключей
 
-//     for (const key of keys) {
-//         console.log(key);
-//         console.log(feedback[key]);
+// console.log(keys);
 
-//         totalFeedback += feedback[key];
-//     }
-//     console.log('totalFeedback: ', totalFeedback);
+//     // for (const key of keys) {
+//     //     console.log(key);
+//     //     console.log(feedback[key]);
+
+//     //     totalFeedback += feedback[key];
+//     // }
+//     // console.log('totalFeedback: ', totalFeedback);
     
 
 //     const values = Object.values(feedback); // Возвращает массив значений
@@ -192,101 +183,95 @@ console.log(colorPickerData); */}
 
 {  console.log('Task - Работа с коллекцией(масивом объекта)');
 
-/*
-*
-*/
-
-    // const friends = [
-    //     { name: 'Mango', online: false },
-    //     { name: 'Kiwi', online: true },
-    //     { name: 'Poly', online: true },
-    //     { name: 'Ajax', online: false },
-    // ];
+    const friends = [
+        { name: 'Mango', online: false },
+        { name: 'Kiwi', online: true },
+        { name: 'Poly', online: true },
+        { name: 'Ajax', online: false },
+    ];
 
     // console.table(friends);
 
     // for (const friend of friends) {
+    //     console.log(friend);
     //     console.log(friend.name);
+    //     console.log(friend.online);
 
     //     friend.newprop = 555;
     // }
     
-    // console.table(friends);
+    console.table(friends);
     /* 
     * Ищем друга по имени
     */
     
-//     const findFriendByName = function (allFriends, friendName) { 
-//     for (const friend of allFriends) {
-//         // console.log(friend);
-//         // console.log(friend.name);
+    const findFriendByName = function (allFriends, friendName) { 
+    for (const friend of allFriends) {
+        // console.log(friend);
+        // console.log(friend.name);
 
-//         if (friend.name === friendName) {
-//             return "COMPLETE!!!"
-//         }
-//         } 
-//         return 'Do not complete !!!'
-// };
+        if (friend.name === friendName) {
+            return "COMPLETE!!!"
+        }
+        } 
+        return 'Do not complete !!!'
+};
     // console.log(findFriendByName(friends, 'Poly'));
     // console.log(findFriendByName(friends, 'Chelsy'));
 
 /* 
 * Получаем имена всех друзей
-*/
-    
-    // const getAllNames = function (allFriends) {
-    //     const names = [];
+*/    
+    const getAllNames = function (allFriends) {
+        const names = [];
 
-    //     for (const friend of allFriends) {
-    //         // console.log(friend.name);
+        for (const friend of allFriends) {
+            // console.log(friend.name);
 
-    //         names.push(friend.name);
-    //     }
+            names.push(friend.name);
+        }
 
-    //     return names;
-    // };
-
-
+        return names;
+    };
     // console.log(getAllNames(friends));
 
     /*
     * Получаем имена только друзей, которые онлайна
     */
-    // const getOnlineFriends = function (allFriends) {
-    //     const onlineFriends = [];
+    const getOnlineFriends = function (allFriends) {
+        const onlineFriends = [];
 
-    //     for (const friend of allFriends) {
-    //         // console.log(friend);
-    //         // console.log(friend.online);
+        for (const friend of allFriends) {
+            // console.log(friend);
+            // console.log(friend.online);
 
-    //         if (friend.online) {
-    //             onlineFriends.push(friend);
+            if (friend.online) {
+                onlineFriends.push(friend);
 
-    //         }
-    //     }
-    //     return onlineFriends;
-    // };
+            }
+        }
+        return onlineFriends;
+    };
     
-    // console.log(getOnlineFriends(friends));
+    console.log(getOnlineFriends(friends));
 
-    // const getOfflineFriends = function (allFriends) { 
+    const getOfflineFriends = function (allFriends) { 
 
-    // console.log(getOfLineFriends(friends));
-// const offlineFriends = [];
+const offlineFriends = [];
 
-//         for (const friend of allFriends) {
-//             // console.log(friend);
-//             // console.log(friend.online);
+        for (const friend of allFriends) {
+            // console.log(friend);
+            // console.log(friend.online);
 
-//             if (!friend.online) {
+            if (!friend.online) {
                 
-//                 offlineFriends.push(friend);
-//             }
-//         }
-//         return offlineFriends;
+                offlineFriends.push(friend);
+            }
+        }
+        return offlineFriends;
     
-//     };
-    // console.log(getOfflineFriends(friends));
+    };
+    console.log(getOfflineFriends(friends));
 
     // const getFriendsByOnlineStatus = function (allFriends) {
     //     const friendsByStatus = {
