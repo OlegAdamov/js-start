@@ -10,14 +10,14 @@ console.log('Repeta: ');
 */
 
 
-// const playlist = {
-//     name: 'Мой супер плейлист',
-//     rating: 5,
-//     tracks: ['track-1', 'track-2', 'track-3'],
-//     trackCount: 3,
-// };
+const playlist = {
+    name: 'Мой супер плейлист',
+    rating: 5,
+    tracks: ['track-1', 'track-2', 'track-3'],
+    trackCount: 3,
+};
 
-// console.log(playlist);
+console.log(playlist);
 }
 
 { console.log("Доступ к свойству")
@@ -412,6 +412,27 @@ console.log(colorPickerData); */}
 
     
     
+   { console.log("")
+/* 
+*
+*/
+    
+    
+}
+   { console.log("")
+/* 
+*
+*/
+    
+    
+}
+   { console.log("")
+/* 
+*
+*/
+    
+    
+}
    { console.log("")
 /* 
 *
