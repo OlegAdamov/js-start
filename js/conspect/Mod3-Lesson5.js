@@ -253,11 +253,11 @@ console.log('Repeta: ');
         return onlineFriends;
     };
     
-    console.log(getOnlineFriends(friends));
+    // console.log(getOnlineFriends(friends));
 
     const getOfflineFriends = function (allFriends) { 
 
-const offlineFriends = [];
+        const offlineFriends = [];
 
         for (const friend of allFriends) {
             // console.log(friend);
@@ -271,7 +271,7 @@ const offlineFriends = [];
         return offlineFriends;
     
     };
-    console.log(getOfflineFriends(friends));
+    // console.log(getOfflineFriends(friends));
 
     // const getFriendsByOnlineStatus = function (allFriends) {
     //     const friendsByStatus = {
