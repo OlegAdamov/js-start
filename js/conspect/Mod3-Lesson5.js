@@ -412,8 +412,10 @@ console.log(colorPickerData); */}
 
     
     
-   { 
+   { console.log("")
 /* 
 *
 */
+    
+    
 }
