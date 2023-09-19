@@ -200,7 +200,7 @@ console.log('Repeta: ');
     //     friend.newprop = 555;
     // }
     
-    console.table(friends);
+    // console.table(friends);
     /* 
     * Ищем друга по имени
     */
@@ -273,26 +273,25 @@ console.log('Repeta: ');
     };
     // console.log(getOfflineFriends(friends));
 
-    // const getFriendsByOnlineStatus = function (allFriends) {
-    //     const friendsByStatus = {
-    //         online: [],
-    //         offline: [],
-    //     };
+    const getFriendsByOnlineStatus = function (allFriends) {
+        const friendsByStatus = {
+            online: [],
+            offline: [],
+        };
 
-    //     for (const friend of allFriends) {
-    //         if (friend.online) {
-    //             friendsByStatus.online.push(friend);
-    //             continue;
-    //         }
+        for (const friend of allFriends) {
+            if (friend.online) {
+                friendsByStatus.online.push(friend);
+                continue;
+            }
 
-    //         friendsByStatus.offline.push(friend);
-    //     }
+            friendsByStatus.offline.push(friend);
+
+            // friendsByStatus[friend.online ? 'online' : 'offline'].push(friend);
+        }
             
-    //     return friendsByStatus;
-    // };
-
-        
-
+        return friendsByStatus;
+    };
 // console.log(getFriendsByOnlineStatus(friends));
 }
 
