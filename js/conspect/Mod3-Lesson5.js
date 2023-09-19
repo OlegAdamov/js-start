@@ -512,7 +512,7 @@ console.log('Repeta: ');
     const profile = {
         name: 'Jacques Gluke',
         tag: 'jgluke',
-        lication: 'Ocho Rios, Jamaica',
+        location: 'Ocho Rios, Jamaica',
         avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
         stats: {
             followers: 5603,
@@ -520,6 +520,16 @@ console.log('Repeta: ');
             likes: 1208,
         },
     };
+
+    // const { name, tag, location, avatar, stats } = profile;
+    
+    const { name, tag, location, avatar, stats: { followers, views, likes }, } = profile;
+
+    console.log(name, tag, location, avatar);
+    
+    // const { followers, views, likes } = stats;
+    
+    console.log(followers, views, likes)
     
     
 }
