@@ -183,12 +183,12 @@ console.log('Repeta: ');
 
 {  console.log('Task - Работа с коллекцией(масивом объекта)');
 
-    const friends = [
-        { name: 'Mango', online: false },
-        { name: 'Kiwi', online: true },
-        { name: 'Poly', online: true },
-        { name: 'Ajax', online: false },
-    ];
+    // const friends = [
+    //     { name: 'Mango', online: false },
+    //     { name: 'Kiwi', online: true },
+    //     { name: 'Poly', online: true },
+    //     { name: 'Ajax', online: false },
+    // ];
 
     // console.table(friends);
 
@@ -396,10 +396,135 @@ console.log('Repeta: ');
 
     
     
-   { console.log("")
-/* 
-*
+   { console.log("Операция spread (распыление)")
+/* Array.prototype.concat() и аналог через spread
 */
+    // const numbers = [1, 2, 3].concat([4, 5, 6], [7, 8, 9]);
+
+    // const numbers = [
+    //     1000,
+    //     ...[1, 2, 3],
+    //     5000,
+    //     ...[4, 5, 6],
+    //     7000,
+    //     ...[7, 8, 9],
+    //     9000,
+    // ];
+    // console.log(numbers);
+
+    
+}
+{ console.log("Поиск самой маленькой или большой температуры (числа)");
+
+    // const temps = [18, 14, 12, 21, 17, 29, 24];
+    
+    // console.log(Math.max(1, 4, 17, 5, 6));
+    // console.log(Math.min(1, 4, 17, 5, 6));
+    // console.log(Math.max(...temps));
+
+
+    // const lastWeekTemps = [1, 2, 3];
+    // const currentTemps = [4, 5, 6];
+    // const nextWeekTemps = [7, 8, 9];
+
+    // const xx = lastWeekTemps.concat(currentTemps, nextWeekTemps);
+    // const allTemps = [...lastWeekTemps, ...currentTemps, ...nextWeekTemps];
+
+    // console.log(xx);
+    // console.log(allTemps);
+}
+   { console.log("Распыление объектов")
+/* Object.prototype.assing() и spread
+*/
+    
+    
+    // const a = { x: 1, y: 2 };
+    // const b = { x: 0, z: 3 };
+
+    // const c = Object.assign({}, a, b);
+    // const d = {
+    //     name: "Mango",
+    //     ...a,
+    //     x: 10,
+    //     ...b,
+    //     y: 20,
+    // }
+    // console.log(c);
+    // console.log(d);
+
+    // const defaultSettings = {
+    //     theme: 'light',
+    //     showNotification: true,
+    //     hideSidebar: false,
+    // };
+
+    // const userSettings = {
+    //     showNotification: false,
+    //     hideSidebar: true,
+    // };
+
+    // const finalSettings = {
+    //     ...defaultSettings,
+    //     ...userSettings,
+    // };
+
+    // console.log(finalSettings);
+    
+}
+   { console.log("Деструктуризация объекта")
+/* 
+* - Значения по умолчанию
+* - Имя переменной отличное от имени свойства
+*/
+    
+    // const playlist = {
+    // name: 'Мой супер плейлист',
+    // rating: 5,
+    // tracks: ['track-1', 'track-2', 'track-3'],
+    // trackCount: 3,
+    // };
+    
+    
+    // console.log(
+    //     playlist.name,
+    //     playlist.rating,
+    //     playlist.tracks,
+    //     playlist.trackCount,
+    //     );
+        
+    // const {name, rating, tracks, trackCount: numberOfTracks, author = 'Henry' } = playlist; // Вытяни из playlist свойства для перечисленных имён
+
+    // console.log(name);
+    // console.log(rating);
+    // console.log(tracks);
+    // console.log(numberOfTracks);
+
+    // console.log(
+    //     name,
+    //     rating,
+    //     tracks,
+    //     numberOfTracks,
+    //     author,
+    // );
+}
+   { console.log("Глубокая деструктуризация")
+
+    const profile = {
+        name: 'Jacques Gluke',
+        tag: 'jgluke',
+        lication: 'Ocho Rios, Jamaica',
+        avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
+        stats: {
+            followers: 5603,
+            views: 4827,
+            likes: 1208,
+        },
+    };
+    
+    
+}
+   { console.log("Деструктуризация массивов")
+
     
     
 }
