@@ -647,10 +647,16 @@ console.log('Artem Rysich: ');
 
     // console.log(user['languages']["React Native"]);
 
-    for (const key in user) {
-        console.log(user[key])
+    // for (const key in user) {
+    //     console.log(user[key])
             
-        }
+        // }
+    
+
+
+
+
+
     }
     
 
