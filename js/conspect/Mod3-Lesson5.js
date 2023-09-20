@@ -509,32 +509,92 @@ console.log('Repeta: ');
 }
    { console.log("Глубокая деструктуризация")
 
-    const profile = {
-        name: 'Jacques Gluke',
-        tag: 'jgluke',
-        location: 'Ocho Rios, Jamaica',
-        avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
-        stats: {
-            followers: 5603,
-            views: 4827,
-            likes: 1208,
-        },
-    };
+    // const profile = {
+    //     name: 'Jacques Gluke',
+    //     tag: 'jgluke',
+    //     location: 'Ocho Rios, Jamaica',
+    //     avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
+    //     stats: {
+    //         followers: 5603,
+    //         views: 4827,
+    //         likes: 1208,
+    //     },
+    // };
 
-    // const { name, tag, location, avatar, stats } = profile;
+    // // const { name, tag, location, avatar, stats } = profile;
     
-    const { name, tag, location, avatar, stats: { followers, views, likes }, } = profile;
+    // const { name, tag, location, avatar, stats: { followers, views, likes }, } = profile;
 
-    console.log(name, tag, location, avatar);
+    // console.log(name, tag, location, avatar);
     
-    // const { followers, views, likes } = stats;
+    // // const { followers, views, likes } = stats;
     
-    console.log(followers, views, likes)
-    
-    
+    // console.log(followers, views, likes)
 }
    { console.log("Деструктуризация массивов")
+    // const rgb = [255, 100, 80];
 
+    // const [red, green, blue] = rgb;
+
+    // // console.log(red, green, blue);
+    
+    // const authors = {
+    //     kiwi: 4,
+    //     poly: 7,
+    //     ajax: 9,
+    //     mango: 6,
+    // };
+    // // // Первый метод
+    // // const ratings = Object.values(authors); 
+    // // console.log(Math.max(...ratings));
+    
+    
+    // // // Второй метод
+    
+    // const entries = Object.entries(authors);
+
+    // console.log(entries);
+
+    // for (const [name, rating] of entries) { // Уровень третий, entry => [name, rationg]
+
+    //     // const [name, rating] = entry // Уровень второй
+        
+    //     // const name = entry[0];  // Уровень первый
+    //     // const rating = entry[1]; 
+
+    //     console.log(name, rating);
+    // }
+}
+   { console.log("Операция rest (сбор)")
+
+//    const profile = {
+//         name: 'Jacques Gluke',
+//         tag: 'jgluke',
+//         location: 'Ocho Rios, Jamaica',
+//         avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
+//         stats: {
+//             followers: 5603,
+//             views: 4827,
+//             likes: 1208,
+//         },
+//     };
+
+
+//     const { name, tag, location, ...restProps } = profile;
+
+//     console.log(name, tag, location);
+
+//     // const restProps = {
+//     //     avatar: profile.avatar,
+//     //     stats: profile.stats,
+//     // };
+
+//     console.log(restProps);
+}
+   { console.log("")
+/* 
+*
+*/
     
     
 }
