@@ -311,84 +311,84 @@ console.log('Repeta: ');
 * { name: 'strawberry', price: 110 }
 */
     
-//     const cart = {
-//         items: [],
-//         getItems() {
-//             return this.items;
-//          },
-//         add(product) {
+    const cart = {
+        items: [],
+        getItems() {
+            return this.items;
+         },
+        add(product) {
 
-//             console.table(this.items);
-//             for (const item of this.items) {
+            console.table(this.items);
+            for (const item of this.items) {
 
-//                 if (item.name === product.name) {
-//                     item.quantity += 1;   // console.log('такой продукт уже есть', product.name);
-//                     return;
-//                 }
-//             }
-//             const newProduct = {
-//                 ...product,
+                if (item.name === product.name) {
+                    item.quantity += 1;   // console.log('такой продукт уже есть', product.name);
+                    return;
+                }
+            }
+            const newProduct = {
+                ...product,
 
-//                 quantity: 1,
-//             };
+                quantity: 1,
+            };
 
-//             this.items.push(newProduct);
-//         },
-//         remove(productName) { 
-//             for (let i = 0; i < this.items.length; i += 1) {
+            this.items.push(newProduct);
+        },
+        remove(productName) { 
+            for (let i = 0; i < this.items.length; i += 1) {
               
-//                 const { name } = this.items[i];
-//             if (productName === this.items[i].name) {
-//                 // console.log('Нашли такой продукт: ', productName);
-//                 // console.log('индекс: ', i);
-//                 this.items.splice(i, 1);
-//                 }
-//             }
-//         },
-//         clear() {
-//             this.items = [];
-//          },
-//         countTotalPrice() {
-//         const { items } = this;    // console.log(this.items)            
-//         let total = 0;
+                const { name } = this.items[i];
+            if (productName === this.items[i].name) {
+                // console.log('Нашли такой продукт: ', productName);
+                // console.log('индекс: ', i);
+                this.items.splice(i, 1);
+                }
+            }
+        },
+        clear() {
+            this.items = [];
+         },
+        countTotalPrice() {
+        const { items } = this;    // console.log(this.items)            
+        let total = 0;
 
-//          for (const { price, quantity } of items)    {   // for (const item of this.items)
-//              total += price * quantity;              // total += item.price;
-//             }
+         for (const { price, quantity } of items)    {   // for (const item of this.items)
+             total += price * quantity;              // total += item.price;
+            }
 
-//             return total;
-//          },
-//         increaseQuantity(productName) {},
-//         decreaseQuantity(productName) {},
-// }
+            return total;
+         },
+        increaseQuantity(productName) {},
+        decreaseQuantity(productName) {},
+}
     
-    // console.log(cart.getItems());
+    console.log(cart.getItems());
 
-// cart.add({ name: '🍎', price: 50 });
-// cart.add({ name: '🍇', price: 70 });
-// cart.add({ name: '🍋', price: 60 });
-// cart.add({ name: '🍋', price: 60 });
-// cart.add({ name: '🍓', price: 110 });
-// cart.add({ name: '🍓', price: 110 });
-// cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍎', price: 50 });
+cart.add({ name: '🍇', price: 70 });
+cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍋', price: 60 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
+cart.add({ name: '🍓', price: 110 });
     
-// console.table(cart.getItems());
+console.table(cart.getItems());
     
-// cart.remove('🍋');
-// console.table(cart.getItems());
+cart.remove('🍋');
+console.table(cart.getItems());
 
-// console.log('Total: ', cart.countTotalPrice());
+console.log('Total: ', cart.countTotalPrice());
     
 
-    // cart.clear();
-    // console.table(cart.getItems());
+    cart.clear();
+    console.table(cart.getItems());
     
-    // cart.increaseQuantity('🍎');
-    // console.table(cart.getItems());
+    cart.increaseQuantity('🍎');
+    console.table(cart.getItems());
     
-    // cart.decreaseQuantity('🍋');
-    // cart.decreaseQuantity('🍋');
-    // console.table(cart.getItems());
+    cart.decreaseQuantity('🍋');
+    cart.decreaseQuantity('🍋');
+    console.table(cart.getItems());
     
 }
 
@@ -591,12 +591,29 @@ console.log('Repeta: ');
 
 //     console.log(restProps);
 }
-   { console.log("")
-/* 
-*
+   { console.log("Паттерн 'Объект' настроек")
+/* - деструктуризация параметра-объекта в подписи функции
+* - rest при деструктуризации в подписи
 */
     
+    // const showProleInfo = function (userProfile) {
+    //     const { name, tag, location, avatar, stats: { followers, views, likes }, } = userProfile
+    //     console.log(name, tag, location, avatar, followers, views, likes);
+    // };
+
+    // const profile = {
+    //         name: 'Jacques Gluke',
+    //         tag: 'jgluke',
+    //         location: 'Ocho Rios, Jamaica',
+    //         avatar: 'https://s3,amazonaws.com/uifaces/twitter/r_oy/128.jpg',
+    //         stats: {
+    //             followers: 5603,
+    //             views: 4827,
+    //             likes: 1208,
+    //         },
+    // };
     
+    // showProleInfo(profile);
 }
    { console.log("")
 /* 
