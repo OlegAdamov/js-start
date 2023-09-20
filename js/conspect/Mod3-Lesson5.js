@@ -627,13 +627,33 @@ console.log('Repeta: ');
     
     // showProleInfo(profile);
 }
+
+console.log('Artem Rysich: ');
+
    { console.log("")
 /* 
 *
 */
+    const user = {
+        name: "Oleg",
+        age: 39,
+        languages: {
+            html: true,
+            css: true,
+            js: true,
+            "React Native": false,
+        }
+    }
+
+    // console.log(user['languages']["React Native"]);
+
+    for (const key in user) {
+        console.log(user[key])
+            
+        }
+    }
     
-    
-}
+
    { console.log("")
 /* 
 *
