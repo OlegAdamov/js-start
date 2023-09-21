@@ -631,20 +631,24 @@ console.log('Repeta: ');
 console.log('Artem Rysich: ');
 
    { console.log("")
-/* 
-*
-*/
-    const user = {
-        name: "Oleg",
-        age: 39,
-        languages: {
-            html: true,
-            css: true,
-            js: true,
-            "React Native": false,
-        }
-    }
+    
+    // const user = {
+    //     name: "Oleg",
+    //     age: 39,
+    //     languages: {
+    //         html: true,
+    //         css: true,
+    //         js: true,
+    //         "React Native": false,
+    //     },
+    // };
+    // // Object.freeze(user);
 
+    // user.city = 'Od';
+    // console.log(user);
+
+    // delete user.city;
+    // console.log(user);
     // console.log(user['languages']["React Native"]);
 
     // for (const key in user) {
@@ -661,10 +665,24 @@ console.log('Artem Rysich: ');
     
 
    { console.log("")
-/* 
-*
-*/
+
+    const user = {
+        name: "Oleg",
+        age: 39,
+        languages: {
+            html: true,
+            css: true,
+            js: true,
+            "React Native": false,
+        },
+    };
+
+    const user2 = Object.create(user);
+    user2.age = 33;
+    console.log(user2.age);
+
     
+
     
 }
    { console.log("")
