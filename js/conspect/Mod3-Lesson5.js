@@ -630,7 +630,7 @@ console.log('Repeta: ');
 
 console.log('Artem Rysich: ');
 
-   { console.log("")
+   { console.log("Об'єкти")
     
     // const user = {
     //     name: "Oleg",
@@ -656,9 +656,50 @@ console.log('Artem Rysich: ');
             
         // }
     
+        // const user = {
+        //     name: "Oleg",
+        //     age: 39,
+        //     languages: {
+        //         html: true,
+        //         css: true,
+        //         js: true,
+        //         "React Native": false,
+        //     },
+        // };
+     
+        // const user2 = Object.create(user);
+        // user2.age = 33;
+        // console.log(user2);
+     
+        // for (const key in user2) {
+        //     if (user2.hasOwnProperty(key)) {
+        //         console.log('Own: ', user2[key]);
+        //     } else {
+        //         console.log('All: ', user2[key]);
+        //     };
+        // };
 
+    // const user = {
+    //     score: 0,
+    // };
 
+    // if (user.score) {
+    //     console.log('yes')
+    // } else {
+    //     console.log('no')
+    // }
 
+    // if (user.hasOwnProperty('score')) { // Покаже чи є ключ в об'єкті (тільки власний ключ)
+    //             console.log('yes')
+    // } else {
+    //     console.log('no')
+    // }
+    
+    // if ('score' in user) { // Покаже чи є ключ в об'єкті (будь який, навіть успадкований)
+    //             console.log('yes')
+    // } else {
+    //     console.log('no')
+    // }
 
 
     }
@@ -666,20 +707,7 @@ console.log('Artem Rysich: ');
 
    { console.log("")
 
-    const user = {
-        name: "Oleg",
-        age: 39,
-        languages: {
-            html: true,
-            css: true,
-            js: true,
-            "React Native": false,
-        },
-    };
-
-    const user2 = Object.create(user);
-    user2.age = 33;
-    console.log(user2.age);
+    
 
     
 
