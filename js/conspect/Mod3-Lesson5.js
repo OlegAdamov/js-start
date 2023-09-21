@@ -426,6 +426,7 @@ console.log('Repeta: ');
 
     
 }
+
 { console.log("Поиск самой маленькой или большой температуры (числа)");
 
     // const temps = [18, 14, 12, 21, 17, 29, 24];
@@ -445,6 +446,7 @@ console.log('Repeta: ');
     // console.log(xx);
     // console.log(allTemps);
 }
+
    { console.log("Распыление объектов")
 /* Object.prototype.assing() и spread
 */
@@ -483,6 +485,7 @@ console.log('Repeta: ');
     // console.log(finalSettings);
     
 }
+
    { console.log("Деструктуризация объекта")
 /* 
 * - Значения по умолчанию
@@ -630,8 +633,7 @@ console.log('Repeta: ');
 
 console.log('Artem Rysich: ');
 
-{
-    console.log("Об'єкти")
+{ console.log("Об'єкти")
    
 {   // const user1 = {
     //     name: "Oleg",
@@ -705,66 +707,233 @@ console.log('Artem Rysich: ');
     // }
     }
 
-{       const user4 = {
-            name: "Oleg",
-            age: 39,
-            languages: {
-                html: true,
-                css: true,
-                js: true,
-                reactNative: false,
-            },
-            sayHello() {
-                console.log(`My name is ${this.name}`)
-        },
-        iKnow() {
-    //         for (const key in this.languages) {
-    //             if (this.languages[key]) {
-    //                 console.log('key: ', key)
-    // }
-            //         }
-            const keys = Object.keys(this.languages); // Повертає масив тільки власних назв. Повертає масив
-            // for (const key of keys) {
-            //     if (this.languages[key]) {
-            //         console.log(key);
-            //     };
-            // };
+    {    // const user4 = {
+    //         name: "Oleg",
+    //         age: 39,
+    //         languages: {
+    //             html: true,
+    //             css: true,
+    //             js: true,
+    //             reactNative: false,
+    //         },
+    //         sayHello() {
+    //             console.log(`My name is ${this.name}`)
+    //     },
+    //     iKnow() {
+    // //         for (const key in this.languages) {
+    // //             if (this.languages[key]) {
+    // //                 console.log('key: ', key)
+    // // }
+    //         //         }
+    //         const keys = Object.keys(this.languages); // Повертає масив тільки власних назв. Повертає масив
+    //         // for (const key of keys) {
+    //         //     if (this.languages[key]) {
+    //         //         console.log(key);
+    //         //     };
+    //         // };
 
-            console.log('keys: ', keys);
-            const values = Object.values(this.languages); // Повертає масив значень ключів.
-            console.log('values: ', values);
+    //         console.log('keys: ', keys);
+    //         const values = Object.values(this.languages); // Повертає масив значень ключів.
+    //         console.log('values: ', values);
 
-            const entries = Object.entries(this.languages);
-            console.log('entries: ', entries);
-        },
-        };
+    //         const entries = Object.entries(this.languages);
+    //         console.log('entries: ', entries);
+    //     },
+    //     };
 
-    // const user5 = Object.create(user4);
-    // user5.name = 'Mike';
-    // console.log('user5: ', user5);
+    // // const user5 = Object.create(user4);
+    // // user5.name = 'Mike';
+    // // console.log('user5: ', user5);
     
-    // user4.sayHello();
-    //     user5.sayHello();
+    // // user4.sayHello();
+    // //     user5.sayHello();
         
-        user4.iKnow();
+    //     user4.iKnow();
     }
-
-
-
-    
-    
 
     }
     
 
-   { console.log("")
+   { console.log("Example 1 - Основи об'єктів")
+/* Напиши скрипт, який для об'єкта user, послідовно 
+* - додає поле mood зі значенням 'happy'
+* - замінює значення 'hobby' на 'skydiving'
+* - замінює значення 'premium' на false
+* - виводить вміст об'єкта user у форматі ключ: значення, використовуючи Object.keys() та for...of
+ */
+    // const user = {
+    //     name: 'Mango',
+    //     age: 20,
+    //     hobby: 'html',
+    //     premium: true,
+    // }
 
+    // user.mood = 'happy';
+    // user.hobby = 'skydiving';
+    // // user['premium'] = false;
+    // const key = 'premium';
+    // user[key] = false;
+    // console.log(user);
     
-
-    
-
-    
+    // const keys = Object.keys(user);
+    // for (const key of keys) {
+    //     console.log(user[key]);
+    // };
+    // console.log(user);
 }
+
+   { console.log("Examples 2 - Метод Object.values()")
+/* У нас є об'єктб де зберігаються зарплати нашої команди.
+* Напишіть код для підсумовування всіх зарплат
+* і збережіть результат у змінній sum. Повинно вийти 390
+* Якщо об'єкт salaries порожній, то результат має бути 0.
+*/
+    // const salaries = {
+    //     John: 100,
+    //     Ann: 160,
+    //     Pete: 130,
+        
+    // };
+
+    // let sum = 0;
+
+    // for (const key in salaries) {
+    //     sum += salaries[key];
+    //     // console.log(salaries[key])
+    // }
+    
+    // const values = Object.values(salaries);
+    // // console.log(values);
+    // for (const value of values) {
+    //     sum += value;
+    //     // console.log(value);
+    // }
+    
+    // console.log(sum);
+}
+
+   { console.log("Examples 3 - Масив об'єктів")
+/* Напишіть функцію calcTotalPrice(stones, stoneName), 
+* яка приймає масив об'єктів та рядок з назвою каменю.
+* Функція рахує і повертає загальну вартість каміння
+* з таким ім'ям, ціною та кількістю з об'єкта.
+*/
+// const stones = [
+//     {
+//         name: 'Смарагд',
+//         price: 1300,
+//         quantity: 4,
+//     },
+//     {
+//         name: 'Діамант',
+//         price: 2700,
+//         quantity: 3,
+//     },
+//     {
+//         name: 'Сапфір',
+//         price: 400,
+//         quantity: 7,
+//     },
+//         {
+//             name: 'Щебінь',
+//             price: 200,
+//             quantity: 2,
+//         },
+//     ]
+    
+//     function calcTotalPrice(stones, stoneName) {
+//         let result = 0;
+//         for (const stone of stones) {
+//             if (stone.name === stoneName) {
+//                 result = stone.price * stone.quantity;
+//                 break;
+//             }
+//         }
+//         return result;
+//     }
+    
+//     console.log(calcTotalPrice(stones, 'Смарагд'));
+//     console.log(calcTotalPrice(stones, 'Діамант'));
+//     console.log(calcTotalPrice(stones, 'Сапфір'));
+//     console.log(calcTotalPrice(stones, 'Щебінь'));
+//     console.log(calcTotalPrice(stones, 'Гравій'));
+}
+
+   { console.log("Examples 4 - Комплексні завдання")
+/* Напиши скрипт управління особистим кабінетом інтернет банку.
+* Є об'єкт account в якому необхідно реалізувати методи для роботи
+* з балансом та історією транзакцій.
+* 
+* - Типів транзакцій всього дваю
+* - Можна покласти або зняти гроші з рахункую
+*/
+    
+    const Transaction = {
+        DEPOSIT: 'deposit',
+        WITHDRAW: 'withdraw',
+    };
+
+    /*  Кожна транзакція це об'єкт із властивостями:
+    * id, type та amount
+     */
+
+    const account = {
+        // Поточний баланс рахунку
+        balance: 0,
+
+        // Історія транзакцій
+        transaction: [],
+        
+        /* Метод створює та повертає об'єкт транзакуії.
+        * Приймає суму та тип транзакції.
+        */
+       
+       createTransaction(amount, type) {
+           return {
+               id: Date.now(),
+            //    type: ,
+            //    amount: ,
+            }
+        },
+        
+        /* Метод, що відповідає за додавання суми до балансу.
+        * Приймає суму транзакції.
+        * Викликає createTransaction для створення об'єкта транзакції
+        * Після чого додає його до історії транзакцій
+        */
+       
+        deposit(amount) { },
+       
+                /* Метод, що відповідає за додавання суми до балансу.
+        * Приймає суму транзакції.
+        * Викликає createTransaction для створення об'єкта транзакції
+        * Після чого додає його до історії транзакцій
+        * 
+        * Якщо amount більше ніж поточний баланс, виводь повідомлення
+        * про те, що зняття такої суми не можливе, недостатньо коштів.
+        */
+       
+       withdraw(amount) {},
+
+       /* Метод повертає поточний баланс
+        */
+       getBalance() {},
+       
+
+       /* Метод шукає та повертає об'єкт транзакції по id
+        */
+        getTransactionDetail(id) { },
+
+    /* Метод повертає кількість коштів
+    * певного типу транзакцій з усієї історії транзакцій
+     */
+        getTransactionTotal(type) { },
+
+    };
+
+    console.log((account.createTransaction()))
+}
+
    { console.log("")
 /* 
 *
