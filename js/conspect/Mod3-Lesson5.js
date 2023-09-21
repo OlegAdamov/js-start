@@ -891,8 +891,8 @@ console.log('Artem Rysich: ');
        createTransaction(amount, type) {
            return {
                id: Date.now(),
-            //    type: ,
-            //    amount: ,
+               amount,
+               type,
             }
         },
         
@@ -931,7 +931,7 @@ console.log('Artem Rysich: ');
 
     };
 
-    console.log((account.createTransaction()))
+    console.log((account.createTransaction(1000, "deposite")))
 }
 
    { console.log("")
