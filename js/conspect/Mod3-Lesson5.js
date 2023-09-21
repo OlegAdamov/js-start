@@ -630,9 +630,10 @@ console.log('Repeta: ');
 
 console.log('Artem Rysich: ');
 
-   { console.log("Об'єкти")
-    
-    // const user = {
+{
+    console.log("Об'єкти")
+   
+{   // const user1 = {
     //     name: "Oleg",
     //     age: 39,
     //     languages: {
@@ -644,19 +645,20 @@ console.log('Artem Rysich: ');
     // };
     // // Object.freeze(user);
 
-    // user.city = 'Od';
-    // console.log(user);
+    // user1.city = 'Od';
+    // console.log(user1);
 
-    // delete user.city;
-    // console.log(user);
-    // console.log(user['languages']["React Native"]);
+    // delete user1.city;
+    // console.log(user1);
+    // console.log(user1['languages']["React Native"]);
 
-    // for (const key in user) {
-    //     console.log(user[key])
+    // for (const key in user1) {
+    //     console.log(user1[key])
             
-        // }
-    
-        // const user = {
+        //     };
+    }
+
+{    // const user2 = {
         //     name: "Oleg",
         //     age: 39,
         //     languages: {
@@ -667,40 +669,68 @@ console.log('Artem Rysich: ');
         //     },
         // };
      
-        // const user2 = Object.create(user);
-        // user2.age = 33;
-        // console.log(user2);
+        // const user21 = Object.create(user2);
+        // user21.age = 33;
+        // console.log(user21);
      
-        // for (const key in user2) {
-        //     if (user2.hasOwnProperty(key)) {
-        //         console.log('Own: ', user2[key]);
+        // for (const key in user21) {
+        //     if (user21.hasOwnProperty(key)) {
+        //         console.log('Own: ', user21[key]);
         //     } else {
-        //         console.log('All: ', user2[key]);
+        //         console.log('All: ', user21[key]);
         //     };
-        // };
-
-    // const user = {
+    // };
+    }
+        
+{   // const user3 = {
     //     score: 0,
     // };
 
-    // if (user.score) {
+    // if (user3.score) {
     //     console.log('yes')
     // } else {
     //     console.log('no')
     // }
 
-    // if (user.hasOwnProperty('score')) { // Покаже чи є ключ в об'єкті (тільки власний ключ)
+    // if (user3.hasOwnProperty('score')) { // Покаже чи є ключ в об'єкті (тільки власний ключ)
     //             console.log('yes')
     // } else {
     //     console.log('no')
     // }
     
-    // if ('score' in user) { // Покаже чи є ключ в об'єкті (будь який, навіть успадкований)
+    // if ('score' in user3) { // Покаже чи є ключ в об'єкті (будь який, навіть успадкований)
     //             console.log('yes')
     // } else {
     //     console.log('no')
     // }
+    }
 
+{   //     const user4 = {
+    //         name: "Oleg",
+    //         age: 39,
+    //         languages: {
+    //             html: true,
+    //             css: true,
+    //             js: true,
+    //             "React Native": false,
+    //         },
+    //         sayHello() {
+    //             console.log(this)
+    //         },
+    //     };
+
+    // const user5 = Object.create(user4);
+    // user5.age = 100;
+    // console.log(user5);
+    
+    // user4.sayHello();
+    // user5.sayHello();
+    }
+
+
+
+    
+    
 
     }
     
