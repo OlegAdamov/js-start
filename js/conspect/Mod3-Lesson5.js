@@ -705,26 +705,48 @@ console.log('Artem Rysich: ');
     // }
     }
 
-{   //     const user4 = {
-    //         name: "Oleg",
-    //         age: 39,
-    //         languages: {
-    //             html: true,
-    //             css: true,
-    //             js: true,
-    //             "React Native": false,
-    //         },
-    //         sayHello() {
-    //             console.log(this)
-    //         },
-    //     };
+{       const user4 = {
+            name: "Oleg",
+            age: 39,
+            languages: {
+                html: true,
+                css: true,
+                js: true,
+                reactNative: false,
+            },
+            sayHello() {
+                console.log(`My name is ${this.name}`)
+        },
+        iKnow() {
+    //         for (const key in this.languages) {
+    //             if (this.languages[key]) {
+    //                 console.log('key: ', key)
+    // }
+            //         }
+            const keys = Object.keys(this.languages); // Повертає масив тільки власних назв. Повертає масив
+            // for (const key of keys) {
+            //     if (this.languages[key]) {
+            //         console.log(key);
+            //     };
+            // };
+
+            console.log('keys: ', keys);
+            const values = Object.values(this.languages); // Повертає масив значень ключів.
+            console.log('values: ', values);
+
+            const entries = Object.entries(this.languages);
+            console.log('entries: ', entries);
+        },
+        };
 
     // const user5 = Object.create(user4);
-    // user5.age = 100;
-    // console.log(user5);
+    // user5.name = 'Mike';
+    // console.log('user5: ', user5);
     
     // user4.sayHello();
-    // user5.sayHello();
+    //     user5.sayHello();
+        
+        user4.iKnow();
     }
 
 
