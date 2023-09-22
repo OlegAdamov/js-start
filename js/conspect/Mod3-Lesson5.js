@@ -859,121 +859,123 @@ console.log('Artem Rysich: ');
 //     console.log(calcTotalPrice(stones, 'Гравій'));
 }
 
-   { console.log("Examples 4 - Комплексні завдання")
-/* Напиши скрипт управління особистим кабінетом інтернет банку.
-* Є об'єкт account в якому необхідно реалізувати методи для роботи
-* з балансом та історією транзакцій.
-* 
-* - Типів транзакцій всього дваю
-* - Можна покласти або зняти гроші з рахункую
-*/
+   { console.log("Examples 4 - Комплексні завдання - управління особистим кабінетом інтернет банку")
+// /* Напиши скрипт управління особистим кабінетом інтернет банку.
+// * Є об'єкт account в якому необхідно реалізувати методи для роботи
+// * з балансом та історією транзакцій.
+// * 
+// * - Типів транзакцій всього дваю
+// * - Можна покласти або зняти гроші з рахункую
+// */
     
-    const Transaction = {
-        DEPOSIT: 'deposit',
-        WITHDRAW: 'withdraw',
-    };
-    Object.freeze(Transaction);
+//     const Transaction = {
+//         DEPOSIT: 'deposit',
+//         WITHDRAW: 'withdraw',
+//     };
+//     Object.freeze(Transaction);
 
 
 
-    /*  Кожна транзакція це об'єкт із властивостями:
-    * id, type та amount
-     */
+//     /*  Кожна транзакція це об'єкт із властивостями:
+//     * id, type та amount
+//      */
 
-    const account = {
-        // Поточний баланс рахунку
-        balance: 0,
+//     const account = {
+//         // Поточний баланс рахунку
+//         balance: 0,
 
-        // Історія транзакцій
-        transactions: [{id: 16, amount: 145, type: 'deposit'}, ],
+//         // Історія транзакцій
+//         transactions: [{id: 16, amount: 145, type: 'deposit'}, ],
         
-        /* Метод створює та повертає об'єкт транзакуії.
-        * Приймає суму та тип транзакції.
-        */
+//         /* Метод створює та повертає об'єкт транзакуії.
+//         * Приймає суму та тип транзакції.
+//         */
        
-       createTransaction(amount, type) {
-           return {
-               id: Date.now(),
-               amount,
-               type,
-            }
-        },
+//        createTransaction(amount, type) {
+//            return {
+//                id: Date.now(),
+//                amount,
+//                type,
+//             }
+//         },
         
-        /* Метод, що відповідає за додавання суми до балансу.
-        * Приймає суму транзакції.
-        * Викликає createTransaction для створення об'єкта транзакції
-        * Після чого додає його до історії транзакцій
-        */
+//         /* Метод, що відповідає за додавання суми до балансу.
+//         * Приймає суму транзакції.
+//         * Викликає createTransaction для створення об'єкта транзакції
+//         * Після чого додає його до історії транзакцій
+//         */
        
-        deposit(amount) {
-            if (amount <= 0) {
-                return 'Error';
-            }
-            const item = this.createTransaction(amount, Transaction.DEPOSIT);
-            this.balance += amount;
-            this.transactions.push(item);
+//         deposit(amount) {
+//             if (amount <= 0) {
+//                 return 'Error';
+//             }
+//             const item = this.createTransaction(amount, Transaction.DEPOSIT);
+//             this.balance += amount;
+//             this.transactions.push(item);
 
-            // console.log(item)
-         },
+//             // console.log(item)
+//          },
        
-        /* Метод, що відповідає за додавання суми до балансу.
-        * Приймає суму транзакції.
-        * Викликає createTransaction для створення об'єкта транзакції
-        * Після чого додає його до історії транзакцій
-        * 
-        * Якщо amount більше ніж поточний баланс, виводь повідомлення
-        * про те, що зняття такої суми не можливе, недостатньо коштів.
-        */
+//         /* Метод, що відповідає за додавання суми до балансу.
+//         * Приймає суму транзакції.
+//         * Викликає createTransaction для створення об'єкта транзакції
+//         * Після чого додає його до історії транзакцій
+//         * 
+//         * Якщо amount більше ніж поточний баланс, виводь повідомлення
+//         * про те, що зняття такої суми не можливе, недостатньо коштів.
+//         */
        
-        withdraw(amount) {
-            if (amount > this.balance || amount <= 0) {
-                return 'Недостатньо коштів';
-            }
-            const item = this.createTransaction(amount, Transaction.WITHDRAW);
-            this.balance -= amount;
-            this.transactions.push(item);
-       },
+//         withdraw(amount) {
+//             if (amount > this.balance || amount <= 0) {
+//                 return 'Недостатньо коштів';
+//             }
+//             const item = this.createTransaction(amount, Transaction.WITHDRAW);
+//             this.balance -= amount;
+//             this.transactions.push(item);
+//        },
 
-       /* Метод повертає поточний баланс
-        */
-        getBalance() {
-            return this.balance;
-       },
+//        /* Метод повертає поточний баланс
+//         */
+//         getBalance() {
+//             return this.balance;
+//        },
        
 
-       /* Метод шукає та повертає об'єкт транзакції по id
-        */
-        getTransactionDetails(id) { 
-            for (const transaction of this.transactions) {
-                if (transaction.id === id) {
-                    return transaction;
-                }
-            }
-            return "Empty";
-        },
+//        /* Метод шукає та повертає об'єкт транзакції по id
+//         */
+//         getTransactionDetails(id) { 
+//             for (const transaction of this.transactions) {
+//                 if (transaction.id === id) {
+//                     return transaction;
+//                 }
+//             }
+//             return "Empty";
+//         },
 
-    /* Метод повертає кількість коштів
-    * певного типу транзакцій з усієї історії транзакцій
-     */
-        getTransactionTotal(type) {
-            let sum = 0;
-            for (const transaction of this.transactions) {
-                if (transaction.type === type) {
-                    sum += transaction.amount
-                }
-            }
-            return sum;
-         },
+//     /* Метод повертає кількість коштів
+//     * певного типу транзакцій з усієї історії транзакцій
+//      */
+//         getTransactionTotal(type) {
+//             let sum = 0;
+//             for (const transaction of this.transactions) {
+//                 if (transaction.type === type) {
+//                     sum += transaction.amount
+//                 }
+//             }
+//             return sum;
+//          },
 
-    };
+//     };
 
-    // console.log((account.createTransaction(1000, "deposit")))
-    account.deposit(1);
-    account.deposit(1231);
-    account.deposit(1431);
-    account.withdraw(123);
+//     // console.log((account.createTransaction(1000, "deposit")))
+//     account.deposit(1);
+//     account.deposit(1231);
+//     account.deposit(1431);
+//     account.withdraw(123);
+//     account.withdraw(1200);
+//     account.withdraw(100);
 
-    console.log(account.getTransactionTotal(Transaction.WITHDRAW));
+//     console.log(account.getBalance());
 
 }
 
