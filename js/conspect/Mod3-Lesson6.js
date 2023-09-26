@@ -287,10 +287,6 @@ const a = { x: 1, y: 2 };
 //     }
 }
 
-
-
-
-
 { console.log('Операция Object - примеры')
 
 // const book = {
@@ -361,9 +357,6 @@ const a = { x: 1, y: 2 };
 // console.log(averageRating); // 8.2
     
 }
-    
-
-
 
 {    console.log(`Task AutoCheck-28`);
 /* В переменных firstGroupScores, secondGroupScores и thirdGroupScores хранятся 
@@ -536,6 +529,34 @@ const atTheOldToad = {
 /* Напиши 
 *
 *
+* -
+* - 
+* - 
+*/
+
+  const arr1 = [12, 22, 3, 14, 45, 16, 57];
+// rest
+  // // const min = Math.min(...arr);
+  // // console.log(min);
+  // const arr2 = [...arr1];
+  // arr2.splice(0,1)
+  // console.log(arr1)
+  // console.log(arr2)
+  
+  // rest
+  const [first, ...props] = arr1;
+  console.log(first);
+  console.log(props);
+  for (const prop of props) {
+    prop *= first;
+  }
+console.log(props)
+
+}
+{    console.log(`Task `);
+/* Напиши 
+*
+*
 *
 *
 * - 
@@ -547,6 +568,29 @@ const atTheOldToad = {
 */
 
 
+
+
+
+}
+{    console.log(`Example 1 - Деструктуризація`);
+/* Напиши функцію так, щоб вона прймала один об'єкт параметрів замість набору незалежних аргументівю
+* 
+*
+*
+*
+* - 
+* - 
+* - 
+* - 
+*
+* - 
+*/
+
+  // function calcBMI(weight, height) {
+  //   const numericWeight = Number(weight.replace(',', '.'));
+  //   const numericHeight = Number(height.replace(',', '.'));
+  //   return Number((numericWeight / numericWeight ** 2).toFixed(1));
+// }
 
 
 
