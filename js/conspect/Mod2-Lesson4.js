@@ -300,6 +300,9 @@
     // console.log(filterNumbers([100, 200, 300, 400, 500], 7, 12, 200, 64)); // [200]
 }
 
+
+console.log('Artem Rysich: ');
+
 { console.log('Example 1 - Індекс маси тіла')
 /* Напиши функцію calkBMI (wieght, height), яка розрахує та поверне індекс маси тіла людини.
 * Для цього необхідно розділити вагу в кілограмах на квадрат висоти людини в метрах.
@@ -538,23 +541,6 @@
     // updateCourse('Express', 'NestJS');
     // console.log(courses); // ['HTML', 'CSS', 'JavaScript', 'PostgreSQL' 'NestJs']
     // console.log(updateCourse('Express', 'NestJS'));
-    
-}
-{
-    console.log('Task - ')
-    /* 
-    * 
-    * 
-    */
-
-    
-}
-{ console.log('Task - ')
-/* 
-* 
-* 
-*/
-    
     
 }
 

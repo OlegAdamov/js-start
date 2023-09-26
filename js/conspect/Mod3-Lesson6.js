@@ -525,73 +525,131 @@ const atTheOldToad = {
 // console.table(atTheOldToad.updatePotionName("Stone skin", "Invulnerability potion"))
 }
 
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-* -
-* - 
-* - 
-*/
 
-  const arr1 = [12, 22, 3, 14, 45, 16, 57];
-// rest
-  // // const min = Math.min(...arr);
-  // // console.log(min);
-  // const arr2 = [...arr1];
-  // arr2.splice(0,1)
-  // console.log(arr1)
-  // console.log(arr2)
-  
-  // rest
-  const [first, ...props] = arr1;
-  console.log(first);
-  console.log(props);
-  for (const prop of props) {
-    prop *= first;
-  }
-console.log(props)
+console.log('Artem Rysich: ');
 
-}
-{    console.log(`Task `);
-/* Напиши 
-*
-*
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
-*/
-
-
-
-
-
-}
 {    console.log(`Example 1 - Деструктуризація`);
-/* Напиши функцію так, щоб вона прймала один об'єкт параметрів замість набору незалежних аргументівю
-* 
+/* Перепиши функцію так, щоб вона прймала один об'єкт параметрів замість набору незалежних аргументів.
 *
-*
-*
-* - 
-* - 
-* - 
-* - 
-*
-* - 
 */
-
-  // function calcBMI(weight, height) {
-  //   const numericWeight = Number(weight.replace(',', '.'));
-  //   const numericHeight = Number(height.replace(',', '.'));
-  //   return Number((numericWeight / numericWeight ** 2).toFixed(1));
+  
+  // JS Doc //** + Tab
+/**
+ * Розраховуємо індекс маси тіла людини
+ * @param {Object} obj 
+ * @returns {Number} BMI
+ */
+//   function calcBMI({weight, height}) {
+//     const numericWeight = Number(weight.replace(',', '.'));
+//     const numericHeight = Number(height.replace(',', '.'));
+//     return Number((numericWeight / numericHeight ** 2).toFixed(1));
 // }
 
+//   // Було
+//   console.log(calcBMI({weight : '88,3', height : '1.75'}));
+//   console.log(calcBMI({weight : '68,3', height : '1.65'}));
+//   console.log(calcBMI({weight : '118,3', height : '1.95'}));
+}
+
+
+
+
+{    console.log(`Example 2 - Деструктуризація`);
+/* 
+* Перепиши функцію так, щоб вона приймала один об'єкт параметрів
+* замість набору незалежних аргументів.
+*/
+  
+/**
+ * 
+ * @param {Object} obj 
+ */
+  
+  //     function printContactsInfo({names, phones}) {
+  //       const namesMassive = names.split(',');
+  //       const phonesMassive = phones.split(',');
+        
+  //       for (let i = 0, n = 1; i < namesMassive.length, i < phonesMassive.length; i+=1, n+=1) {
+  //               console.log(`${n}. ${namesMassive[i]} ${phonesMassive[i]}`);
+  //           }
+  //           // console.log(namesMassive);
+  //           // console.log(phonesMassive);
+  //       }
+            
+  // printContactsInfo({
+  //   names: 'Jacob,William,Solomon,Artem',
+  //   phones: '89001234567,89001112233,890055566377,890055566300'});
+}
+{    console.log(`Example 3 - Глибока деструктуризація`);
+/* Перепиши функцію так, щоб вона приймала один об'єкт параметрів замість набору незалежних аргументів.
+*/
+  
+
+  // function getBotReport({companyName, repairBots, defenceBots}) {
+  //   return `${companyName} has ${repairBots + defenceBots} bots in stock`;
+  // };
+
+  // // Було
+  // console.log(getBotReport({
+  //   companyName: 'Cyberdyne Systems',
+  //   repairBots: 150,
+  //   defenceBots: 50,
+  // }));
+
+}
+{    console.log(`Example 4 - Деструктуризація`);
+/* Перепиши функцію так, щоб вона приймала об'єкт параметрів із властивостями
+* companyName та stock та виводила репорт про кількість товарів на складі будь-якої компанії
+*/
+
+  // function getStockReport({companyName, stock}) {
+  //   let total = 0;
+  //   for (const value of Object.values(stock)) {
+  //     total += value;
+  //   }
+  //   return `${companyName} has ${total} items in stock`;
+  // }
+  
+  // console.log(
+  //   getStockReport({
+  //     companyName: 'Cyberdyne Systems', 
+  //     stock: {
+  //     repairBots: 150,
+  //     defenceBots: 50,
+  //   },}
+  //   ),
+  // );
+
+  // console.log(
+  //   getStockReport({
+  //     companyName: 'Belacci',
+  //     stock: {
+  //       shoes: 20,
+  //       skirts: 10,
+  //       hats: 5,
+  //     },
+  //   },),
+  // );
+
+}
+{    console.log(`Example 5 - Операція Spread`);
+/* 
+*
+*/
+
+
+}
+{    console.log(`Example - `);
+/* 
+*
+*/
+
+
+}
+{    console.log(`Example - `);
+/* 
+*
+*/
 
 
 }
