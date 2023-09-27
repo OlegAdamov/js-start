@@ -670,33 +670,32 @@ console.log('Artem Rysich: ');
 /* Напиши функцію transformUserName(user) так, щоб вона повертала
 * новий об'єкт із властивістю fullName, замість firstName та lastName.
 */
-
-  function transformUserName({firstName, lastName, ...props}) {
-    return {
-      fullName: `${firstName} ${lastName}`,
-      ...props,
-    }
-    }
+  // function transformUserName({firstName, lastName, ...props}) {
+  //   return {
+  //     fullName: `${firstName} ${lastName}`,
+  //     ...props,
+  //   }
+  //   }
   
-    console.log(
-      transformUserName({
-      id: 1,
-      firstName: 'Jacob',
-      lastName: 'Mercer',
-      email: 'j.mercer@mail.com',
-      friendCount: 40,  
-    }),
-  );
+  //   console.log(
+  //     transformUserName({
+  //     id: 1,
+  //     firstName: 'Jacob',
+  //     lastName: 'Mercer',
+  //     email: 'j.mercer@mail.com',
+  //     friendCount: 40,  
+  //   }),
+  // );
 
-    console.log(
-      transformUserName({
-      id: 2,
-      firstName: 'Adrian',
-      lastName: 'Cross',
-      email: 'a.cross@hotmail.com',
-      friendCount: 30,
-    }),
-  );
+  //   console.log(
+  //     transformUserName({
+  //     id: 2,
+  //     firstName: 'Adrian',
+  //     lastName: 'Cross',
+  //     email: 'a.cross@hotmail.com',
+  //     friendCount: 30,
+  //   }),
+  // );
 }
 {    console.log(`Example - `);
 /* 
