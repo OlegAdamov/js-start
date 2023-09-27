@@ -637,38 +637,66 @@ console.log('Artem Rysich: ');
 * щоб вона повертала новий об'єкт контакту з доданими властивостями id та createdAt,
 * а також List зі значенням "default", якщо в partialContact немає такої властивості.
 */
-  
+  // function createContact(partialContact) {
+  //   return {
+  //     list: "default",
+  //     id: createdId(),
+  //     createdAt: new Date(),
+  //     ...partialContact,
+  //   }
+  // }
 
-  function createContact(partialContact) {
-    return {}
-  }
+  // console.log(
+  //   createContact({
+  //     name: 'Mango',
+  //     email: 'mango@mail.com',
+  //     list: 'friends',
+  //   }),
+  // );
 
-  console.log(
-    createContact({
-      name: 'Mango',
-      email: 'mango@mail.com',
-      list: 'friends',
-    }),
-  );
+  // console.log(
+  //   createContact({
+  //     name: 'Poly',
+  //     email: 'poly@hotmail.com',
+  //   }),
+  // );
 
-  console.log(
-    createContact({
-      name: 'Poly',
-      email: 'poly@hotmail.com',
-    }),
-  );
-
-  function createdId() {
-    return '_' + Math.random().toString(36).substr(29);
-  }
-
+  // function createdId() {
+  //   return '_' + Math.random().toString(36).substr(2, 9);
+  // }
 }
-{    console.log(`Example - `);
-/* 
-*
+
+{    console.log(`Example 6 - Операція rest`);
+/* Напиши функцію transformUserName(user) так, щоб вона повертала
+* новий об'єкт із властивістю fullName, замість firstName та lastName.
 */
 
+  function transformUserName({firstName, lastName, ...props}) {
+    return {
+      fullName: `${firstName} ${lastName}`,
+      ...props,
+    }
+    }
+  
+    console.log(
+      transformUserName({
+      id: 1,
+      firstName: 'Jacob',
+      lastName: 'Mercer',
+      email: 'j.mercer@mail.com',
+      friendCount: 40,  
+    }),
+  );
 
+    console.log(
+      transformUserName({
+      id: 2,
+      firstName: 'Adrian',
+      lastName: 'Cross',
+      email: 'a.cross@hotmail.com',
+      friendCount: 30,
+    }),
+  );
 }
 {    console.log(`Example - `);
 /* 
