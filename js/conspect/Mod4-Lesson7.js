@@ -12,18 +12,18 @@ console.log('Repeta: ');
 */
 
 {    const fnA = function (message, callback) {
-        // console.log(message);
+        console.log(message);
 
-        // console.log(callback);
-        // callback(100);
+        console.log(callback);
+        callback(100);
         
     };
     
     const fnB = function (number) {
-        // console.log('Это лог при вызове fnB', number);
+        console.log('Это лог при вызове fnB', number);
     };
 
-        fnA('afajfsdjfls', fnB)
+        // fnA('some text', fnB)
 }
     {
         const doMath = function (a, b, callback) {
@@ -46,19 +46,15 @@ console.log('Repeta: ');
 
 }
 
-
-
-
-
 {console.log('Example: Отложенный вызов: регистрация событий');
 
-    // const buttonRef = document.querySelector('.js-button');   //  - класс кнопки в html
+    const buttonRef = document.querySelector('.js-button');   //  - класс кнопки в html
 
-    // const handleBtnClick = function () {
-    //     console.log('Клик по кнопке ' + Date.now());
-    // };
+    const handleBtnClick = function () {
+        console.log('Клик по кнопке ' + Date.now());
+    };
 
-    // buttonRef.addEventListener('click', handleBtnClick); // - слушатель события - видає помилку, знайти, яку
+    buttonRef.addEventListener('click', handleBtnClick); // - слушатель события - видає помилку, знайти, яку
 
 }
 
