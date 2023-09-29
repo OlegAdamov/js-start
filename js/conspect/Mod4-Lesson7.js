@@ -48,33 +48,30 @@ console.log('Repeta: ');
 
 {console.log('Example: Отложенный вызов: регистрация событий');
 
-    const buttonRef = document.querySelector('.js-button');   //  - класс кнопки в html
+//     const buttonRef = document.querySelector('.js-button');   //  - класс кнопки в html
 
-    const handleBtnClick = function () {
-        console.log('Клик по кнопке ' + Date.now());
-    };
+//     const handleBtnClick = function () {
+//         console.log('Клик по кнопке № ' + Date.now());
+//     };
 
-    buttonRef.addEventListener('click', handleBtnClick); // - слушатель события - видає помилку, знайти, яку
-
+//     buttonRef.addEventListener('click', handleBtnClick); // - слушатель события, вызывает функцию при клике
 }
 
 {console.log('Example: Отложенный вызов: геолокация');
 
-    // const onGetPositionSuccess = function (position) {
-    //     console.log('Это вызов onGetPositionSuccess');
-    //     console.log(position);
-    // }
+//     const onGetPositionSuccess = function (position) {
+//         console.log('Это вызов onGetPositionSuccess');
+//         console.log(position);
+//     }
     
-    // const onGetPositionError = function (error) {
-    //     console.log('Это вызов onGetPositionError');
-    //     console.log(error);
-    // }
-
+//     const onGetPositionError = function (error) {
+//         console.log('Это вызов onGetPositionError');
+//         console.log(error);
+//     }
     
-    // window.navigator.geolocation.getCurrentPosition(
-    // onGetPositionSuccess,
-    //     onGetPositionError,);
-
+// window.navigator.geolocation.getCurrentPosition(
+//     onGetPositionSuccess,
+//         onGetPositionError,);
 }
 
 {console.log('Example: Отложенный вызов: интервалы');
@@ -85,18 +82,15 @@ console.log('Repeta: ');
 
     // console.log('В коде перед таймаутом');
 
-    // setTimeout(callback, 2000);
+    // setTimeout(callback, 3000);
 
-    // console.log('В коде после таймаутом');
-
+    // console.log('В коде после таймаута');
 }
 
 {console.log('Example: Отложенный вызов: http-запрос');
-
     /* 
     * - API URL: HTTPS:/pokeapi.co/api/v2/pokemon
     */
-    
     // const onRequestSuccess = function (response) {
     //     console.log('Вызов функци onRequestSuccess после успешного ответа бекэнда');
 
@@ -106,40 +100,44 @@ console.log('Repeta: ');
     // fetch('HTTPS:/pokeapi.co/api/v2/pokemon')
     //     .then(res => res.json())
     //     .then(onRequestSuccess);
-
-
 }
 
 {console.log('Example: Фильтр');
-    
 
-    // const filter = function (array, test) {
-    //     const filteredArray = [];
 
-    //     for (const el of array) {
-    //         console.log(el);
-    //         console.log(test(el));
-    //     }
-    //     return filteredArray;
-    // };
+    const filter = function (array, test) {
+        const filteredArray = [];
+
+        for (const el of array) {
+            console.log(el);
+            const passed = test(el);
+
+            if (passed) {
+                filteredArray.push(el);
+}
+            // console.log(test(el));
+        }
+        return filteredArray;
+    };
 
     // 1. надо передать функцию
     // 2. функция получает элемент массива
     // 3. если элемент массива удовлетворяет условию то функция вернет true
     // 3. если элемент массива НЕ удовлетворяет условию то функция вернет false
     
-    // const callback1 = function (value) {
-    //     return value >= 3;
-    // }
+    const callback1 = function (value) {
+        return value >= 3;
+    }
    
+    const callback2 = function (value) {
+        return value <= 4;
+    }
 
-    // const r1 = filter([1, 2, 3, 4, 5,], callback1)
-    // console.log(r1);
+    const r1 = filter([1, 2, 3, 4, 5,], callback1)
+    console.log(r1);
     
-    // const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], function (value) {
-    //     return value <= 4;
-    // });
-    // console.log(r2);
+    const r2 = filter([1, 2, 3, 4, 5, 6, 7, 8], callback2);
+    console.log(r2);
 
 
     // const fruits = [
@@ -624,7 +622,7 @@ const filteredNumbers = numbers.filter(value => value > 3);
 
 
 
-{console.log(': ');
+{console.log(' ');
 
     
     
