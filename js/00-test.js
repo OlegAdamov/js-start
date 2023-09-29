@@ -916,11 +916,23 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{
-
-
+{console.log('Function reverseWords')
+function reverseWords(str) {
+    let result = [];
+    const words = str.split(' ');
+    
+    for (const word of words) {
+        result.push(word.split('').reverse().join(''));
+    }
+    return result.join(' ');
+    }
+    
+    // console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
 }
 
+{
+    
+}
 
 
 

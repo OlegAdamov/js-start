@@ -67,7 +67,7 @@ console.log('Repeta: ');
 // console.log(colorPickerData);
 }
 
-{    console.log("Добавление элементов в объект после его создания")
+{console.log("Добавление элементов в объект после его создания")
     
 //     const playlist = {
 //     name: 'Мой супер плейлист',
@@ -99,7 +99,7 @@ console.log('Repeta: ');
     // playlist.getName(5);
 }
 
-{  console.log('Замена имени через функцию')
+{console.log('Замена имени через функцию')
 
         /* 
 * http://fecore.net.ua/books/m5ph3r-javascript/module-03/images/context.jpg
