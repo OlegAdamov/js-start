@@ -200,16 +200,25 @@ console.log('Repeta: ');
 
     // const makeSheff = function (name) {
     //     const makeDish = function (dish) {
-    //         console.log(`${sheffName} готовит ${dish}`);
+    //         console.log(`${name} готовит ${dish}`);
     //     };
 
     //     return makeDish;
     // };
+
+    // const mango = makeSheff('Mango');
+    // // console.log(mango);
+    // const poly = makeSheff('Poly');
+
+    // mango('котлеты');
+    // mango('пирожок');
+    // poly('чай');
+    // poly('омлет');
 }
 
 {console.log('Example: Округлятор');
 
-    
+    // {
     // const floatingPoint = 3.326445454;
     // const someInt = Math.round(floatingPoint); // 3
     // const withDecimals = Number(floatingPoint.toFixed(2)); // 3.26
@@ -222,18 +231,18 @@ console.log('Repeta: ');
     // console.log(Number(number1.toFixed(2)));
     // console.log(Number(number2.toFixed(4)));
 
-    // {const rounder = function (number, places) {
+    // const rounder = function (number, places) {
     //     return Number(number.toFixed(places))
     // };
 
     // console.log(rounder(3.548975, 4));
     // console.log(rounder(3.55454, 3));
     // console.log(rounder(3.21578, 5));
-    // console.log(rounder(3.212215465987, 7));}
+    // console.log(rounder(3.212215465987, 7));
+    // }
 
-
-
-    // {const rounder = function (places) {
+    // {
+    //     const rounder = function (places) {
     //     return function (number) {
     //         return Number(number.toFixed(places))
     //     }
@@ -243,44 +252,42 @@ console.log('Repeta: ');
     //     const rounder5 = rounder(5);
     //     const rounder7 = rounder(7);
 
-    //     console.dir(rounder2);
+    //     // console.dir(rounder2);
 
-    //         console.log(rounder2(3.548975));
-    // console.log(rounder3(3.55454));
-    // console.log(rounder5(3.21578));
+    //     console.log(rounder2(3.548975));
+    //     console.log(rounder3(3.55454));
+    //     console.log(rounder5(3.21578));
     //     console.log(rounder7(3.212215465987));
-    
-    
     // }
 
 }
         
-{console.log('Example: Привтные данные и функции - скрытие реализации, интерфейс');
+{console.log('Example: Приватные данные и функции - скрытие реализации, интерфейс');
 
-    // const salaryManagerFactory = function (employeeName, baseSalary = 0) {
-    //     let salary = baseSalary;
+    const salaryManagerFactory = function (employeeName, baseSalary = 0) {
+        let salary = baseSalary;
 
-    //     const changeBy = function (amount) {
-    //         salary += amount;   // можно убрать строку
-    //     };
+        const changeBy = function (amount) {
+            salary += amount;   // можно убрать строку
+        };
     
 
-    //     return {
-    //         raise(amount) {
-    //             changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
-    //         },
-    //         lower(amount) {
-    //             changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
-    //         },
-    //         current() {
-    //             return `Текущая зарплата ${employeeName} - ${salary}`;
-    //         },
-    //     };
-    // };
+        return {
+            raise(amount) {
+                changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
+            },
+            lower(amount) {
+                changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
+            },
+            current() {
+                return `Текущая зарплата ${employeeName} - ${salary}`;
+            },
+        };
+    };
 
-    // const salaryManager = salaryManagerFactory('Mango', 5000);
+    const salaryManager = salaryManagerFactory('Mango', 5000);
 
-    // console.log(salaryManager.current());
+    console.log(salaryManager.current());
 
 }
 
