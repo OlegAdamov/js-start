@@ -264,30 +264,30 @@ console.log('Repeta: ');
         
 {console.log('Example: Приватные данные и функции - скрытие реализации, интерфейс');
 
-    const salaryManagerFactory = function (employeeName, baseSalary = 0) {
-        let salary = baseSalary;
+    // const salaryManagerFactory = function (employeeName, baseSalary = 0) {
+    //     let salary = baseSalary;
 
-        const changeBy = function (amount) {
-            salary += amount;   // можно убрать строку
-        };
+    //     const changeBy = function (amount) {
+    //         salary += amount;   // можно убрать строку
+    //     };
     
 
-        return {
-            raise(amount) {
-                changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
-            },
-            lower(amount) {
-                changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
-            },
-            current() {
-                return `Текущая зарплата ${employeeName} - ${salary}`;
-            },
-        };
-    };
+    //     return {
+    //         raise(amount) {
+    //             changeBy(amount);  // если убрать строку - выше, тогда salary += amount;
+    //         },
+    //         lower(amount) {
+    //             changeBy(amount);// если убрать строку - выше, тогда salary -= amount;
+    //         },
+    //         current() {
+    //             return `Текущая зарплата ${employeeName} - ${salary}`;
+    //         },
+    //     };
+    // };
 
-    const salaryManager = salaryManagerFactory('Mango', 5000);
+    // const salaryManager = salaryManagerFactory('Mango', 5000);
 
-    console.log(salaryManager.current());
+    // console.log(salaryManager.current());
 
 }
 
@@ -316,11 +316,10 @@ console.log('Repeta: ');
 //     console.log(addArrow(12, 18, 32));
 // }
 
-// {    const addArrow = (a, b, c) => a + b + c;  // !{} - НЕявный возврат
+// {    const addArrow1 = (a, b, c) => a + b + c;  // !{} - НЕявный возврат
         
-//     console.log(addArrow(37, 25, 69));
+//     console.log(addArrow1(37, 25, 69));
 //     }
-    
 
     // {const fnA = function () {
     //     return {
@@ -336,12 +335,12 @@ console.log('Repeta: ');
     // }
 
     // { console.log(`Синтаксис стрелочной функции`);
-        /* 
+        /*
         * 
         * - с параметрами
         * - с одним параметром
         * - без параметров
-        */
+       */
 
         // const add = function (a, b) {
         //     return a + b;
@@ -366,8 +365,6 @@ console.log('Repeta: ');
         // };
         // greet();
 
-
-
         /*
         * Явный и неявный возврат
         */
@@ -382,8 +379,6 @@ console.log('Repeta: ');
         // const add = (a, b) => a + b;
 
         // console.log(add(2, 3));
-
-
 
        /*
        * Псевдомассив arguments
@@ -460,42 +455,6 @@ console.log('Repeta: ');
     
 }
 
-{console.log('Example: ');
-
-
-
-}
-
-
-{console.log('Example: ');
-
-
-
-}
-
-
-{console.log('Example: ');
-
-
-
-}
-
-
-{console.log('Example: ');
-
-
-
-}
-
-
-{console.log('Example: ');
-
-
-
-}
-
-
-
 {console.log('Autocheck: 11');
 
 // // Change code below this line
@@ -550,6 +509,35 @@ numbers.forEach(number => {
 
 }
 
+{ console.log('Task-Konsp: Императивное программирование');
+
+const numbers = [1, 2, 3, 4, 5];
+const filteredNumbers = [];
+
+for (let i = 0; i < numbers.length; i += 1) {
+  if (numbers[i] > 3) {
+    filteredNumbers.push(numbers[i]);
+  }
+}
+
+// console.log(filteredNumbers); // [4, 5]
+}
+
+{console.log('Task-Konsp: Декларативное программирование');
+
+const numbers = [1, 2, 3, 4, 5];
+const filteredNumbers = numbers.filter(value => value > 3);
+// console.log(filteredNumbers); // [4, 5]
+}
+
+console.log('Artem Ricych: ');
+
+{console.log('Example: ');
+
+}
+
+
+
 {console.log('Autocheck: ');
 
 
@@ -571,43 +559,11 @@ numbers.forEach(number => {
 
 }
 
-
-
-{ console.log('Task-Konsp: Императивное программирование');
-
-const numbers = [1, 2, 3, 4, 5];
-const filteredNumbers = [];
-
-for (let i = 0; i < numbers.length; i += 1) {
-  if (numbers[i] > 3) {
-    filteredNumbers.push(numbers[i]);
-  }
-}
-
-// console.log(filteredNumbers); // [4, 5]
-
-}
-
-{console.log('Task-Konsp: Декларативное программирование');
-
-const numbers = [1, 2, 3, 4, 5];
-const filteredNumbers = numbers.filter(value => value > 3);
-// console.log(filteredNumbers); // [4, 5]
-
+{console.log('Task-Konsp: ');
 
 }
 
 {console.log('Task-Konsp: ');
-
-
-
-
-}
-
-{console.log('Task-Konsp: ');
-
-
-
 
 }
 
