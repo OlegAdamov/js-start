@@ -931,7 +931,26 @@ function reverseWords(str) {
 }
 
 {
+function addBinary(a,b) {
+    let results1 = "";
+
+    const sum = a + b;
+    // for (let index = sum; index > 0; index / 2) {
+    //     if (!!(sum % 2)) {
+    //         results1 = "1";
+    //         index -= 1;
+    //     }
+        
+    // }
     
+    return results1;
+    }
+
+    console.log(addBinary(1, 2));
+    console.log(addBinary(5, 9));
+    console.log(addBinary(1, 6));
+    
+
 }
 
 
