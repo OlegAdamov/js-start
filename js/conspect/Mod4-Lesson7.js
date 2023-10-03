@@ -334,18 +334,13 @@ console.log('Repeta: ');
     //     console.log(arrowFnA());
     // }
 
-    // { console.log(`Синтаксис стрелочной функции`);
+    // {        console.log(`Синтаксис стрелочной функции`);
         /*
         * 
         * - с параметрами
         * - с одним параметром
         * - без параметров
        */
-
-        // const add = function (a, b) {
-        //     return a + b;
-        // };
-
 
         // const add = (a, b) => {
         //     console.log(`afaff`);
@@ -366,33 +361,33 @@ console.log('Repeta: ');
         // greet();
 
         /*
-        * Явный и неявный возврат
+        * Явный (explicit) и неявный (implicit) возврат
         */
         
-
         // const add = (a, b) => {
         //     return a + b;
         // }
         // console.log(add(2, 3));
 
 
-        // const add = (a, b) => a + b;
+        // const add1 = (a, b) => a + b;
 
-        // console.log(add(2, 3));
+        // console.log(add1(2, 3));
 
-       /*
-       * Псевдомассив arguments
-       */
+        /*
+        * Псевдомассив arguments
+        */
+
         
         // const add = (...args) => {
         //     console.log(args);
         // };
         // add(1, 2, 3, 4, 5, 6, 7);
-  //  }
+//    }
 
     // { console.log(`Контекст стрелки`)
         
-        /* 
+        /*
         * Контекст внутри стрелки определяется местом её объявления,
         * а не вызова и ссылается на контекст родительской функции
         */
@@ -408,24 +403,26 @@ console.log('Repeta: ');
 
         // user.showContext(); // this in showThis: window
 
-        //         const user = {
+
+
+        // const user = {
         //     fullName: `Mango`,
-        //             showName() {
-        //                 console.log(`this: `, this);
-        //                 console.log(`this.fullName: `, this.fullName);
+        //     showName() {
+        //         console.log(`this: `, this);
+        //         console.log(`this.fullName: `, this.fullName);
 
-        //                 const inner = () => {
-        //                     console.log(`this in inner: `, this);
-        //                 };
-
-        //                 inner();
+        //         const inner = () => {
+        //             console.log(`this in inner: `, this);
+        //         };
+        //     inner();
         //     },
         // };
 
         // user.showName();
 
         /*
-        * 💩 Стрелки как методы объекта
+        * 💩 Стрелки как методы объекта (стрелочная функция запоминает this при объявлении
+        * и не может быть перезаписан при вызове)
         */
         
         // const user = {
@@ -439,21 +436,19 @@ console.log('Repeta: ');
         // user.showName();
 
 /* 
-* 💩 Стрелка конструктор
+* 💩 Стрелка конструктор (стрелочная функция не может быть конструктором)
 */
 
         // const User = function (name) {  // const User = name => {  - 💩
         //     this.name = name;
         // }
 
-        // console.log(new User(`Mango`));
-
-
-
-
+    // console.log(new User(`Mango`));
+    
 //   }
     
 }
+
 
 {console.log('Autocheck: 11');
 
@@ -530,60 +525,159 @@ const filteredNumbers = numbers.filter(value => value > 3);
 // console.log(filteredNumbers); // [4, 5]
 }
 
-console.log('Artem Ricych: ');
+{console.log('Example: Цепочки вызовов');
+
+    const numbers = [1, 2, 5, 6, 3, 4];
+    
+    /* const greaterThenTwo = numbers.filter(function (num) {
+        return num > 2;
+    }); */
+    const greaterThenTwo = numbers.filter(num => num > 2 );
+
+    // console.log(greaterThenTwo);
+
+    /* const multByTwo = greaterThenTwo.map(function (num) {
+        return num * 3;
+    }); */
+    const multByTwo = greaterThenTwo.map((num) => num * 3);
+
+    // console.log(multByTwo);
+
+    /* const sorted = multByTwo.sort(function (a, b) {
+        return a - b;
+    }); */
+    const sorted = multByTwo.sort((a, b) => a - b);
+
+    // console.log(multByTwo);
+
+
+    /* const res = numbers
+        .filter(function (num) {
+            return num > 2;
+        })
+        .map(function (num) {
+            return num * 3;
+        })
+        .sort(function (a, b) {
+            return a - b;
+        }); */
+    const res = numbers
+        .filter(num => num > 2)
+        .map(num => num * 3)
+        .sort((a, b) => a - b);
+
+    // console.log(res);
+
+
+
+
+
+
+
+    
+}
+
+{console.log('Example: Сортировка тех кто онлайн по рангу');
+
+    // const players = [
+    //     { id: 'id-1', tag: 'Mango', isOnline: true, rank: 800 },
+    //     { id: 'id-2', tag: 'Poly', isOnline: false, rank: 600 },
+    //     { id: 'id-3', tag: 'Ajax', isOnline: true, rank: 100 },
+    //     { id: 'id-4', tag: 'Kiwi', isOnline: true, rank: 400 },
+    // ];
+
+/*     const onlineAndSorted = players
+        .filter(function (player) {
+            return player.isOnline;
+        })
+        .sort(function (prevPlayer, nextPlayer) {
+            return prevPlayer.rank - nextPlayer.rank;
+        }); */
+    
+    //     const onlineAndSorted = players
+    //     .filter(player => player.isOnline)
+    //     .sort((prevPlayer, nextPlayer) => prevPlayer.rank - nextPlayer.rank);
+    // console.table(onlineAndSorted);
+}
+
+{console.log('Example: Увеличиваем количество поинтов каждого игрока');
+
+    const players = [
+        { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false},
+        { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true},
+        { id: 'player-3', name: 'Ajax', timePlayed: 230, points: 48, online: true},
+        { id: 'player-4', name: 'Kiwi', timePlayed: 150, points: 71, online: false},
+        { id: 'player-5', name: 'Kiwi', timePlayed: 80, points: 48, online: true},
+    ];
+
+    /* const updatePlayers = players.map(function (player) {
+        return {
+            ...player,
+            points: player.points + player.points * 0.1,
+        };
+    }); */
+    
+    const updatePlayers = players.map(player => ({
+            ...player,
+            points: player.points + player.points * 0.1,
+        }));
+    // console.table(updatePlayers);
+}
+
+{console.log('Example: Увеличиваем количество часов игрока по id');
+    
+    const players = [
+        { id: 'player-1', name: 'Mango', timePlayed: 310, points: 54, online: false},
+        { id: 'player-2', name: 'Poly', timePlayed: 470, points: 92, online: true},
+        { id: 'player-3', name: 'Ajax', timePlayed: 230, points: 48, online: true},
+        { id: 'player-4', name: 'Kiwi', timePlayed: 150, points: 71, online: false},
+        { id: 'player-5', name: 'Kiwi', timePlayed: 80, points: 48, online: true},
+    ];
+
+    const playerIdToUpdate = 'player-3';
+
+    /* const updatePlayers = players.map(function (player) {
+        if (player.id === playerIdToUpdate) {
+            return {
+                ...player,
+                timePlayed: player.timePlayed + 50,
+            };
+        }
+        return player;
+    }); */
+
+    /*  const updatePlayers = players.map(player => {
+            return player.id === playerIdToUpdate
+                ? { ...player, timePlayed: player.timePlayed + 50}
+                : player;
+        }); */
+    
+        const updatePlayers = players.map(player =>
+        player.id === playerIdToUpdate
+                ? { ...player, timePlayed: player.timePlayed + 50}
+                : player
+                );
+    
+    // console.table(updatePlayers);
+}
 
 {console.log('Example: ');
-
-}
-
-
-
-{console.log('Autocheck: ');
-
-
-
-
-}
-
-{console.log('Autocheck: ');
-
-
-
-
-}
-
-{console.log('Autocheck: ');
-
-
     
 
 }
 
-{console.log('Task-Konsp: ');
+{console.log('Autocheck: ');
 
 }
 
 {console.log('Task-Konsp: ');
 
 }
-
-{console.log('Task-Konsp: ');
-
-
-
-
-}
-
-
 
 {console.log(' ');
 
-    
-    
-    
-    
-    
 }
 
 
 
+console.log('Artem Ricych: ');
