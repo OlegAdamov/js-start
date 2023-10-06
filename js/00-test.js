@@ -930,20 +930,19 @@ function reverseWords(str) {
     // console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
 }
 
-{
+{ console.log('sum number and add of binary')
 function addBinary(a,b) {
-    let results1 = "";
+    let results = 0;
 
     const sum = a + b;
-    // for (let index = sum; index > 0; index / 2) {
-    //     if (!!(sum % 2)) {
-    //         results1 = "1";
-    //         index -= 1;
-    //     }
         
-    // }
-    
-    return results1;
+    // function check(sum) {
+        if (sum % 2) {
+           return results =  1;
+        }   
+        return results = 0;
+    // };
+    return results;
     }
 
     console.log(addBinary(1, 2));
@@ -952,6 +951,9 @@ function addBinary(a,b) {
     
 }
 
+{   
+
+}
 
 
 
