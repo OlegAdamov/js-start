@@ -981,7 +981,33 @@ function basicOp(operation, value1, value2)
 
 }
 
+{ console.log("%cRecursion", "color: blue")
 
+      function multiply(arr, n) {
+    if (n <= 0) {
+      return 1;
+    } else {
+      return multiply(arr, n - 1) * arr[n - 1];
+    }
+    }
+    console.log(multiply([1], 0));
+    console.log(multiply([2, 3, 4], 1));
+    console.log(multiply([2, 3, 4, 5], 3));
+    
+
+    function sum(arr, n) {
+        if (n <= 0) {
+            return 0;
+        } else {
+            return sum(arr, n - 1) + arr[n - 1];
+        }
+    }
+    
+    console.log(sum([1], 0));
+    console.log(sum([2, 3, 4], 1));
+    console.log(sum([2, 3, 4, 5], 3));
+    
+}
 
 
 
