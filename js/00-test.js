@@ -1,6 +1,5 @@
 
-{
-    console.log(`%cЗАДАЧА 1 - сумма зарплат работников`, "color: red");
+{console.log(`%cЗАДАЧА 1 - сумма зарплат работников`, "color: red");
     /*
     * Напишите скрипт, который подсчитывает общую сумму зарплат работников.
     * Кол-во работников хранится в переменной employees.
@@ -932,22 +931,22 @@ function reverseWords(str) {
 
 { console.log('sum number and add of binary')
 function addBinary(a,b) {
-    let results = 0;
+    let results = [];
 
-    const sum = a + b;
-        
-    // function check(sum) {
-        if (sum % 2) {
-           return results =  1;
-        }   
-        return results = 0;
-    // };
-    return results;
+    const sum = (a + b);
+
+    for (let i = sum; i > 0; i = Math.floor(i/2) ){
+       (i % 2) ? results.push(1) : results.push(0);
+    }
+    return results.reverse().join('');
+    
     }
 
-    console.log(addBinary(1, 2));
-    console.log(addBinary(5, 9));
-    console.log(addBinary(1, 6));
+    console.log(addBinary(1, 2));   // 0011
+    console.log(addBinary(5, 9));   // 1110
+    console.log(addBinary(1, 6));   // 0111
+    console.log(addBinary(25, 36));   // 0011 1101
+    console.log(addBinary(24, 116));   // 1000 1100
     
 }
 
