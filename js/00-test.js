@@ -915,7 +915,7 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{console.log('%cFunction reverseWords', "color: green")
+{console.log('%cFunction reverseWords', "color: red")
 function reverseWords(str) {
     let result = [];
     const words = str.split(' ');
@@ -929,7 +929,7 @@ function reverseWords(str) {
     // console.log(reverseWords('The quick brown fox jumps over the lazy dog.'));
 }
 
-{ console.log('sum number and add of binary')
+{ console.log('%csum number and add of binary', "color: red")
 function addBinary(a,b) {
     let results = [];
 
@@ -951,8 +951,21 @@ function addBinary(a,b) {
     
 }
 
-{   
+{   console.log("%cMy Friends", "color: green")
+    function friend(friends){
+        const friend = [];
 
+        for (let i = 0; i < friends.length; i += 1) {
+            friends[i].length === 4 ? friend.push(friends[i]) : 0;
+        }
+        return friend;
+
+    }
+    
+    console.log(friend(["Ryan", "Kieran", "Mark"])) // ["Ryan", "Mark"]
+    console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])) // ["Ryan"]
+    console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])) // ["Jimm", "Cari", "aret"]
+    console.log(friend(["Love", "Your", "Face", "1"])) // ["Love", "Your", "Face"]
 }
 
 
