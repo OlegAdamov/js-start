@@ -951,7 +951,7 @@ function addBinary(a,b) {
     
 }
 
-{   console.log("%cMy Friends", "color: green")
+{   console.log("%cMy Friends", "color: red")
     function friend(friends){
         const friend = [];
 
@@ -962,13 +962,24 @@ function addBinary(a,b) {
 
     }
     
-    console.log(friend(["Ryan", "Kieran", "Mark"])) // ["Ryan", "Mark"]
-    console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])) // ["Ryan"]
-    console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])) // ["Jimm", "Cari", "aret"]
-    console.log(friend(["Love", "Your", "Face", "1"])) // ["Love", "Your", "Face"]
+    // console.log(friend(["Ryan", "Kieran", "Mark"])) // ["Ryan", "Mark"]
+    // console.log(friend(["Ryan", "Jimmy", "123", "4", "Cool Man"])) // ["Ryan"]
+    // console.log(friend(["Jimm", "Cari", "aret", "truehdnviegkwgvke", "sixtyiscooooool"])) // ["Jimm", "Cari", "aret"]
+    // console.log(friend(["Love", "Your", "Face", "1"])) // ["Love", "Your", "Face"]
 }
 
+{ console.log("%cMath operations", "color: green")
+function basicOp(operation, value1, value2)
+{
+    return typeof(operation);
+    }
+    
+// console.log(basicOp('+', 4, 7)); // 11
+// console.log(basicOp('-', 15, 18)); // -3
+// console.log(basicOp('*', 5, 5)); // 25
+// console.log(basicOp('/', 49, 7)); // 7
 
+}
 
 
 
