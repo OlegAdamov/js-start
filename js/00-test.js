@@ -1,5 +1,6 @@
 
-{ console.log(`ЗАДАЧА 1 - сумма зарплат работников`);
+{
+    console.log(`%cЗАДАЧА 1 - сумма зарплат работников`, "color: red");
     /*
     * Напишите скрипт, который подсчитывает общую сумму зарплат работников.
     * Кол-во работников хранится в переменной employees.
@@ -28,7 +29,7 @@
     // console.log('totalSalary; ', totalSalary);
 }
 
-{    console.log(`ЗАДАЧА 2 - сумма четных чисел`);
+{    console.log(`%cЗАДАЧА 2 - сумма четных чисел`, "color: red");
     /*
     * Напишите скрипт, который подсчитывает сумму всех чётных чисел,
     * которые входят в диапазон чисел в переменных от min до max.
@@ -40,7 +41,7 @@
 
 }
 
-{    console.log(`ЗАДАЧА 3 - обработка покупки в магазине`);
+{    console.log(`%cЗАДАЧА 3 - обработка покупки в магазине`, "color: red" );
     /*
     * Напишите скрипт, обработки покупки в магазине.
     * 
@@ -62,7 +63,7 @@
 
 }
 
-{    console.log(`Task 4`);
+{    console.log(`%cTask 4`, "color: red");
     /* Напиши скрипт подсчета суммы покупки со скидкой в зависимости 
     *от потраченной суммы за всё время (партнёрская программа).
     * 
@@ -110,7 +111,7 @@
 
 }
 
-{    console.log(`Task 6.1`);
+{    console.log(`%cTask 6.1`, "color: red");
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -133,7 +134,7 @@
     // console.log(`Total: `, total);
 }
 
-{    console.log(`Task 6.2 - сумма всех четных чисел в массиве`);
+{    console.log(`%cTask 6.2 - сумма всех четных чисел в массиве`, "color: red");
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -152,7 +153,7 @@
     // console.log(`Total: `, total);
 }
 
-{    console.log(`Task 6.3 - сумма всех четных чисел в массиве`);
+{    console.log(`%cTask 6.3 - сумма всех четных чисел в массиве`, "color: red");
     /*
     * Напиши скрипт, который подсчитывает сумму всех четных чисел в массиве. 
    */
@@ -173,7 +174,7 @@
     // console.log(`Total: `, total);
 }
 
-{    console.log(`Task 7.1`);
+{    console.log(`%cTask 7.1`, "color: red");
 
 /* Напиши скрипт поиска логина
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -217,8 +218,7 @@
     // console.log(message);
 }
 
-{
-    console.log(`Task 7.2`);
+{console.log(`%cTask 7.2`, "color: red");
     // Задача 7.2
     /* Напиши скрипт поиска логина
     * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -260,7 +260,7 @@
 
 }
 
-{    console.log(`Task 7.3`);
+{    console.log(`%cTask 7.3`, "color: red");
 /* Напиши скрипт поиска логина
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
 * - Если нашли логин, вывести сообщение "Пользователь [логин] найден."
@@ -271,7 +271,7 @@
 
 }
 
-{    console.log(`Task 7.4`);
+{    console.log(`%cTask 7.4`, "color: red");
 
     /* Напиши скрипт поиска логина
     * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -290,7 +290,7 @@
 
 }
 
-{    console.log(`Task 8`);
+{    console.log(`%cTask 8`, "color: red");
 /* Напиши скрипт поиска самого маленького/большого числа в массиве,
 * при условии, что числа уникальные (не повторяются).
 *
@@ -316,7 +316,7 @@
     // console.log(biggestNumber);
 }
 
-{    console.log(`Task 9`);
+{    console.log(`%cTask 9`, "color: red");
 /* Напиши скрипт, который объединяет все элементы массива в одно строковое значение.
 *
 * Элементов может быть произвольное кол-во.
@@ -343,7 +343,7 @@
 
 }
 
-{    console.log(`Task 10`);
+{    console.log(`%cTask 10`, "color: red");
 /* Напиши функцию changeCase(string), которая заменяет регистр
 * каждого символа в строе на противоположный.
 * Например, если строка "JavaScript", то на выходе должна быть строка "jAVAsCRIPT".
@@ -376,7 +376,7 @@
 
 }
 
-{    console.log(`Task 11`);
+{    console.log(`%cTask 11`, "color: red");
 /* Делаем slug в URL из названия статьи (например на dev.to)
 * Заголовок статьи состоит только из букв и пробелов 
 * - Нормализируем строку
@@ -402,7 +402,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
     
 }
 
-{    console.log(`Task 12`);
+{    console.log(`%cTask 12`, "color: red");
 /* Напиши скрипт, который считает сумму элементов двух массивов
 */
 
@@ -431,7 +431,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
     // console.log(total);
 }
 
-{    console.log(`Task 13`);
+{    console.log(`%cTask 13`, "color: red");
 /* Работаем с коллекцией карточек в trello
 * - Метод splice()
 * - Удалить
@@ -476,7 +476,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
     // console.table(cards);
 }
 
-{    console.log(`Task `);
+{    console.log(`%cTask `, "color: red");
 /* Напиши 
 *
 *
@@ -496,7 +496,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
 
 }
 
-{    console.log(`Task F-1 - массив чисел + сумма`);
+{    console.log(`%cTask F-1 - массив чисел + сумма`, "color: red");
 /* Напиши функцию calculateTotalPrice(items)
 * которая принимает массив цен (чисел) и возвращает их сумму
 *
@@ -510,7 +510,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
 //     total +=value;
 }
 
-{ console.log('Task - the natural numbers');
+{ console.log('%cTask - the natural numbers', "color: red");
 
 /* If we list all the natural numbers below $10$ that are multiples of $3$ or $5$, we get $3, 5, 6$ and $9$. The sum of these multiples is $23$.
 * Find the sum of all the multiples of $3$ or $5$ below $1000$. 
@@ -530,7 +530,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
     // console.log(total);
 }
 
-{ console.log('Task - the Fibonacci sequence')
+{ console.log('%cTask - the Fibonacci sequence', "color: red")
     /* Each new term in the Fibonacci sequence is generated by adding the previous two terms. By starting with and, the first terms will be:
     * 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ...
     * By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms. 
@@ -564,7 +564,7 @@ const slug1 = title.toLowerCase().split(' ').join('-');
     // console.table('total: ', total);
 }
 
-{ console.log('Task - calculateTotalPrice')
+{ console.log('%cTask - calculateTotalPrice', "color: red")
 const calculateTotalPrice = function (items){
     console.log(`items внутри функции: `, items);
 
@@ -584,7 +584,7 @@ const calculateTotalPrice = function (items){
 
 }
 
-{    console.log(`Task F-2 - перебор + логирование массива`);
+{    console.log(`%cTask F-2 - перебор + логирование массива`, "color: red");
 /* Напиши функцию logItems(items) для перебора и логирования массива
 *
 */
@@ -602,7 +602,7 @@ logItems([`клавиатура`, `наушники`, `часы`]);
 
 }
 
-{    console.log(`Task F-3 - поиск логина`);
+{    console.log(`%cTask F-3 - поиск логина`, "color: red");
 /* Напиши функцию findLogin(allLogins, login) для поиска логина
 *
 * - Если логина нет, вывести сообщение "Пользователь [логин] не найден."
@@ -634,7 +634,7 @@ const findLogin = function (allLogins, loginToFind) {
 // console.log(findLogin(logins, `aj4xtdfd4n`));
 }
 
-{    console.log(`Task F-4 - поиск самого маленького числа в массиве`);
+{    console.log(`%cTask F-4 - поиск самого маленького числа в массиве`, "color: red");
 /* Напиши функцию findSmallesNumber(numbers) для поиска самого маленького числа в массиве.
 * при условии, что числа уникальные (не повторяются).
 */
@@ -659,7 +659,7 @@ const findLogin = function (allLogins, loginToFind) {
 // console.log(findSmallesNumber([51, 18, 13, 24, 7, 85, 19])); // 7
 }
 
-{   console.log(`Task F-5 - замена регистра каждого символа в строе на противоположный`);
+{   console.log(`%cTask F-5 - замена регистра каждого символа в строе на противоположный`, "color: red");
     
 /* Напиши функцию changeCase(string), которая заменяет регистр
     * каждого символа в строе на противоположный.
@@ -688,7 +688,7 @@ const findLogin = function (allLogins, loginToFind) {
     // console.log(changeCase('AjAx'));
 }
     
-{    console.log(`Task F-6 - URL`);
+{    console.log(`%cTask F-6 - URL`, "color: red");
 /* Напиши функцию slugigy(string), которая получает строку и возвращает URL-slug
 * Строка состоит только из букв и пробелов
 */
@@ -719,7 +719,7 @@ const findLogin = function (allLogins, loginToFind) {
     // console.log(slugify('Technical writing tips for non-native English speakers'));
 }
 
-{console.log(`Task F-7 - Псевдомассив argunents и Array.from и ...`);
+{console.log(`%cTask F-7 - Псевдомассив argunents и Array.from и ...`, "color: red");
 
     /*
     * Псевдомассив argunents и Array.from и ...
@@ -748,7 +748,7 @@ const findLogin = function (allLogins, loginToFind) {
     // fn('hi', 1, 2, 3, 4, 5, 6, 7, 8, 9);
 }
 
-{console.log('Task - сложения произвольного количества аргументов')
+{console.log('%cTask - сложения произвольного количества аргументов', "color: red")
     /* (Напиши функцию add для сложения произвольного количества аргументов (чисел))
 * - Array.from()
 * - Операция ... (rest)
@@ -770,7 +770,7 @@ const findLogin = function (allLogins, loginToFind) {
     // console.log(add(1, 2, 3, 4, 5, 6));
 }
 
-{    console.log(`Task F-8`);
+{    console.log(`%cTask F-8`, "color: red");
 /*  
 * Напиши функцию filterNumbers(array [, number1, ...]), которая:
 * - первым аргументом принимает массив чисел
@@ -800,7 +800,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{ console.log(`Task - Function + Function (Freelancer - Рекурсия)`);
+{ console.log(`%cTask - Function + Function (Freelancer - Рекурсия)`, "color: red");
 
     // function calcSumm(numOne, numTwo) {
     //     let result = 1;
@@ -824,7 +824,7 @@ const findLogin = function (allLogins, loginToFind) {
 
 }
 
-{    console.log(`Task AutoCheck-21`);
+{    console.log(`%cTask AutoCheck-21`, "color: red");
 /* Напиши функцию findLongestWord(string) которая принимает произвольную
 * строку состоящую только из слов разделённых пробелом (параметр string) и
 * возвращает самое длинное слово в этой строке.
@@ -850,7 +850,7 @@ const findLogin = function (allLogins, loginToFind) {
         // console.log(findLongestWord("May the force be with you")) // force
 }
 
-{    console.log(`Task AutoCheck-22`);
+{    console.log(`%cTask AutoCheck-22`, "color: red");
 /* Дополни код функции createArrayOfNumbers(min, max) так, чтобы она возвращала
 * массив всех целых чисел от значения min до max. 
 * - В цикле for использовался метод push
@@ -875,7 +875,7 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{console.log('Example: Кнопочки + -')
+{console.log('%cExample: Кнопочки + -', "color: red")
     
     
     // const counter = {
@@ -916,7 +916,7 @@ for (i = min; i <= max; i += 1) {
 
 }
 
-{console.log('Function reverseWords')
+{console.log('%cFunction reverseWords', "color: green")
 function reverseWords(str) {
     let result = [];
     const words = str.split(' ');
