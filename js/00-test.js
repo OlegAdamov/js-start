@@ -940,13 +940,14 @@ function addBinary(a,b) {
     }
     return results.reverse().join('');
     
+    // return (a+b).toString(2)
     }
 
-    console.log(addBinary(1, 2));   // 0011
-    console.log(addBinary(5, 9));   // 1110
-    console.log(addBinary(1, 6));   // 0111
-    console.log(addBinary(25, 36));   // 0011 1101
-    console.log(addBinary(24, 116));   // 1000 1100
+    // console.log(addBinary(1, 2));   // 0011
+    // console.log(addBinary(5, 9));   // 1110
+    // console.log(addBinary(1, 6));   // 0111
+    // console.log(addBinary(25, 36));   // 0011 1101
+    // console.log(addBinary(24, 116));   // 1000 1100
     
 }
 
