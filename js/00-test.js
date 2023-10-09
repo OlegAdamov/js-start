@@ -981,18 +981,18 @@ function basicOp(operation, value1, value2)
 
 }
 
-{ console.log("%cRecursion", "color: blue")
+{ console.log("%cRecursion", "color: red")
 
       function multiply(arr, n) {
     if (n <= 0) {
       return 1;
     } else {
       return multiply(arr, n - 1) * arr[n - 1];
-    }
-    }
-    console.log(multiply([1], 0));
-    console.log(multiply([2, 3, 4], 1));
-    console.log(multiply([2, 3, 4, 5], 3));
+          };
+    };
+    // console.log(multiply([1], 0));
+    // console.log(multiply([2, 3, 4], 1));
+    // console.log(multiply([2, 3, 4, 5], 3));
     
 
     function sum(arr, n) {
@@ -1000,12 +1000,53 @@ function basicOp(operation, value1, value2)
             return 0;
         } else {
             return sum(arr, n - 1) + arr[n - 1];
-        }
-    }
+        };
+    };
     
-    console.log(sum([1], 0));
-    console.log(sum([2, 3, 4], 1));
-    console.log(sum([2, 3, 4, 5], 3));
+    // console.log(sum([1], 0));
+    // console.log(sum([2, 3, 4], 1));
+    // console.log(sum([2, 3, 4, 5], 3));
+
+    function countup(n) {
+  if (n < 1) {
+    return [];
+  } else {
+    const countArray = countup(n - 1);
+    countArray.push(n);
+    return countArray;
+        };
+    };
+// console.log(countup(5));
+
+
+function countdown(n){
+    if (n < 1) {
+        return [];
+    } else {
+        const countArray = countdown(n - 1);
+        countArray.unshift(n)
+        return countArray;
+    };
+};
+
+// console.log(countdown(-1));
+// console.log(countdown(10));
+// console.log(countdown(5));
+
+function rangeOfNumbers(startNum, endNum) {
+    if (startNum === endNum) {
+        return [startNum]
+    } else {
+        const countArray = rangeOfNumbers(startNum, endNum - 1)
+        countArray.push(endNum);
+        return countArray;
+    };
+};
+
+// console.log(rangeOfNumbers(1, 5));
+// console.log(rangeOfNumbers(6, 9));
+// console.log(rangeOfNumbers(4, 4));
+    
     
 }
 
