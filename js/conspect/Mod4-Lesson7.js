@@ -290,7 +290,7 @@ console.log('Repeta: ');
 
 }
 
-{console.log('Стрелочные функции');
+{console.log('%cСтрелочные функции', "color: green");
 
     /* 
     * - Объявление
