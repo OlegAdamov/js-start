@@ -73,7 +73,7 @@ console.log('Repeta: ');
 //         onGetPositionError,);
 }
 
-{console.log('%cExample: Отложенный вызов: интервалы', "color: red");
+{console.log('Example: Отложенный вызов: интервалы');
 
     // const callback = function () {
     //     console.log('Через 3 секунды внтури колбека в таймауте');
@@ -86,7 +86,7 @@ console.log('Repeta: ');
     // console.log('В коде после таймаута');
 }
 
-{console.log('%cExample: Отложенный вызов: http-запрос', "color: blue");
+{console.log('Example: Отложенный вызов: http-запрос');
     /* 
     * - API URL: HTTPS:/pokeapi.co/api/v2/pokemon
     */
@@ -153,7 +153,7 @@ console.log('Repeta: ');
 
 }
 
-{console.log('Функция замыкания: ');
+{console.log('Функция замыкания (closures): ');
 
 /* Функция результатом своей работы может возвращать другую функцию.
 * 
@@ -447,7 +447,6 @@ console.log('Repeta: ');
 //   }
     
 }
-
 
 {console.log('Autocheck: 11');
 
