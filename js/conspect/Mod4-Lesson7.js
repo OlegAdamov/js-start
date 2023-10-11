@@ -11,46 +11,38 @@ console.log('Repeta: ');
 * "функцией высшего порядка"
 */
 
-{    const fnA = function (message, callback) {
-        console.log(message);
+// {    const fnA = function (message, callback) {
+//         console.log(message);
 
-        console.log(callback);
-        callback(100);
+//         console.log(callback);
+//         callback(100);
         
-    };
+//     };
     
-    const fnB = function (number) {
-        console.log('Это лог при вызове fnB', number);
-    };
+//     const fnB = function (number) {
+//         console.log('Это лог при вызове fnB', number);
+//     };
 
-        // fnA('some text', fnB)
-}
-    {
-        const doMath = function (a, b, callback) {
-            const result = callback(a, b);
+//         // fnA('some text', fnB)
+// }
+//     {
+//         const doMath = function (a, b, callback) {
+//             const result = callback(a, b);
 
-            // console.log(result);
-        };
+//             // console.log(result);
+//         };
 
-        doMath(2, 3, function (x, y) { // const add = function (x, y)
-            return x + y;
-        });                         // };
+//         doMath(2, 3, function (x, y) { // const add = function (x, y)
+//             return x + y;
+//         });                         // };
 
-        doMath(26, 15, function (x, y) { //const sub = function
-            return x - y;
-        });                     // };
+//         doMath(26, 15, function (x, y) { //const sub = function
+//             return x - y;
+//         });                     // };
 
-                            // doMath(2, 3, add);
-                            // doMath(26, 15, sub);
-    }
-
-
-
-
-    {
-        
-}
-
+//                             // doMath(2, 3, add);
+//                             // doMath(26, 15, sub);
+//     }
 }
 
 {console.log('Example: Отложенный вызов: регистрация событий');
@@ -81,7 +73,7 @@ console.log('Repeta: ');
 //         onGetPositionError,);
 }
 
-{console.log('Example: Отложенный вызов: интервалы');
+{console.log('%cExample: Отложенный вызов: интервалы', "color: red");
 
     // const callback = function () {
     //     console.log('Через 3 секунды внтури колбека в таймауте');
@@ -94,7 +86,7 @@ console.log('Repeta: ');
     // console.log('В коде после таймаута');
 }
 
-{console.log('Example: Отложенный вызов: http-запрос');
+{console.log('%cExample: Отложенный вызов: http-запрос', "color: blue");
     /* 
     * - API URL: HTTPS:/pokeapi.co/api/v2/pokemon
     */
