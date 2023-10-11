@@ -218,9 +218,9 @@ console.log('Repeta: ');
 {console.log('Example: Округлятор');
 
     // {
-    // const floatingPoint = 3.326445454;
-    // const someInt = Math.round(floatingPoint); // 3
-    // const withDecimals = Number(floatingPoint.toFixed(2)); // 3.26
+    const floatingPoint = 3.326445454;
+    const someInt = Math.round(floatingPoint); // 3
+    const withDecimals = Number(floatingPoint.toFixed(2)); // 3.26
 
     // console.log(Number(floatingPoint.toFixed(3)));
     // console.log(Number(floatingPoint.toFixed(4)));
