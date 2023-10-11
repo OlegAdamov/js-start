@@ -44,6 +44,13 @@ console.log('Repeta: ');
                             // doMath(26, 15, sub);
     }
 
+
+
+
+    {
+        
+}
+
 }
 
 {console.log('Example: Отложенный вызов: регистрация событий');
