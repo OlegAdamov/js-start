@@ -306,8 +306,8 @@ console.log('Repeta: ');
 
 //         console.log(add(5, 10, 15));
 // }
-
-// {    const addArrow = (a, b, c) => {   // {} - явный возврат
+    
+// {    const addArrow = (a, b, c) => {   // {} - явный возврат (explicit)
 //         console.log(a, b, c);
 //         return a + b + c;
 //     };
@@ -315,23 +315,23 @@ console.log('Repeta: ');
 //     console.log(addArrow(12, 18, 32));
 // }
 
-// {    const addArrow1 = (a, b, c) => a + b + c;  // !{} - НЕявный возврат
+// {    const addArrow1 = (a, b, c) => a + b + c;  // !{} - НЕявный возврат (impicit)
         
 //     console.log(addArrow1(37, 25, 69));
 //     }
 
-    // {const fnA = function () {
-    //     return {
-    //         a: 5,
-    //     };
-    // };
+//     {const fnA = function () {
+//         return {
+//             a: 5,
+//         };
+//     };
         
-    //     console.log(fnA())
+//         console.log(fnA())
     
-    //     const arrowFnA = () => ({arrowA: 5,})
+//         const arrowFnA = () => ({arrowA: 5,})
 
-    //     console.log(arrowFnA());
-    // }
+//         console.log(arrowFnA());
+//     }
 
     // {        console.log(`Синтаксис стрелочной функции`);
         /*
@@ -444,11 +444,10 @@ console.log('Repeta: ');
 
     // console.log(new User(`Mango`));
     
-//   }
-    
+    //   }
 }
 
-{console.log('Autocheck: 11');
+{console.log('%cAutocheck: 11', "color: red");
 
 // // Change code below this line
 // const filterArray = (numbers, value) => {
