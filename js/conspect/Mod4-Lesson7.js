@@ -290,7 +290,7 @@ console.log('Repeta: ');
 
 }
 
-{console.log('%cСтрелочные функции', "color: green");
+{console.log('Стрелочные функции');
 
     /* 
     * - Объявление
@@ -445,9 +445,31 @@ console.log('Repeta: ');
     // console.log(new User(`Mango`));
     
     //   }
+
+    // {
+    //     const objA = {
+    //     x: 5,
+    //     showX() {
+    //         console.log("This in objA.showX: ", this);
+    //         console.log(this.x);
+
+    //         const objB = {
+    //             y: 10,
+    //             showThis: () => {
+    //                 console.log("This in objB.showThis: ", this);
+    //             },
+    //         };
+
+    //         objB.showThis();
+    //     },
+    // };
+
+    // objA.showX();
+
+    // }
 }
 
-{console.log('%cAutocheck: 11', "color: red");
+{console.log('Autocheck: 11');
 
 // // Change code below this line
 // const filterArray = (numbers, value) => {
