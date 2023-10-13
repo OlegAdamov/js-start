@@ -1,4 +1,4 @@
-console.log('Repeta: ');
+console.log('%cRepeta: ', 'color: blue');
 
 {console.log('Функция обратного вызова (callback): ');
 
@@ -469,7 +469,7 @@ console.log('Repeta: ');
     // }
 }
 
-{console.log('%cAutocheck: 11', 'color: green');
+{console.log('Autocheck: 11');
 
 // // Change code below this line
 // const filterArray = (numbers, value) => {
@@ -699,4 +699,47 @@ const filteredNumbers = numbers.filter(value => value > 3);
 
 
 
-console.log('Artem Ricych: ');
+console.log('%cArtem Ricych: ', 'color: blue');
+
+{   console.log('%cCallback', "color: red")
+
+    const arr = [2, 6, 1, 7, 3];
+
+    function each(arr, callback) {
+        let total = arr[0];
+        for (let i = 1; i < arr.length; i +=1) {
+            total = callback(total, arr[i]);
+            // console.log(item);
+        };
+        return total;
+    };
+
+    console.log(each(arr, add));
+
+    console.log(each(arr, sub));
+    
+    console.log(each(arr, sum));
+
+    console.log(each(arr, division));
+
+    function add(first, second) {
+        return first + second;
+    };
+    
+    function sub(first, second) {
+        return first - second;
+    };
+
+    function sum(first, second) {
+        return first * second;
+    };
+
+    function division(first, second) {
+        return first / second;
+    }
+    
+}
+
+{   console.log('%cNext', "color: green")
+}
+
