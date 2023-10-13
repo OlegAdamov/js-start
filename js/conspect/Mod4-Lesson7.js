@@ -701,45 +701,73 @@ const filteredNumbers = numbers.filter(value => value > 3);
 
 console.log('%cArtem Ricych: ', 'color: blue');
 
-{   console.log('%cCallback', "color: red")
+{   console.log('Callback')
+    // const arr = [2, 6, 1, 7, 3];
 
-    const arr = [2, 6, 1, 7, 3];
+    // function each(arr, callback) {
+    //     let total = arr[0];
+    //     for (let i = 1; i < arr.length; i +=1) {
+    //         total = callback(total, arr[i]);
+    //         // console.log(item);
+    //     };
+    //     return total;
+    // };
 
-    function each(arr, callback) {
-        let total = arr[0];
-        for (let i = 1; i < arr.length; i +=1) {
-            total = callback(total, arr[i]);
-            // console.log(item);
-        };
-        return total;
-    };
+    // console.log(each(arr, add));
 
-    console.log(each(arr, add));
-
-    console.log(each(arr, sub));
+    // console.log(each(arr, sub));
     
-    console.log(each(arr, sum));
+    // console.log(each(arr, sum));
 
-    console.log(each(arr, division));
+    // console.log(each(arr, division));
 
-    function add(first, second) {
-        return first + second;
-    };
+    // function add(first, second) {
+    //     return first + second;
+    // };
     
-    function sub(first, second) {
-        return first - second;
-    };
+    // function sub(first, second) {
+    //     return first - second;
+    // };
 
-    function sum(first, second) {
-        return first * second;
-    };
+    // function sum(first, second) {
+    //     return first * second;
+    // };
 
-    function division(first, second) {
-        return first / second;
-    }
-    
+    // function division(first, second) {
+    //     return first / second;
+    // }
 }
 
-{   console.log('%cNext', "color: green")
+{console.log('%cforEach - Перебрати весь масив', "color: green")
+/* 
+* - Що він робить?
+* - Що він приймає?
+* - Що він повертає?
+*/
+    const arr = [2, 6, 1, 7, 3];
+
+    // arr.forEach(function (_, idx) {
+    //     console.log(idx);
+    // })
+
+    // item - ітеруємий елемент
+    // idx - індекс поточного елемента
+    // arr - масив який ітеруємо (перебираємо)
+    // arr.forEach(function (item, idx, arr) {
+    //     console.log('item: ', item);
+    //     console.log('idx: ', idx);
+    //     console.log('arr: ', arr);
+    // }
+    // );
+
+    // arr.forEach(function (item, idx, arr) {
+    //     arr[idx] = item * 2;
+    // })
+    // console.log(arr)
+
+}
+
+
+{   console.log('%cNext', "color: red")
 }
 
