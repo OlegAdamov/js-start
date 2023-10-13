@@ -693,10 +693,7 @@ const filteredNumbers = numbers.filter(value => value > 3);
 
 }
 
-{console.log(' ');
-
-}
-
+{console.log(' ')}
 
 
 console.log('%cArtem Ricych: ', 'color: blue');
