@@ -767,7 +767,7 @@ console.log('%cArtem Ricych: ', 'color: blue');
 
 }
 
-{console.log('%cFunction-Arrow', "color: green")
+{console.log('Function-Arrow')
 /* 
 * - arguments - відсутній
 * - 
@@ -832,6 +832,11 @@ console.log('%cArtem Ricych: ', 'color: blue');
     
     // user.say();
     // user.sayHello();
+}
+
+{console.log('%cSome Theme', "color: green")
+
+
 }
 
 {   console.log('%cNext', "color: red")
