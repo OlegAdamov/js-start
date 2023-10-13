@@ -717,7 +717,7 @@ console.log('%cArtem Ricych: ', 'color: blue');
 
     // console.log(each(arr, sub));
     
-    // console.log(each(arr, sum));
+    // console.log(each(arr, multiply));
 
     // console.log(each(arr, division));
 
@@ -729,7 +729,7 @@ console.log('%cArtem Ricych: ', 'color: blue');
     //     return first - second;
     // };
 
-    // function sum(first, second) {
+    // function summultiply(first, second) {
     //     return first * second;
     // };
 
@@ -738,7 +738,7 @@ console.log('%cArtem Ricych: ', 'color: blue');
     // }
 }
 
-{console.log('%cforEach - Перебрати весь масив', "color: green")
+{console.log('forEach - Перебрати весь масив')
 /* 
 * - Що він робить?
 * - Що він приймає?
@@ -767,6 +767,72 @@ console.log('%cArtem Ricych: ', 'color: blue');
 
 }
 
+{console.log('%cFunction-Arrow', "color: green")
+/* 
+* - arguments - відсутній
+* - 
+* - 
+* - 
+*/
+    // const foo = (...rest) => {
+    //     console.log(rest)
+    // };
+
+    // foo(1,2,3,4,5);
+    // foo(1, 2, 3, 4, 21, 532, 5324, 5);
+    
+    // const arr = [2, 6, 1, 7, 3];
+
+
+    // function each(arr, callback) {
+    //     let total = arr[0];
+    //     for (let i = 1; i < arr.length; i +=1) {
+    //         total = callback(total, arr[i]);
+    //         // console.log(item);
+    //     };
+    //     return total;
+    // };
+
+
+/*     function add(first, second) {
+        return first + second;
+    }; */
+    const add = (first, second) => first + second;
+    
+/*     function sub(first, second) {
+        return first - second;
+    }; */
+    const sub = (first, second) => first - second;
+
+/*     function multiply(first, second) {
+        return first * second;
+    }; */
+    const multiply = (first, second) => first * second;
+
+    /*     function division(first, second) {
+        return first / second;
+    } */
+    const division = (first, second) => first / second;
+
+    
+    // console.log(each(arr, add));
+    // console.log(each(arr, sub));
+    // console.log(each(arr, multiply));
+    // console.log(each(arr, division));
+
+    // const user = {
+    //     userName: 'Test user',
+    //     say() {
+    //         console.log(`Hello ${this.userName}`);
+    //     },
+    //     sayHello: () => {
+    //         console.log(`Hello ${this.userName}`);
+    //   }
+    // };
+    
+    // user.say();
+    // user.sayHello();
+}
 
 {   console.log('%cNext', "color: red")
 }
