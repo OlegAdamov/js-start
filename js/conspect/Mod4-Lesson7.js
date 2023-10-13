@@ -469,7 +469,7 @@ console.log('Repeta: ');
     // }
 }
 
-{console.log('Autocheck: 11');
+{console.log('%cAutocheck: 11', 'color: green');
 
 // // Change code below this line
 // const filterArray = (numbers, value) => {
