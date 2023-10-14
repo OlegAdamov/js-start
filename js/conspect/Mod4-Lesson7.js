@@ -735,7 +735,7 @@ console.log('%cArtem Ricych: ', 'color: blue');
     // }
 }
 
-{console.log('forEach - Перебрати весь масив')
+{console.log('Example 3 - forEach - Перебрати весь масив')
 /* 
 * - Що він робить?
 * - Що він приймає?
@@ -831,12 +831,253 @@ console.log('%cArtem Ricych: ', 'color: blue');
     // user.sayHello();
 }
 
-{console.log('%cSome Theme', "color: green")
+{console.log('Example 1 - callback - createProduct')
+    /* Напишіть наступні функції:
+    * - createProduct(obj, callback) - приймає об'єкт товару без id, а також коллбек.
+    * Функція створює об'єкт товару, додаючи йому унікальний ідентифікатор
+    * у властивість id та викликає коллбек передаючи йому створений об'єкт.
+    * - logProduct(product) - коллбек приймаючий об'єкт продукту і логуччий його в консоль.
+    * - logTotalPrice(producn) - коллбек, що приймає об'єкт продукту і логує 
+    * загальну вартість товару в консоль. 
+    */
+   
+    // function createProduct(obj, callback) {
+    //     const product = {
+    //         id: Date.now(),
+    //         ...obj,
+    //     };
+    //     callback(product);
+    //     console.log(product);
+    // };
 
-    
+    // function logProduct(obj) {
+    //     console.log(`Product: ${obj.name}`);
+    // };
 
+    // function logTotalPrice({price, quantity}) { 
+    //     console.log(`Total price: ${price * quantity}`);
+    // };
+
+    // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
+    // createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
 }
 
+{console.log('Example 2 - callback - TRANSACTION_LIMIT')
+/*  
+* - Додайте в об'єкт account методи withdraw (amount, onSuccess, onError)
+* та deposit(amount, onSuccess, onError), де перший параметр це сума операцій,
+* а другий та третій - коллбеки.
+* - Метод withdraw викликає onError, якщо amount більше TRANSACTION_LIMIT, 
+* або this.balance, і onSuccess в іншому випадку.
+* - Метод deposit викликає onError, якщо amount більше TRANSACTION_LIMIT,
+* або менше або дорівнює нулю, і onSuccess в іншому випадку.
+*/
+    
+    // const TRANSACTION_LIMIT = 1000;
+
+    // const account = {
+    //     userName: 'Jacob',
+    //     balance: 400,
+
+    //     withdraw(amount, onSuccess, onError) {
+    //         if (amount > TRANSACTION_LIMIT) {
+    //             onError(`TRANSACTION_LIMIT: ${TRANSACTION_LIMIT}`)
+    //             return;
+    //         } else if (this.balance < amount) {
+    //             onError(`Not enough in the account`);
+    //             return;
+    //         } 
+    //         this.balance -= amount;
+    //         onSuccess(`Transaction complete: ${amount}, balance: ${this.balance}`);
+    //     },
+
+    //     deposit(amount, onSuccess, onError) {
+    //         if (amount > TRANSACTION_LIMIT) {
+    //             onError(`TRANSACTION_LIMIT: ${TRANSACTION_LIMIT}`);
+    //             return;
+    //         } else if (amount <= 0) {
+    //             onError(`Nice try Bro! 😂`);
+    //             return;
+    //         }
+    //         this.balance += amount;
+    //         onSuccess(`Transaction complete: ${amount}, balance: ${this.balance}`)
+    //     }
+    // };
+
+    // function handleSuccess(message) {
+    //     console.log(`✅ Success! ${message}`);
+    // };
+
+    // function handleError(message) {
+    //     console.log(`❌ Error! ${message}`);
+    // };
+    
+
+
+
+    // account.withdraw(2000, handleSuccess, handleError);
+    // account.withdraw(600, handleSuccess, handleError);
+    // account.withdraw(300, handleSuccess, handleError);
+    // account.deposit(1700, handleSuccess, handleError);
+    // account.deposit(0, handleSuccess, handleError);
+    // account.deposit(-600, handleSuccess, handleError);
+    // account.deposit(600, handleSuccess, handleError);
+}
+
+{console.log('Example 4 - function Arrow - createProduct')
+
+    // Виконайте рефакторинг коду за допомогою стрілочних функцій.
+    
+/*     const  createProduct = (partialProduct, callback) => {
+        const product = {
+            id: Date.now(),
+            ...partialProduct,
+        };
+        callback(product);
+    }; */
+    
+    // const createProduct = (partialProduct, callback) => callback({
+    //         id: Date.now(),
+    //         ...partialProduct,
+    //     });
+    
+
+/*     function logProduct(obj) {
+        console.log(`Product: ${obj.name}`);
+    }; */
+    
+    // const logProduct = product => console.log(`Product: ${product.name}`);
+
+/*     function logTotalPrice({price, quantity}) { 
+        console.log(`Total price: ${price * quantity}`);
+    }; */
+
+    // const logTotalPrice = ({price, quantity}) => console.log(`Total price: ${price * quantity}`)
+
+    // createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
+    // createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
+}
+
+{console.log('Example 5 - function Arrow - TRANSACTION_LIMIT')
+
+// Виконайте рефакторинг коллбеків за допомогою стрілочних функцій
+
+    // const TRANSACTION_LIMIT = 1000;
+
+    // const account = {
+    //     userName: 'Jacob',
+    //     balance: 400,
+
+    //     withdraw(amount, onSuccess, onError) {
+    //         if (amount > TRANSACTION_LIMIT) {
+    //             onError(`TRANSACTION_LIMIT: ${TRANSACTION_LIMIT}`)
+    //             return;
+    //         } else if (this.balance < amount) {
+    //             onError(`Not enough in the account`);
+    //             return;
+    //         } 
+    //         this.balance -= amount;
+    //         onSuccess(`Transaction complete: ${amount}, balance: ${this.balance}`);
+    //     },
+
+    //     deposit(amount, onSuccess, onError) {
+    //         if (amount > TRANSACTION_LIMIT) {
+    //             onError(`TRANSACTION_LIMIT: ${TRANSACTION_LIMIT}`);
+    //             return;
+    //         } else if (amount <= 0) {
+    //             onError(`Nice try Bro! 😂`);
+    //             return;
+    //         }
+    //         this.balance += amount;
+    //         onSuccess(`Transaction complete: ${amount}, balance: ${this.balance}`)
+    //     }
+    // };
+
+/*     function handleSuccess(message) {
+        console.log(`✅ Success! ${message}`);
+    }; */
+   
+    // const handleSuccess = message => console.log(`✅ Success! ${message}`);
+
+/*     function handleError(message) {
+        console.log(`❌ Error! ${message}`);
+    }; */
+
+    // const handleError = message => console.log(`❌ Error! ${message}`);
+    
+
+
+
+    // account.withdraw(2000, handleSuccess, handleError);
+    // account.withdraw(600, handleSuccess, handleError);
+    // account.withdraw(300, handleSuccess, handleError);
+    // account.deposit(1700, handleSuccess, handleError);
+    // account.deposit(0, handleSuccess, handleError);
+    // account.deposit(-600, handleSuccess, handleError);
+    // account.deposit(600, handleSuccess, handleError);
+}
+
+{console.log('Example 6 - inline Arrow function')
+
+    // function each(array, callback) {
+    //     const newArr = [];
+    //     for (const el of array) {
+    //         newArr.push(callback(el));
+    //     }
+    //     return newArr;
+    // };
+    
+/*     console.log(
+        each([64, 49, 36, 25, 16], function (value) {
+            return value * 2;
+        }),
+    ); */
+    // console.log(each([64, 49, 36, 25, 16], value => value * 2));
+
+/*     console.log(
+        each([64, 49, 36, 25, 16], function (value) {
+            return value - 10;
+        }),
+    ); */
+    // console.log(each([64, 49, 36, 25, 16], value => value - 10));
+
+/*      console.log(
+        each([64, 49, 36, 25, 16], function (value) {
+            return Math.sqrt(value);
+        }),
+    ); */
+    // console.log(each([64, 49, 36, 25, 16], value => Math.sqrt(value)));
+
+/*     console.log(
+        each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
+            return Math.ceil(value);
+        }),
+    ); */
+    // console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.ceil(value)));
+
+/*     console.log(
+        each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
+            return Math.floor(value);
+        }),
+    ); */
+    // console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.floor(value)));
+}
+
+{console.log('%cExample 2 - callback', "color: green")
+
+// Виконати рефакторитг коду за допомогою методу forEach та стрілочної функції
+
+    function logItems(items) {
+        console.log(items);
+        for (let i = 0; i < logItems.length; i += 1) {
+            console.log(`${i + 1} - ${items[i]}`)
+        }
+    }
+    
+    logItems(['Mango', 'Poly', 'Ajax']);
+    logItems(['🍎','🍇','🍑','🍌','🍋']);
+
+}
 {   console.log('%cNext', "color: red")
 }
 
