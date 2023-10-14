@@ -1063,21 +1063,47 @@ console.log('%cArtem Ricych: ', 'color: blue');
     // console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.floor(value)));
 }
 
-{console.log('%cExample 2 - callback', "color: green")
+{console.log('Example 7 - forEach & Arrow function')
 
 // Виконати рефакторитг коду за допомогою методу forEach та стрілочної функції
 
-    function logItems(items) {
-        console.log(items);
-        for (let i = 0; i < logItems.length; i += 1) {
+/*     function logItems(items) {
+        // console.log(items);
+        for (let i = 0; i < items.length; i += 1) {
             console.log(`${i + 1} - ${items[i]}`)
         }
-    }
+    } */
     
-    logItems(['Mango', 'Poly', 'Ajax']);
-    logItems(['🍎','🍇','🍑','🍌','🍋']);
-
+    // const logItems = arr => arr.forEach((item, idx) => console.log(`${idx + 1} - ${item}`))
+    // logItems(['Mango', 'Poly', 'Ajax']);
+    // logItems(['🍎','🍇','🍑','🍌','🍋']);
 }
-{   console.log('%cNext', "color: red")
+
+{console.log('Example 8 - forEach')
+// Виконати рефакторитг коду за допомогою методу forEach та стрілочної функції
+
+/*     function calculateAverage(...args) {
+        let total = 0;
+        for (let i = 0; i < args.length; i += 1) {
+            total += args[i];
+        }
+        return total / args.length;
+    };  */
+    
+    // const calculateAverage = (...arr) => {
+    //     let total = 0;
+    //     arr.forEach(value => total += value);
+    //     return total / arr.length;
+    // }
+    
+    // console.log(calculateAverage(1, 2, 3, 4)); // 2.5
+    // console.log(calculateAverage(14, 8, 2)); // 8
+    // console.log(calculateAverage(27, 43, 2, 8, 36)); // 23.2
+}
+
+{console.log('%cExample 0 - ', "color: green")
+}
+
+{console.log('%cNext', "color: red")
 }
 
